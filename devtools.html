@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开发者工具（16 个）· GitHub 精选</title>
+<link id="siteCss" rel="stylesheet" href="assets/site.css">
+<script>
+/* 分享链接靠 ?sharecode= 放行。站内跳转一旦丢掉这个参数，在没有 cookie 的环境
+   （内嵌 webview、隐私模式、聊天工具转发截断）就会直接 403「链接不完整」。
+   这里把参数补回当前地址、样式表和所有站内链接；拿不到参数时什么也不做。 */
+(function () {
+  var sc = "";
+  try {
+    var m = location.search.match(/[?&]sharecode=([^&]+)/);
+    if (m) sc = decodeURIComponent(m[1]);
+    if (!sc) {
+      var m2 = (document.referrer || "").match(/[?&]sharecode=([^&]+)/);
+      if (m2) sc = decodeURIComponent(m2[1]);
+    }
+  } catch (e) { return; }
+  if (!sc) return;
+  window.__SHARECODE = sc;
+  if (!/[?&]sharecode=/.test(location.search)) {
+    try { history.replaceState(null, "", location.pathname + "?sharecode=" + encodeURIComponent(sc) + location.hash); } catch (e) {}
+  }
+  /* 样式表也是被同一道网关拦的：不补参数会出现「页面能开但没样式」 */
+  var css = document.getElementById("siteCss");
+  if (css) css.href = "assets/site.css?sharecode=" + encodeURIComponent(sc);
+  function fix(h) {
+    if (!h) return null;
+    if (h.charAt(0) === "#") return null;
+    if (h.indexOf("//") === 0) return null;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(h)) return null;
+    if (/[?&]sharecode=/.test(h)) return null;
+    return h + (h.indexOf("?") >= 0 ? "&" : "?") + "sharecode=" + encodeURIComponent(sc);
+  }
+  function patch() {
+    var as = document.querySelectorAll("a[href]");
+    for (var i = 0; i < as.length; i++) {
+      var n = fix(as[i].getAttribute("href"));
+      if (n) as[i].setAttribute("href", n);
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", patch);
+  else patch();
+  /* 卡片重绘、视图切换会换掉节点，点之前再兜一次 */
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    while (t && t !== document && (!t.tagName || t.tagName.toLowerCase() !== "a")) t = t.parentNode;
+    if (!t || t === document) return;
+    var n = fix(t.getAttribute("href"));
+    if (n) t.setAttribute("href", n);
+  }, true);
+})();
+</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="index.html"><span class="mark">⚡</span><span>GitHub 精选<small>AWESOME REPOS</small></span></a>
+    <div class="search"><span class="ico">🔍</span><input id="q" type="text" placeholder="在 开发者工具 里搜索…"></div>
+    <a class="fav-link" href="favorites.html" title="我的收藏"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M6.5 3h11A1.5 1.5 0 0 1 19 4.5V21l-7-4.4L5 21V4.5A1.5 1.5 0 0 1 6.5 3z"/></svg><span class="fav-txt">收藏</span><span class="fav-count">0</span></a>
+    <a class="gh-link" href="index.html">全部项目</a>
+  </div>
+</div>
+<header class="chero">
+  <div class="chero-row">
+    <div class="chero-icon" style="background:linear-gradient(135deg,#0ea5e9,#06b6d4)">🛠️</div>
+    <div>
+      <h1>开发者工具<span class="code">DEV</span></h1>
+      <p class="desc">终端神器、命令行效率工具，程序员的兵器库</p>
+      <div class="pills">
+        <span class="pill">共 <b>16</b> 个项目</span>
+        <span class="pill">编号 <b>#01 – #16</b></span>
+        <span class="pill">累计 <b>★ 1.42M</b></span>
+        <span class="pill">引用格式 <b>DEV-12</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="switchbar"><div class="switchbar-inner">
+  <a class="cchip" href="ai.html">🤖 AI 工具 <span class="n">76</span></a><a class="cchip" href="productivity.html">⚡ 效率办公 <span class="n">20</span></a><a class="cchip" href="fun.html">🎮 休闲娱乐 <span class="n">30</span></a><a class="cchip active" href="devtools.html">🛠️ 开发者工具 <span class="n">16</span></a><a class="cchip" href="frontend.html">🎨 前端框架 <span class="n">19</span></a><a class="cchip" href="selfhosted.html">🏠 自托管服务 <span class="n">12</span></a>
+  <div class="viewtog">
+    <button data-v="grid" class="on">卡片</button>
+    <button data-v="rows">列表</button>
+  </div>
+</div></nav>
+
+<main>
+  <section class="listwrap" id="listwrap"></section>
+  <div class="empty" id="empty">😕 这个分类里没有匹配的项目，换个关键词试试</div>
+</main>
+<footer>
+  <div class="foot-inner">
+    <b>GitHub 精选</b> · 优质开源项目集合 · 共 173 个项目 / 6 大分类<br>
+    数据来源 GitHub Search API · Star 数截至 2026-11-04 · 每个分类内按 Star 降序编号 #01–#N<br>
+    Made with ⚡ by WorkBuddy
+  </div>
+</footer>
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="m-hero" id="mHero">
+      <button class="m-close" id="mClose" aria-label="关闭">✕</button>
+      <div class="m-top">
+        <img class="m-avatar" id="mAvatar" alt="">
+        <div class="m-title">
+          <h3><span id="mName"></span><span class="m-id" id="mId"></span><span class="cat-tag" id="mCat"></span></h3>
+          <div class="sub" id="mSub"></div>
+        </div>
+      </div>
+      <div class="m-btns">
+        <button class="m-btn ghost with-label" id="mFav" aria-label="收藏">收藏</button>
+        <button class="m-btn deploy" id="mDeploy" type="button" title="复制一段可直接粘给 AI 的部署指令">⚡ 复制部署指令</button>
+        <a class="m-btn solid" id="mGithub" target="_blank" rel="noopener">在 GitHub 打开 ↗</a>
+      </div>
+    </div>
+    <div class="m-body">
+      <div class="m-stats" id="mStats"></div>
+      <div class="m-intro" id="mIntro"></div>
+      <details class="m-en-box"><summary>英文原始描述</summary><p class="m-en" id="mEn"></p></details>
+      <div class="m-topics" id="mTopics"></div>
+      <div class="m-readme">
+        <span class="m-sec-label">README 摘要</span>
+        <div class="m-readme-box" id="mReadmeBox"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const PAGE = {"cat": {"id": "devtools", "code": "DEV", "name": "开发者工具", "icon": "🛠️", "grad": "linear-gradient(135deg,#0ea5e9,#06b6d4)", "desc": "终端神器、命令行效率工具，程序员的兵器库", "count": 16}};
+const CATS = {"ai":{"id":"ai","code":"AI","name":"AI 工具","icon":"🤖","grad":"linear-gradient(135deg,#6366f1,#a855f7)"},"productivity":{"id":"productivity","code":"WORK","name":"效率办公","icon":"⚡","grad":"linear-gradient(135deg,#f59e0b,#f97316)"},"fun":{"id":"fun","code":"FUN","name":"休闲娱乐","icon":"🎮","grad":"linear-gradient(135deg,#ec4899,#f43f5e)"},"devtools":{"id":"devtools","code":"DEV","name":"开发者工具","icon":"🛠️","grad":"linear-gradient(135deg,#0ea5e9,#06b6d4)"},"frontend":{"id":"frontend","code":"WEB","name":"前端框架","icon":"🎨","grad":"linear-gradient(135deg,#10b981,#14b8a6)"},"selfhosted":{"id":"selfhosted","code":"SELF","name":"自托管服务","icon":"🏠","grad":"linear-gradient(135deg,#8b5cf6,#6366f1)"}};
+const REPOS = [{"full_name":"yt-dlp/yt-dlp","name":"yt-dlp","owner":"yt-dlp","avatar":"https://avatars.githubusercontent.com/u/79589310?v=4","url":"https://github.com/yt-dlp/yt-dlp","desc":"A feature-rich command-line audio/video downloader","stars":205031,"forks":18012,"lang":"Python","topics":["cli","downloader","python","sponsorblock","youtube-dl","youtube-downloader"],"updated":"2026-11-04","tag":"最强命令行视频下载器","body":["yt-dlp 是 youtube-dl 的活跃分支，如今已是同类工具里的绝对王者：支持上千个站点，能选清晰度、抽音频、下字幕、批量下载播放列表、断点续传。","它还能配合 cookies 处理登录态、调用外部下载器加速、按模板命名归档，是自动化媒体采集流程里的标准组件。更新极其频繁，跟进各站点改动很快。"],"feats":["上千站点的链接解析","清晰度 / 音频 / 字幕自由选择","播放列表批量与断点续传","模板化命名与外部下载器集成"],"fit":"需要采集网络媒体的开发者与重度用户","rank":1,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#3572A5"},{"full_name":"ohmyzsh/ohmyzsh","name":"ohmyzsh","owner":"ohmyzsh","avatar":"https://avatars.githubusercontent.com/u/22552083?v=4","url":"https://github.com/ohmyzsh/ohmyzsh","desc":"🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.","stars":190303,"forks":28036,"lang":"Shell","topics":["cli","cli-app","oh-my-zsh","oh-my-zsh-plugin","oh-my-zsh-theme","ohmyzsh"],"updated":"2026-11-02","tag":"zsh 的配置框架与插件生态","body":["Oh My Zsh 让 zsh 从「另一个 shell」变成好用的开发环境：内置数百个插件和主题，一条命令就能装上 git 别名、自动补全、语法高亮、目录跳转等能力。","它的价值在于开箱即用和社区沉淀——想给终端加什么能力，大概率已经有人写好了插件。对刚接触命令行的开发者尤其友好。"],"feats":["数百个插件与主题","git / docker / k8s 等常用别名","自动补全与提示","一条命令安装配置"],"fit":"所有命令行用户、Linux / macOS 开发者","rank":2,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#89e051"},{"full_name":"Panniantong/Agent-Reach","name":"Agent-Reach","owner":"Panniantong","avatar":"https://avatars.githubusercontent.com/u/73925474?v=4","url":"https://github.com/Panniantong/Agent-Reach","desc":"Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.","stars":108475,"forks":9675,"lang":"Python","topics":["agent-infrastructure","ai-agent","ai-search","automation","bilibili","claude-code"],"updated":"2026-11-01","tag":"给智能体接上全网的眼睛","body":["Agent-Reach 解决的是智能体「看不到互联网」的问题：它提供统一的接口，让代理能读取和搜索 Twitter/X、Reddit、YouTube、网页等内容。","相比自己为每个平台写爬虫，接入它之后代理可以直接检索实时信息，做舆情分析、竞品调研、内容聚合这类任务时能力提升明显。"],"feats":["多平台内容读取与搜索","统一接口供代理调用","覆盖社媒、视频与网页","支持实时信息检索"],"fit":"做信息聚合、调研型 Agent 的开发者","rank":3,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#3572A5"},{"full_name":"sherlock-project/sherlock","name":"sherlock","owner":"sherlock-project","avatar":"https://avatars.githubusercontent.com/u/48293496?v=4","url":"https://github.com/sherlock-project/sherlock","desc":"Hunt down social media accounts by username across social networks","stars":95517,"forks":11390,"lang":"Python","topics":["cli","cti","cybersecurity","forensics","hacktoberfest","information-gathering"],"updated":"2026-11-03","tag":"用一个用户名搜遍全网账号","body":["Sherlock 只需一个用户名，就能在 400 多个社交与开发者平台上探测账号是否存在，输出带链接的结果列表。","它常用于 OSINT 调查、品牌名可用性检查、自查个人账号暴露面。命令行调用、支持导出多种格式，也能作为库集成进其他工具。"],"feats":["400+ 平台账号探测","并发查询，速度快","导出 JSON / CSV / XLSX","可作 Python 库调用"],"fit":"安全研究员、做账号排查的开发者","rank":4,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#3572A5"},{"full_name":"OpenHands/OpenHands","name":"OpenHands","owner":"OpenHands","avatar":"https://avatars.githubusercontent.com/u/225919603?v=4","url":"https://github.com/OpenHands/OpenHands","desc":"🙌 OpenHands: AI-Driven Development","stars":92596,"forks":12350,"lang":"TypeScript","topics":["agent","artificial-intelligence","chatgpt","claude-ai","cli","developer-tools"],"updated":"2026-11-04","tag":"能自己写代码跑测试的 AI 开发代理","body":["OpenHands（原 OpenDevin）是一个完整的 AI 软件开发代理：给它一个任务，它会浏览代码库、改文件、跑命令、看报错再修，直到测试通过。","它提供网页界面、命令行与 API，可在沙箱容器里运行，支持多种模型后端。对「把整块需求丢给 AI」的场景，是目前完成度最高的开源实现之一。"],"feats":["端到端完成开发任务","代码浏览、编辑与命令执行","沙箱容器隔离运行","多模型后端与 API 接入"],"fit":"想用 AI 承担整块开发任务的团队","rank":5,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#3178c6"},{"full_name":"rtk-ai/rtk","name":"rtk","owner":"rtk-ai","avatar":"https://avatars.githubusercontent.com/u/258253854?v=4","url":"https://github.com/rtk-ai/rtk","desc":"CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies","stars":85491,"forks":5468,"lang":"Rust","topics":["agentic-coding","ai-coding","anthropic","claude-code","cli","command-line-tool"],"updated":"2026-11-03","tag":"把命令输出压到 LLM 能省着读","body":["rtk 是一个 CLI 代理：在执行常见开发命令（git、测试、构建、日志）时，自动把冗长输出压缩成关键信息，减少喂给模型的 token，官方称可省 60~90%。","它不是粗暴截断，而是理解命令语义后保留错误、摘要和关键行。对长时间跑编码代理、读日志排查问题的场景，既省钱又减少上下文溢出。"],"feats":["常见命令输出智能压缩","保留错误与关键信息","token 消耗降 60~90%","透明代理，无需改工作流"],"fit":"用编码代理处理大量命令输出的开发者","rank":6,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#dea584"},{"full_name":"junegunn/fzf","name":"fzf","owner":"junegunn","avatar":"https://avatars.githubusercontent.com/u/700826?v=4","url":"https://github.com/junegunn/fzf","desc":":cherry_blossom: A command-line fuzzy finder","stars":83996,"forks":4153,"lang":"Go","topics":["bash","cli","fish","fzf","go","neovim"],"updated":"2026-11-03","tag":"终端里的模糊搜索神器","body":["fzf 是一个通用的模糊查找器：把任何列表（文件、历史命令、git 分支、进程、docker 容器）管道给它，就能边打字边筛选，方向键选中即返回。","它本身只是个过滤器，但接入 shell、vim、tmux 后能极大改变工作流——历史命令搜索、文件跳转、分支切换都快到不用思考。"],"feats":["通用模糊匹配，接任何列表","与 shell / vim / tmux 深度集成","预览窗口与多选","极快，百万行也无压力"],"fit":"所有命令行用户","rank":7,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#00ADD8"},{"full_name":"jesseduffield/lazygit","name":"lazygit","owner":"jesseduffield","avatar":"https://avatars.githubusercontent.com/u/8456633?v=4","url":"https://github.com/jesseduffield/lazygit","desc":"simple terminal UI for git commands","stars":83638,"forks":3244,"lang":"Go","topics":["cli","git","terminal"],"updated":"2026-11-04","tag":"图形化终端 Git 客户端","body":["lazygit 把 Git 的常见操作做成终端界面：暂存单个 hunk、交互式 rebase、挑选 commit、解决冲突、查看 diff，全部用快捷键完成。","它保留了 Git 的全部能力，又免去记复杂参数。对每天要处理分支和提交的人来说，比命令行快，也比 GUI 客户端轻。"],"feats":["hunk 级暂存与取消","交互式 rebase 与 cherry-pick","冲突解决与 diff 浏览","全键盘操作，启动极快"],"fit":"每天用 Git 的开发者","rank":8,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#00ADD8"},{"full_name":"BurntSushi/ripgrep","name":"ripgrep","owner":"BurntSushi","avatar":"https://avatars.githubusercontent.com/u/456674?v=4","url":"https://github.com/BurntSushi/ripgrep","desc":"ripgrep recursively searches directories for a regex pattern while respecting your gitignore","stars":69687,"forks":4185,"lang":"Rust","topics":["cli","command-line","command-line-tool","gitignore","grep","recursively-search"],"updated":"2026-10-27","tag":"最快的代码搜索工具","body":["ripgrep（rg）是现在代码搜索的默认选择：递归搜索目录、自动遵守 .gitignore、跳过二进制文件，速度比 grep 快一个量级。","它支持正则、多行匹配、按文件类型过滤、上下文显示，输出还可直接给 fzf 或编辑器用。几乎所有现代编辑器内部的搜索都受它影响。"],"feats":["极快的并行搜索","自动遵守 .gitignore","正则与多行匹配","按类型过滤与上下文显示"],"fit":"所有需要在大代码库里找东西的开发者","rank":9,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#dea584"},{"full_name":"tldr-pages/tldr","name":"tldr","owner":"tldr-pages","avatar":"https://avatars.githubusercontent.com/u/7366472?v=4","url":"https://github.com/tldr-pages/tldr","desc":"Collaborative cheatsheets for console commands 📚.","stars":64118,"forks":5651,"lang":"Markdown","topics":["android","bsd","cheatsheet","cheatsheets","cli","command-line"],"updated":"2026-11-03","tag":"给人看的命令速查手册","body":["tldr 是 man 手册的实用替代：不解释所有参数，只给几个最常见用法和示例，一眼就能看懂该怎么敲。","它有社区维护的多语言页面，可通过客户端在终端直接查询，覆盖几乎所有常用命令。忘了 tar 怎么解压时，它比 man 快得多。"],"feats":["只给常用示例，简洁实用","社区维护，多语言","终端客户端直接查询","覆盖主流命令"],"fit":"所有命令行用户、Linux 新手","rank":10,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#083fa1"},{"full_name":"tw93/Pake","name":"Pake","owner":"tw93","avatar":"https://avatars.githubusercontent.com/u/8736212?v=4","url":"https://github.com/tw93/Pake","desc":"Turn any website into a lightweight desktop app with one command, on macOS, Windows and Linux.","stars":62794,"forks":12923,"lang":"Rust","topics":["chatgpt","claude","cli","desktop","desktop-app","electron-alternative"],"updated":"2026-11-02","tag":"一条命令把网页变成桌面应用","body":["Pake 用 Rust + Tauri 把任意网页打包成轻量桌面应用，体积通常只有几 MB，内存占用远低于 Electron 方案。","它支持快捷键、沉浸式窗口、托盘、自定义样式，还能注入 JS 去掉广告或改交互。想让某个常用网站「像个 App 一样」存在时，它是最省事的方案。"],"feats":["网页一键打包成桌面 App","Tauri 实现，体积小占用低","支持快捷键 / 托盘 / 沉浸模式","可注入 JS 定制页面"],"fit":"想把常用网页变桌面应用的用户与开发者","rank":11,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#dea584"},{"full_name":"Raphire/Win11Debloat","name":"Win11Debloat","owner":"Raphire","avatar":"https://avatars.githubusercontent.com/u/9938813?v=4","url":"https://github.com/Raphire/Win11Debloat","desc":"A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.","stars":61626,"forks":2730,"lang":"PowerShell","topics":["automated","bloatware","bloatware-removal","cleanup","cli","debloat"],"updated":"2026-11-01","tag":"一键清理 Windows 11 的预装垃圾","body":["Win11Debloat 是一个 PowerShell 脚本，用来移除 Windows 11/10 的预装应用、关闭推荐与遥测、清理开始菜单广告、恢复经典右键菜单。","它提供交互式菜单和可回滚选项，不必手动翻设置或改注册表。对刚装完系统想快速「减负」的人来说很实用。"],"feats":["批量卸载预装应用","关闭遥测、推荐与广告","恢复经典右键菜单","支持回滚与自定义选择"],"fit":"Windows 11 用户、装机洁癖","rank":12,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#012456"},{"full_name":"sharkdp/bat","name":"bat","owner":"sharkdp","avatar":"https://avatars.githubusercontent.com/u/4209276?v=4","url":"https://github.com/sharkdp/bat","desc":"A cat(1) clone with wings.","stars":61055,"forks":3068,"lang":"Rust","topics":["cli","command-line","git","hacktoberfest","rust","syntax-highlighting"],"updated":"2026-11-03","tag":"带语法高亮的 cat","body":["bat 是 cat 的增强版：自动识别文件类型并高亮语法、显示行号与 Git 修改标记、处理非打印字符，还能分页浏览。","它可以直接替换 cat 用在管道里（自动切回纯文本输出），也能作为 man、diff、fzf 预览的后端。日常翻配置文件时观感提升明显。"],"feats":["语法高亮与行号","Git 变更标记","管道中自动降级为纯文本","可作为 man / diff 的美化后端"],"fit":"所有命令行用户","rank":13,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#dea584"},{"full_name":"wagoodman/dive","name":"dive","owner":"wagoodman","avatar":"https://avatars.githubusercontent.com/u/590471?v=4","url":"https://github.com/wagoodman/dive","desc":"A tool for exploring each layer in a docker image","stars":54699,"forks":2011,"lang":"Go","topics":["cli","docker","docker-image","explorer","inspector","tui"],"updated":"2026-11-02","tag":"逐层检查 Docker 镜像里都有什么","body":["dive 用终端界面展示 Docker 镜像的每一层：每层新增/修改了哪些文件、浪费了多少空间、镜像效率评分如何。","做镜像瘦身时非常有用——你能立刻看出是哪一步塞进了几百 MB 的缓存或临时文件，从而把 Dockerfile 改对。也支持 CI 里做体积门禁。"],"feats":["镜像分层可视化浏览","空间浪费与效率评分","定位臃肿层与无用文件","可接入 CI 做校验"],"fit":"做容器镜像优化的 DevOps 与后端开发","rank":14,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#00ADD8"},{"full_name":"kepano/obsidian-skills","name":"obsidian-skills","owner":"kepano","avatar":"https://avatars.githubusercontent.com/u/10565871?v=4","url":"https://github.com/kepano/obsidian-skills","desc":"Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.","stars":50705,"forks":3584,"lang":null,"topics":["agents","agentskills","bases","claude","clawdbot","cli"],"updated":"2026-09-15","tag":"让智能体学会用 Obsidian","body":["这是 Obsidian 官方向 AI 代理提供的技能包：教智能体使用 Obsidian CLI 与开放格式（Markdown + wikilink），从而能读写、整理、检索整个知识库。","接上之后，代理可以帮你批量整理笔记、生成索引、迁移格式、按双链关系补全内容，而不用你手动处理几万个 md 文件。"],"feats":["Obsidian CLI 使用能力","开放格式读写（Markdown / 双链）","批量整理与检索笔记","适配主流编码代理"],"fit":"用 Obsidian 管理知识库的重度用户","rank":15,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#8b949e"},{"full_name":"Aider-AI/aider","name":"aider","owner":"Aider-AI","avatar":"https://avatars.githubusercontent.com/u/172139148?v=4","url":"https://github.com/Aider-AI/aider","desc":"aider is AI pair programming in your terminal","stars":49931,"forks":5133,"lang":"Python","topics":["anthropic","chatgpt","claude-3","cli","command-line","gemini"],"updated":"2026-05-22","tag":"终端里的 AI 结对编程","body":["aider 是最早也最实用的终端 AI 编程工具之一：它把你的代码库建立索引，你描述需求，它直接改文件并自动提交 Git commit。","它的强项是「精准编辑」——只改动必要的行，而不是重写整个文件；配合 git 天然可回滚。支持多种模型，也能读懂报错信息后自己修。"],"feats":["代码库索引与上下文理解","精准行级编辑","自动生成 Git 提交","多模型支持与报错自修复"],"fit":"习惯终端工作流的开发者","rank":16,"cat":"开发者工具","catId":"devtools","code":"DEV","langColor":"#3572A5"}];
+/* ------------------------------------------------------------------
+ * md.js — 轻量 Markdown 渲染器 + README 摘要提炼（零依赖）
+ * 浏览器挂到 window.MD；Node 下 module.exports，便于离线测试
+ * ------------------------------------------------------------------ */
+(function (root, factory) {
+  var API = factory();
+  if (typeof module === 'object' && module.exports) module.exports = API;
+  else root.MD = API;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+
+  var CJK = /[\u2e80-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff00-\uffef]/;
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function stripTags(s) { return String(s).replace(/<[^>]*>/g, ''); }
+  function isCJK(ch) { return !!ch && CJK.test(ch); }
+
+  /* ---------------- 1. 预处理：把 HTML 风格 README 归一化成 Markdown ---------------- */
+
+  var LANG_NAMES = /(english|中文|简体中文|正體中文|繁體中文|日本語|日本语|한국어|deutsch|français|francais|español|espanol|italiano|português|portugues|русский|українська|polski|nederlands|svenska|türkçe|turkce|tiếng việt|ภาษาไทย|العربية|עברית|bahasa indonesia|malayalam|മലയാളം|bengali|हिन्दी|हिंदी)/gi;
+
+  function prep(src) {
+    var s = String(src || '')
+      .replace(/\r\n?/g, '\n')
+      .replace(/^\uFEFF/, '');
+
+    s = s.replace(/<!--[\s\S]*?-->/g, '');                       // HTML 注释
+    s = s.replace(/^---\n[\s\S]{0,600}?\n---\n/, '');            // YAML front matter
+    s = s.replace(/<details[\s\S]*?<\/details>/gi, '\n');        // 折叠块（目录/语言切换/FAQ）
+    s = s.replace(/<\/?(picture|source|video|audio|iframe)[^>]*>/gi, '');
+
+    // 块级 HTML → Markdown
+    s = s.replace(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi, function (m, lv, t) {
+      return '\n' + new Array(+lv + 1).join('#') + ' ' + stripTags(t).replace(/\s+/g, ' ').trim() + '\n';
+    });
+    s = s.replace(/<br\s*\/?>/gi, '\n');
+    s = s.replace(/<a\s[^>]*href\s*=\s*["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi, function (m, href, txt) {
+      var t = stripTags(txt).replace(/\s+/g, ' ').trim();
+      return t ? '[' + t.replace(/\]/g, '') + '](' + href + ')' : '';
+    });
+    s = s.replace(/<(b|strong)>([\s\S]*?)<\/\1>/gi, '**$2**');
+    s = s.replace(/<(i|em)>([\s\S]*?)<\/\1>/gi, '*$2*');
+    s = s.replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, '`$1`');
+    s = s.replace(/<li[^>]*>/gi, '\n- ').replace(/<\/li>/gi, '');
+    s = s.replace(/<\/p>|<p[^>]*>/gi, '\n\n');
+    s = s.replace(/<hr[^>]*>/gi, '\n\n---\n\n');
+    s = s.replace(/<img[^>]*>/gi, '');                           // 图片一律丢弃（徽章是噪音，截图走外链太慢）
+    s = s.replace(/<\/?(div|span|center|summary|table|thead|tbody|tfoot|tr|td|th|ul|ol|dl|dt|dd|section|article|header|footer|main|aside|nav|font|sup|sub|mark|kbd|small|big|figure|figcaption|blockquote|pre)[^>]*>/gi, '');
+
+    // 行内图片 / 空链接 / 徽章残渣
+    s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+    s = s.replace(/\[\s*\]\([^)]*\)/g, '');
+
+    // 目录块（连续 >=3 行纯锚点链接）整块删除
+    var lines = s.split('\n');
+    var out = [], run = [];
+    var isToc = function (l) { return /^\s*[-*+]?\s*\[[^\]]{1,60}\]\(#[^)]*\)\s*$/.test(l); };
+    var flush = function () {
+      if (run.length && run.length >= 3) { out.push(''); }
+      else { out.push.apply(out, run); }
+      run = [];
+    };
+    for (var i = 0; i < lines.length; i++) {
+      if (isToc(lines[i])) run.push(lines[i]);
+      else { if (run.length) flush(); out.push(lines[i]); }
+    }
+    if (run.length) flush();
+    s = out.join('\n');
+
+    // 参考式链接定义：[id]: https://... （正文里只留引用，定义单独存）
+    var refs = {};
+    s = s.replace(/^ {0,3}\[([^\]\n]{1,80})\]:\s*<?([^\s>]+)>?(?:\s+["'(][^\n]*)?$/gm, function (m, id, url) {
+      var key = id.trim().toLowerCase();
+      if (!refs[key]) refs[key] = url.trim();
+      return '';
+    });
+
+    // 导航行 / 语言切换行过滤（段落级在 parse 里做，这里只处理明显的链接串）
+    s = s.split('\n').filter(function (l) { return !isNavLine(l); }).join('\n');
+
+    // 清理空行堆积与行尾空白
+    s = s.replace(/[ \t]+$/gm, '').replace(/\n{3,}/g, '\n\n').replace(/^\n+/, '').trim();
+    return { text: s, refs: refs };
+  }
+
+  function isNavLine(l) {
+    if (!l.trim()) return false;
+    if (/^\s{0,3}([-*+]|\d{1,2}[.)])\s/.test(l)) return false;   // 列表项保留
+    if (l.indexOf('|') >= 0 && !/\]\(/.test(l)) return false;      // 表格行保留（无链接）
+    if (/^\s{0,3}#{1,6}\s/.test(l)) return false;                 // 标题保留
+    return isNavText(l);
+  }
+
+  // 整段都是链接/语言项 → 导航条，丢弃
+  function isNavText(t) {
+    var links = t.match(/!?\[[^\]]*\]\([^)]*\)/g) || [];
+    if (!links.length) {
+      return t.length < 80 && (t.match(/[·•|]/g) || []).length >= 2 && !/[.!?。！？]/.test(t);
+    }
+    var rest = t.replace(/!?\[[^\]]*\]\([^)]*\)/g, '')
+                .replace(/[\[\]()<>·|/\\–—•*_,.;:+\-]+/g, ' ')
+                .trim();
+    var langs = t.match(LANG_NAMES) || [];
+    if (links.length >= 2 && rest.length < 14) return true;
+    if (links.length === 1 && rest.length < 4 && t.length < 100) return true;   // 单一 CTA 按钮
+    if (langs.length >= 3 && links.length >= 2 && rest.length < 40) return true;
+    if (links.length >= 2 && rest.length < 60 && !/[.!?。！？]/.test(rest) && rest.split(/\s+/).filter(Boolean).length <= 6) return true;
+    return false;
+  }
+
+  /* ---------------- 2. 块级解析 ---------------- */
+
+  var RE_FENCE = /^\s{0,3}(```+|~~~+)\s*([\w+#.\-]*)/;
+  var RE_HEAD = /^\s{0,3}(#{1,6})\s+(.*?)\s*#*\s*$/;
+  var RE_HR = /^\s{0,3}((\*\s*){3,}|(-\s*){3,}|(_\s*){3,})$/;
+  var RE_UL = /^([ \t]*)([-*+])\s+(.*)$/;
+  var RE_OL = /^([ \t]*)(\d{1,2})[.)]\s+(.*)$/;
+  var RE_QUOTE = /^\s{0,3}>\s?/;
+  var RE_TSEP = /^\s*\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?\s*$/;
+
+  function splitRow(line) {
+    var s = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+    return s.split('|').map(function (c) { return c.trim().replace(/\\\|/g, '|'); });
+  }
+
+  function joinLines(arr) {
+    var s = '';
+    for (var i = 0; i < arr.length; i++) {
+      if (!i) { s = arr[i]; continue; }
+      var prev = s.charAt(s.length - 1), next = arr[i].charAt(0);
+      s += (isCJK(prev) || isCJK(next) ? '' : ' ') + arr[i];
+    }
+    return s;
+  }
+
+  function blockStart(lines, i) {
+    var l = lines[i];
+    if (!l.trim()) return true;
+    if (RE_FENCE.test(l) || RE_HEAD.test(l) || RE_HR.test(l) || RE_QUOTE.test(l)) return true;
+    if (RE_UL.test(l) || RE_OL.test(l)) return true;
+    if (l.indexOf('|') >= 0 && lines[i + 1] && RE_TSEP.test(lines[i + 1])) return true;
+    return false;
+  }
+
+  function parse(md) {
+    var lines = md.split('\n'), out = [], i = 0, n = lines.length, m;
+    while (i < n) {
+      var line = lines[i];
+      if (!line.trim()) { i++; continue; }
+
+      // 围栏代码
+      if ((m = line.match(RE_FENCE))) {
+        var mark = m[1].charAt(0) === '`' ? '```' : '~~~';
+        var lang = (m[2] || '').toLowerCase(), buf = [];
+        i++;
+        while (i < n && lines[i].indexOf(mark) !== 0 && !new RegExp('^\\s{0,3}' + mark).test(lines[i])) {
+          buf.push(lines[i]); i++;
+        }
+        if (i < n) i++;
+        out.push({ type: 'code', lang: lang, text: buf.join('\n') });
+        continue;
+      }
+
+      // 标题
+      if ((m = line.match(RE_HEAD))) {
+        out.push({ type: 'heading', level: m[1].length, text: m[2].trim() });
+        i++; continue;
+      }
+
+      // 分隔线
+      if (RE_HR.test(line)) { out.push({ type: 'hr' }); i++; continue; }
+
+      // 表格
+      if (line.indexOf('|') >= 0 && lines[i + 1] && RE_TSEP.test(lines[i + 1])) {
+        var head = splitRow(line), rows = [];
+        i += 2;
+        while (i < n && lines[i].trim() && lines[i].indexOf('|') >= 0) {
+          rows.push(splitRow(lines[i])); i++;
+        }
+        out.push({ type: 'table', head: head, rows: rows });
+        continue;
+      }
+
+      // 引用
+      if (RE_QUOTE.test(line)) {
+        var q = [];
+        while (i < n && RE_QUOTE.test(lines[i])) { q.push(lines[i].replace(RE_QUOTE, '')); i++; }
+        out.push({ type: 'quote', text: q.join(' ') });
+        continue;
+      }
+
+      // 列表
+      if (RE_UL.test(line) || RE_OL.test(line)) {
+        var ordered = !RE_UL.test(line), items = [], base = null;
+        while (i < n && (RE_UL.test(lines[i]) || RE_OL.test(lines[i]))) {
+          var lm = lines[i].match(RE_UL);
+          var om = lm ? null : lines[i].match(RE_OL);
+          var indent = (lm ? lm[1] : om[1]).replace(/\t/g, '    ').length;
+          var text = lm ? lm[3] : om[3];
+          if (base === null) base = indent;
+          var lvl = Math.min(2, Math.max(0, Math.round((indent - base) / 2)));
+          var checked = null;
+          var cm = text.match(/^\[([ xX])\]\s+(.*)$/);
+          if (cm) { checked = cm[1].toLowerCase() === 'x'; text = cm[2]; }
+          items.push({ level: lvl, text: text, checked: checked });
+          i++;
+          while (i < n && lines[i].trim() && !RE_UL.test(lines[i]) && !RE_OL.test(lines[i]) &&
+                 !RE_HEAD.test(lines[i]) && !RE_FENCE.test(lines[i]) && /^\s{2,}/.test(lines[i])) {
+            items[items.length - 1].text += ' ' + lines[i].trim();
+            i++;
+          }
+        }
+        var pureLinks = items.length >= 3 && items.every(function (it) {
+          return /^\[[^\]]+\]\([^)]*\)$/.test(it.text.trim());
+        });
+        if (!pureLinks) out.push({ type: 'list', ordered: ordered, items: items });
+        continue;
+      }
+
+      // 段落
+      var para = [line.trim()];
+      i++;
+      while (i < n && !blockStart(lines, i)) { para.push(lines[i].trim()); i++; }
+      var ptext = joinLines(para);
+      if (isNavText(ptext)) continue;                            // 合并后才成形的导航条
+      out.push({ type: 'para', text: ptext });
+    }
+    return out;
+  }
+
+  /* ---------------- 3. 行内渲染 ---------------- */
+
+  function resolveUrl(url, ctx) {
+    var u = String(url || '').trim().replace(/^<|>$/g, '');
+    if (!u) return '';
+    if (/^(https?:|mailto:|#|\/\/)/i.test(u)) return u;
+    u = u.replace(/^\.\//, '').replace(/^\//, '');
+    var base = 'https://github.com/' + (ctx.full || '') + '/blob/' + (ctx.branch || 'main') + '/';
+    return base + u.replace(/^\.\.\//, '');
+  }
+
+  function inline(text, ctx) {
+    var s = String(text == null ? '' : text);
+    var codes = [];
+    s = s.replace(/`([^`]+)`/g, function (m, c) {
+      codes.push(c);
+      return '\u0001C' + (codes.length - 1) + '\u0001';
+    });
+
+    s = esc(s);
+    s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+
+    // 参考式链接 [text][id] 与快捷引用 [id]
+    s = s.replace(/\[([^\]]{0,200})\]\[([^\]]{0,80})\]/g, function (m, label, id) {
+      var u = ctx.refs && ctx.refs[(id || label).trim().toLowerCase()];
+      if (!u) return label;
+      return '<a href="' + esc(resolveUrl(u, ctx)) + '" target="_blank" rel="noopener nofollow">' + label + '</a>';
+    });
+    s = s.replace(/\[([^\]\n]{1,80})\](?!\()/g, function (m, id) {
+      var u = ctx.refs && ctx.refs[id.trim().toLowerCase()];
+      return u ? '<a href="' + esc(resolveUrl(u, ctx)) + '" target="_blank" rel="noopener nofollow">' + id + '</a>' : m;
+    });
+
+    // 链接
+    s = s.replace(/\[([^\]]{0,200})\]\(\s*([^)\s]{1,400})(?:\s+&quot;[^&]*&quot;)?\s*\)/g, function (m, label, url) {
+      var href = resolveUrl(url, ctx);
+      if (!href) return label;
+      return '<a href="' + esc(href) + '" target="_blank" rel="noopener nofollow">' + label + '</a>';
+    });
+
+    // <autolink>
+    s = s.replace(/&lt;((?:https?:\/\/|mailto:)[^\s&]+)&gt;/g, function (m, u) {
+      return '<a href="' + esc(u) + '" target="_blank" rel="noopener nofollow">' + u.replace(/^mailto:/, '') + '</a>';
+    });
+
+    // 强调
+    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
+    s = s.replace(/~~([^~\n]+)~~/g, '<del>$1</del>');
+    s = s.replace(/(^|[\s(（])\*([^*\n]+)\*(?=[\s)）,.!?;:，。！？；：]|$)/g, '$1<em>$2</em>');
+
+    // 还原行内代码
+    s = s.replace(/\u0001C(\d+)\u0001/g, function (m, idx) {
+      return '<code>' + esc(codes[+idx]) + '</code>';
+    });
+    return s;
+  }
+
+  /* ---------------- 4. 块级渲染 ---------------- */
+
+  function renderList(b, ctx) {
+    var open = b.ordered ? '<ol>' : '<ul>', close = b.ordered ? '</ol>' : '</ul>';
+    var html = '', depth = 0;
+    b.items.forEach(function (it) {
+      while (depth < it.level) { html += b.ordered ? '<ol>' : '<ul>'; depth++; }
+      while (depth > it.level) { html += close; depth--; }
+      var box = '';
+      if (it.checked === true) box = '<span class="cb on"></span>';
+      else if (it.checked === false) box = '<span class="cb"></span>';
+      html += '<li' + (it.checked !== null ? ' class="task"' : '') + '>' + box + inline(it.text, ctx) + '</li>';
+    });
+    while (depth >= 0) { if (depth === 0) break; html += close; depth--; }
+    return open + html + close;
+  }
+
+  function renderTable(b, ctx) {
+    var h = '<div class="md-table"><table><thead><tr>';
+    b.head.forEach(function (c) { h += '<th>' + inline(c, ctx) + '</th>'; });
+    h += '</tr></thead><tbody>';
+    b.rows.forEach(function (row) {
+      h += '<tr>';
+      for (var c = 0; c < b.head.length; c++) h += '<td>' + inline(row[c] || '', ctx) + '</td>';
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div>';
+  }
+
+  function toHtml(blocks, ctx) {
+    var h = [];
+    for (var i = 0; i < blocks.length; i++) {
+      var b = blocks[i];
+      if (b.type === 'heading') {
+        var lv = Math.min(Math.max(b.level, 2), 5);
+        h.push('<h' + lv + '>' + inline(b.text, ctx) + '</h' + lv + '>');
+      } else if (b.type === 'para') {
+        h.push('<p>' + inline(b.text, ctx) + '</p>');
+      } else if (b.type === 'code') {
+        h.push('<pre' + (b.lang ? ' data-lang="' + esc(b.lang) + '"' : '') + '><code>' + esc(b.text) + '</code></pre>');
+      } else if (b.type === 'quote') {
+        h.push('<blockquote>' + inline(b.text, ctx) + '</blockquote>');
+      } else if (b.type === 'hr') {
+        h.push('<hr>');
+      } else if (b.type === 'list') {
+        h.push(renderList(b, ctx));
+      } else if (b.type === 'table') {
+        h.push(renderTable(b, ctx));
+      }
+    }
+    return h.join('\n');
+  }
+
+  /* ---------------- 5. 摘要提炼 ---------------- */
+
+  // 到了这些章节说明「介绍」部分结束了
+  var STOP = /^(table of contents?|contents?|目录|安装|安装指南|install(ation)?|how to|quick ?start|getting started|使用|使用方法|用法|快速开始|快速上手|快速入门|documentation|docs?|文档|配置|configuration|setup|deploy(ment)?|部署|api( reference)?|license|licen[cs]e|许可|许可证|开源协议|contribut\w*|贡献|acknowledg\w*|致谢|sponsor\w*|赞助|star history|changelog|更新日志|release notes|faq|常见问题|roadmap|development|develop|开发|build|构建|credits|related|相关|disclaimer|免责声明|screenshots?|截图|demo|预览)/i;
+
+  // 纯导航性质的标题，直接丢弃
+  var NAV_HEAD = /^(external links?|links?|link list|badges?|navigation|menu|languages?|语言|目录|table of contents?|contents?|community|社区|social|关注我们|backers?|sponsors?)$/i;
+
+  function textLen(b) {
+    if (b.type === 'list') return b.items.reduce(function (a, i) { return a + i.text.length; }, 0);
+    return (b.text || '').length;
+  }
+
+  function isNoise(b) {
+    if (b.type === 'hr' || b.type === 'code' || b.type === 'table') return true;
+    if (b.type === 'quote') return true;
+    var t = (b.text || '').trim();
+    if (t.length < 2) return true;
+    if (/^[\s\-–—|·•*]+$/.test(t)) return true;
+    if (/(free credits?|become a sponsor|buy me a coffee|ko-fi\.com|patreon\.com|open collective|sponsors? us)/i.test(t)) return true;
+    if (/^(loved|trusted|used|chosen|adopted) by\b/i.test(t) && t.length < 100) return true;
+    if (/^(access|see|read|check|visit|click|try|view|explore|find|learn)\b[\s\S]{0,120}\b(here|demo|docs?|documentation|more|website|details?)\b/i.test(t) && t.length < 140) return true;
+    if (/^(english|中文|简体中文|繁體中文|日本語|한국어|english\s*\|.*)$/i.test(t)) return true;
+    if (/^(english|中文|简体中文|繁體中文|日本語|한국어)(\s*[|/·]\s*(english|中文|简体中文|繁體中文|日本語|한국어))+$/i.test(t)) return true;
+    return false;
+  }
+
+  // 后面紧跟另一个标题（或直接结束）的标题 = 空章节
+  function isEmptyHeading(blocks, i) {
+    for (var j = i + 1; j < blocks.length; j++) {
+      if (blocks[j].type === 'heading') return true;
+      if (isNoise(blocks[j])) continue;
+      return false;
+    }
+    return true;
+  }
+
+  // 属于「介绍区」的章节名，可以继续读下去
+  var ALLOW_HEAD = /^(overview|about|introduction|intro|what'?s? (this|inside|new)|what is|features?|highlights?|key features|core features|main features|why\b|capabilities|简介|概述|介绍|项目简介|核心特性|主要特性|功能特性|特性|功能|亮点|优势|为什么)/i;
+
+  function buildSummary(blocks, budget) {
+    var picked = [], chars = 0, started = false, contentBlocks = 0;
+    for (var i = 0; i < blocks.length; i++) {
+      var b = blocks[i];
+      if (b.type === 'heading') {
+        if (NAV_HEAD.test(b.text.trim())) continue;
+        if (isEmptyHeading(blocks, i)) continue;
+        if (b.level === 1 && !started && !contentBlocks) continue;   // 标题与弹窗头部重复
+        if (STOP.test(b.text.trim())) break;
+        if (contentBlocks && !ALLOW_HEAD.test(b.text.trim())) break; // 介绍区结束
+        if (chars >= 600) break;
+        picked.push(b);
+        continue;
+      }
+      if (isNoise(b)) continue;
+      if (b.type === 'para' && b.text.length < 90 &&
+          /^(npx|npm|pnpm|yarn|pip3?|docker|brew|git|curl|wget|cargo|go|apt|sudo|make|chmod|export)\b/i.test(b.text.replace(/`/g, ''))) continue;  // 命令行
+      if (!started) started = true;
+      var len = textLen(b);
+      if (chars + len > budget) {
+        if (b.type === 'list' && b.items && chars < budget * 0.85) {
+          var fit = [], acc = 0;
+          for (var j = 0; j < b.items.length; j++) {
+            var it = b.items[j];
+            if (acc + it.text.length > budget - chars && fit.length >= 2) break;
+            fit.push(it); acc += it.text.length;
+          }
+          if (fit.length >= 2) { picked.push({ type: 'list', ordered: b.ordered, items: fit }); chars += acc; contentBlocks++; }
+        }
+        if (chars > budget * 0.5) break;
+      }
+      picked.push(b);
+      chars += len;
+      contentBlocks++;
+      if (chars >= budget) break;
+    }
+    while (picked.length && (picked[picked.length - 1].type === 'heading' || isNoise(picked[picked.length - 1]))) picked.pop();
+    var tail = picked[picked.length - 1];
+    if (tail && tail.type === 'para' && /[:：]\s*$/.test(tail.text)) {
+      var m2 = tail.text.match(/^([\s\S]*[.!?。！？])\s+[^.!?。！？]{0,160}[:：]\s*$/);
+      if (m2 && m2[1].length >= 60) picked[picked.length - 1] = { type: 'para', text: m2[1] };
+      else picked.pop();                                        // 只留一句「下面列出了…」没有意义
+    }
+    while (picked.length && (picked[picked.length - 1].type === 'heading' || isNoise(picked[picked.length - 1]))) picked.pop();
+    if (!picked.length) {
+      // 兜底：取前两段有实际文字的内容
+      for (var k = 0; k < blocks.length && picked.length < 2; k++) {
+        if (blocks[k].type === 'para' && blocks[k].text.length > 30) picked.push(blocks[k]);
+      }
+    }
+    return picked;
+  }
+
+  /* ---------------- 6. 对外接口 ---------------- */
+
+  function render(src, opts) {
+    opts = opts || {};
+    var p = prep(src);
+    var blocks = parse(p.text);
+    var ctx = { full: opts.full || '', branch: opts.branch || 'main', refs: p.refs || {} };
+    var budget = opts.budget || 700;
+    var cjk = (p.text.match(/[\u4e00-\u9fff]/g) || []).length;
+    if (cjk / Math.max(1, p.text.length) > 0.22) budget = Math.round(budget * 0.55);  // 中文信息密度更高
+    var sum = buildSummary(blocks, budget);
+    var summaryHtml = toHtml(sum, ctx);
+    var fullHtml = toHtml(blocks, ctx);
+    var chars = 0;
+    blocks.forEach(function (b) { chars += textLen(b); });
+    var sumChars = 0;
+    sum.forEach(function (b) { sumChars += textLen(b); });
+    var hasProse = sum.some(function (b) {
+      if (b.type === 'para') return b.text.length >= 120;
+      if (b.type === 'list') return b.items.length >= 2 && b.items.some(function (i) { return i.text.length >= 40; });
+      return false;
+    });
+    return {
+      summary: summaryHtml,
+      full: fullHtml,
+      chars: chars,
+      summaryChars: sumChars,
+      hasMore: chars > sumChars * 1.15 && blocks.length > sum.length,
+      thin: !hasProse && sumChars < 150,
+      blockCount: blocks.length
+    };
+  }
+
+  return {
+    render: render,
+    prep: prep,
+    parse: parse,
+    inline: inline,
+    toHtml: toHtml,
+    esc: esc
+  };
+});
+
+/* ================= 通用工具 ================= */
+function pad2(n) { return n < 10 ? "0" + n : String(n); }
+function medalCls(n) { return n === 1 ? "g1" : n === 2 ? "g2" : n === 3 ? "g3" : ""; }
+function fmtK(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : "" + n; }
+function esc(s) {
+  return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function searchText(r) {
+  return (r.full_name + " " + r.desc + " " + r.tag + " " + (r.topics || []).join(" ") + " " + (r.lang || "")).toLowerCase();
+}
+/* 注意：CATS 是用 const 声明的，不会挂到 window 上，必须直接按标识符取 */
+function catMeta(id) {
+  const map = (typeof CATS !== "undefined" && CATS) ? CATS : {};
+  return map[id] || { code: "", name: "", icon: "", grad: "linear-gradient(135deg,#6366f1,#a855f7)" };
+}
+
+/* ================= 字段索引：full_name -> repo ================= */
+const REPO_MAP = {};
+function setRepos(arr) { (arr || []).forEach(r => { REPO_MAP[r.full_name] = r; }); }
+
+/* ================= 收藏（本机保存） ================= */
+const FAV_KEY = "ghfav.v1";
+
+/* 存储适配：localStorage → sessionStorage → 内存
+   预览窗口、隐私模式、sandbox iframe 里 localStorage 会直接抛错。
+   老实现把异常 catch 掉了，结果是「点收藏有反应，但其实没存」，
+   所以这里先显式探测能不能写，再决定用哪一层，并把结论暴露给用户。 */
+const STORE = (function () {
+  function probe(s) {
+    try {
+      const k = "__ghfav_probe__";
+      s.setItem(k, "1");
+      const ok = s.getItem(k) === "1";
+      s.removeItem(k);
+      return ok;
+    } catch (e) { return false; }
+  }
+  try {
+    if (window.localStorage && probe(window.localStorage)) return { kind: "local", api: window.localStorage };
+  } catch (e) { /* 某些环境连访问属性都会抛 */ }
+  try {
+    if (window.sessionStorage && probe(window.sessionStorage)) return { kind: "session", api: window.sessionStorage };
+  } catch (e) { /* 同上 */ }
+  return { kind: "memory", api: null };
+})();
+
+let FAV = (function () {
+  if (!STORE.api) return {};
+  try {
+    const o = JSON.parse(STORE.api.getItem(FAV_KEY) || "{}");
+    if (o && typeof o === "object" && !Array.isArray(o)) return o;
+  } catch (e) { /* 数据损坏 */ }
+  return {};
+})();
+
+let SAVE_FAILED = false;
+
+/* ---------- 本地收藏服务（预览窗口不让写 localStorage 时的唯一出路） ----------
+   tools/fav_server.py 在 127.0.0.1:8765 起一个服务，收藏存成 data/favorites.json。
+   页面通过 HTTP 读写，绕开浏览器的存储限制。探测到就用它，探测不到才退回内存。 */
+const REMOTE_PORTS = [8765, 8766, 8767, 8768, 8769, 8770, 8771, 8772, 8773, 8774, 8775];
+let REMOTE_BASE = null;
+let STORE_PROBING = false;
+
+/* 只有在本机打开时才去找本地收藏服务。发布到公网后，访客打开的是线上页面，
+   收藏归各自浏览器所有——这时候去打 127.0.0.1 只会得到一串失败请求。 */
+const IS_LOCAL_PAGE =
+  location.protocol === "file:" ||
+  /^(127\.0\.0\.1|localhost|::1|\[::1\]|0\.0\.0\.0)$/.test(location.hostname);
+
+function healthOf(port) {
+  return fetch("http://127.0.0.1:" + port + "/api/health", { cache: "no-store", mode: "cors" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => (j && j.app === "gh-awesome" ? "http://127.0.0.1:" + port : null))
+    .catch(() => null);
+}
+/* 先试最可能的 8765，没中再扫后面几个，避免每次开页都打 11 个请求 */
+function probeRemote() {
+  return healthOf(REMOTE_PORTS[0]).then(base => {
+    if (base) return base;
+    return Promise.all(REMOTE_PORTS.slice(1).map(healthOf)).then(l => l.filter(Boolean)[0] || null);
+  });
+}
+
+/* 只提交「变了什么」，绝不整份覆盖——否则一个空页面就能把服务端数据冲掉 */
+const PENDING = { set: {}, del: [] };
+
+function queuePending(payload) {
+  if (payload.set) {
+    Object.keys(payload.set).forEach(k => {
+      PENDING.set[k] = payload.set[k];
+      const i = PENDING.del.indexOf(k);
+      if (i >= 0) PENDING.del.splice(i, 1);
+    });
+  }
+  (payload.del || []).forEach(k => {
+    delete PENDING.set[k];
+    if (PENDING.del.indexOf(k) < 0) PENDING.del.push(k);
+  });
+}
+
+function flushPending() {
+  if (!REMOTE_BASE) return;
+  const set = PENDING.set, del = PENDING.del;
+  if (!Object.keys(set).length && !del.length) return;
+  PENDING.set = {};
+  PENDING.del = [];
+  postRemote({ set: set, del: del });
+}
+
+function postRemote(payload) {
+  if (!REMOTE_BASE) { queuePending(payload); return Promise.resolve(false); }
+  return fetch(REMOTE_BASE + "/api/fav", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  })
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => {
+      SAVE_FAILED = !(j && j.ok);
+      if (SAVE_FAILED) mountStoreWarn();
+      return !SAVE_FAILED;
+    })
+    .catch(() => { SAVE_FAILED = true; mountStoreWarn(); return false; });
+}
+
+function pullRemote() {
+  return fetch(REMOTE_BASE + "/api/fav", { cache: "no-store" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(o => {
+      if (!o || typeof o !== "object" || Array.isArray(o)) return;
+      let changed = false;
+      Object.keys(o).forEach(k => { if (!isFav(k)) { FAV[k] = o[k]; changed = true; } });
+      if (changed) {
+        syncFavUI();
+        document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+      }
+    })
+    .catch(() => {});
+}
+
+/* 有本地服务就优先用它（数据落在工程目录里，随时可读、可备份）；
+   没有服务时退回浏览器存储；再不行才是内存 + 告警 */
+function initStorage() {
+  // 线上分享链接：收藏存各自浏览器，不碰本机服务
+  if (!IS_LOCAL_PAGE) {
+    STORE_PROBING = false;
+    if (!STORE.api) mountStoreWarn();
+    return;
+  }
+  STORE_PROBING = true;
+  const before = Object.assign({}, FAV);        // 本地已经有的（可能来自浏览器存储）
+  probeRemote().then(base => {
+    STORE_PROBING = false;
+    if (!base) { mountStoreWarn(); return; }
+    REMOTE_BASE = base;
+    SAVE_FAILED = false;
+    return fetch(base + "/api/fav", { cache: "no-store" })
+      .then(r => (r.ok ? r.json() : null))
+      .then(server => {
+        server = (server && typeof server === "object" && !Array.isArray(server)) ? server : {};
+        let changed = false;
+        Object.keys(server).forEach(k => { if (!isFav(k)) { FAV[k] = server[k]; changed = true; } });
+        if (changed) {
+          syncFavUI();
+          document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+        }
+        // 本地有、服务端没有的 → 只补这些，绝不整份覆盖
+        const add = {};
+        Object.keys(before).forEach(k => { if (!(k in server)) add[k] = before[k]; });
+        if (Object.keys(add).length) postRemote({ set: add });
+        flushPending();          // 探测期间点过的收藏，这时候补发
+      })
+      .catch(() => {})
+      .then(() => {
+        if (STORE.api) {
+          try { STORE.api.setItem(FAV_KEY, JSON.stringify(FAV)); } catch (e) { /* 无所谓 */ }
+        }
+      });
+  }).catch(() => {
+    STORE_PROBING = false;
+    mountStoreWarn();
+  });
+}
+
+/* 当前收藏是否真的存到了磁盘上 */
+function storageOK() {
+  if (SAVE_FAILED) return false;
+  return STORE.kind === "local" || !!REMOTE_BASE;
+}
+function storageMsg() {
+  if (SAVE_FAILED) return "写入失败了，这次收藏可能没保存";
+  if (!IS_LOCAL_PAGE) return "浏览器禁用了本地存储（可能开了无痕模式），收藏关掉页面就没了";
+  if (STORE.kind === "session") return "浏览器禁用了本地存储，收藏只在本次标签页有效，关掉就没了";
+  return "存不住：预览窗口禁止网页写存储，本地收藏服务也没启动。双击「打开网站.command」可解决";
+}
+
+function isFav(full) { return !!full && Object.prototype.hasOwnProperty.call(FAV, full); }
+function favCount() { return Object.keys(FAV).length; }
+function favIcon(on) {
+  return '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="' + (on ? "currentColor" : "none") +
+    '" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M6.5 3h11A1.5 1.5 0 0 1 19 4.5V21l-7-4.4L5 21V4.5A1.5 1.5 0 0 1 6.5 3z"/></svg>';
+}
+function paintFavBtn(el) {
+  const full = el.dataset.fav;
+  if (!full) return;
+  const on = isFav(full);
+  el.classList.toggle("on", on);
+  el.title = on ? "取消收藏" : "收藏到我的清单";
+  el.setAttribute("aria-pressed", on ? "true" : "false");
+  el.innerHTML = favIcon(on) + (el.classList.contains("with-label") ? "<span>" + (on ? "已收藏" : "收藏") + "</span>" : "");
+}
+function syncFavUI() {
+  document.querySelectorAll("[data-fav]").forEach(paintFavBtn);
+  const n = favCount();
+  document.querySelectorAll(".fav-count").forEach(el => { el.textContent = n; });
+  document.querySelectorAll(".fav-link").forEach(a => a.classList.toggle("has", n > 0));
+}
+function persistFav() {
+  if (!STORE.api) return false;
+  try {
+    STORE.api.setItem(FAV_KEY, JSON.stringify(FAV));
+    SAVE_FAILED = false;
+    return true;
+  } catch (e) {
+    SAVE_FAILED = true;
+    return false;
+  }
+}
+
+/* 传变化的那个项目给服务端：加就 set，删就 del */
+function syncOne(full, on) {
+  if (!REMOTE_BASE) return;
+  if (on) postRemote({ set: (function () { const o = {}; o[full] = FAV[full]; return o; })() });
+  else postRemote({ del: [full] });
+}
+
+/* 存不住的时候，页面底部必须说出来，并且给一条能立刻把数据带走的路 */
+function mountStoreWarn() {
+  if (storageOK() || STORE_PROBING || document.getElementById("storewarn")) return;
+  const bar = document.createElement("div");
+  bar.id = "storewarn";
+  bar.className = "storewarn";
+  bar.innerHTML =
+    '<span class="sw-ico">⚠️</span>' +
+    '<span class="sw-txt">' + esc(storageMsg()) + "</span>" +
+    '<a class="sw-btn" href="favorites.html">导出备份</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add("has-storewarn");
+}
+window.addEventListener("DOMContentLoaded", () => {
+  initStorage();
+  // 线上版的收藏属于访客自己，说明文字要跟着改
+  if (!IS_LOCAL_PAGE) {
+    const note = document.querySelector(".favnote");
+    if (note) {
+      note.innerHTML = "收藏保存在 <b>你自己这台设备的浏览器</b>里，只属于你，别人看不到。" +
+        "换设备或清理浏览器数据会丢失，建议偶尔点一下「备份 .json」。";
+    }
+  }
+});
+window.addEventListener("load", () => { setTimeout(mountStoreWarn, 1200); });
+function toggleFav(full) {
+  if (!full) return false;
+  if (isFav(full)) delete FAV[full];
+  else FAV[full] = Date.now();
+  const on = isFav(full);
+  const saved = persistFav();
+  syncOne(full, on);
+  if (!saved && !REMOTE_BASE) mountStoreWarn();
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: full, on: on } }));
+  return on;
+}
+function removeFav(full) {
+  if (!isFav(full)) return;
+  delete FAV[full];
+  const saved = persistFav();
+  syncOne(full, false);
+  if (!saved && !REMOTE_BASE) mountStoreWarn();
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: full, on: false } }));
+}
+
+/* 捕获阶段统一接管收藏点击：既保证卡片重建后依然有效，也避免误触卡片的"打开详情" */
+document.addEventListener("click", e => {
+  const btn = e.target.closest && e.target.closest("[data-fav]");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  toggleFav(btn.dataset.fav);
+}, true);
+
+/* 多个标签页同时开着时保持同步 */
+window.addEventListener("storage", e => {
+  if (e.key !== FAV_KEY) return;
+  try {
+    const o = JSON.parse(e.newValue || "{}");
+    FAV = (o && typeof o === "object" && !Array.isArray(o)) ? o : {};
+  } catch (err) { FAV = {}; }
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+});
+
+/* ================= 卡片模板 ================= */
+function cardHTML(r, opts) {
+  opts = opts || {};
+  const cm = catMeta(r.catId);
+  const label = opts.code ? (r.code || cm.code) + "-" + pad2(r.rank) : "#" + pad2(r.rank);
+  return '<article class="card" style="--cgrad:' + cm.grad + '" data-full="' + esc(r.full_name) +
+    '" data-search="' + esc(searchText(r)) + '">' +
+    '<button class="favbtn" data-fav="' + esc(r.full_name) + '" aria-label="收藏"></button>' +
+    '<div class="c-top">' +
+      '<span class="num ' + medalCls(r.rank) + '" title="编号 ' + (r.code || cm.code) + "-" + pad2(r.rank) + '">' + label + "</span>" +
+      '<img class="avatar" loading="lazy" src="' + r.avatar + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
+      '<span class="c-name"><span class="repo" title="' + esc(r.full_name) + '">' + esc(r.full_name) + "</span></span>" +
+    "</div>" +
+    '<p class="c-zh">' + esc(r.tag) + "</p>" +
+    '<p class="c-en">' + esc(r.desc) + "</p>" +
+    '<div class="c-foot">' +
+      '<span class="stars">★ ' + fmtK(r.stars) + "</span>" +
+      '<span class="lang"><i style="background:' + r.langColor + '"></i>' + esc(r.lang || "—") + "</span>" +
+      '<span class="more-hint">详情 ›</span>' +
+    "</div></article>";
+}
+
+/* 给新渲染出来的卡片/行绑定打开详情 + 悬停预取 */
+function bindCards(root) {
+  (root || document).querySelectorAll("[data-full]:not([data-bound])").forEach(el => {
+    el.dataset.bound = "1";
+    const r = REPO_MAP[el.dataset.full];
+    if (!r) return;
+    el.addEventListener("click", () => openRepo(r));
+    el.addEventListener("mouseenter", () => {
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(() => prefetchReadme(r.full_name), 120);
+    });
+    el.addEventListener("mouseleave", () => clearTimeout(hoverTimer));
+  });
+}
+
+/* ================= 详情弹窗 ================= */
+const overlay = document.getElementById("overlay");
+const mHero = document.getElementById("mHero"),
+      mAvatar = document.getElementById("mAvatar"),
+      mName = document.getElementById("mName"),
+      mId = document.getElementById("mId"),
+      mCat = document.getElementById("mCat"),
+      mSub = document.getElementById("mSub"),
+      mGithub = document.getElementById("mGithub"),
+      mStats = document.getElementById("mStats"),
+      mIntro = document.getElementById("mIntro"),
+      mEn = document.getElementById("mEn"),
+      mTopics = document.getElementById("mTopics"),
+      mReadmeBox = document.getElementById("mReadmeBox"),
+      mFav = document.getElementById("mFav"),
+      mDeploy = document.getElementById("mDeploy");
+let readmeToken = 0;
+let hoverTimer = null;
+let currentRepo = null;
+
+function openRepo(r) {
+  if (!r || !overlay) return;
+  currentRepo = r;
+  const cm = catMeta(r.catId);
+  const code = r.code || cm.code;
+  mHero.style.background = cm.grad;
+  mAvatar.src = r.avatar;
+  mName.textContent = r.full_name;
+  mId.textContent = code + "-" + pad2(r.rank);
+  mCat.textContent = (cm.icon || "") + " " + (cm.name || "");
+  mSub.textContent = "本榜第 " + r.rank + " 个 · " + (r.owner ? r.owner + " · " : "") + "★ " + fmtK(r.stars);
+  mGithub.href = r.url;
+  mStats.innerHTML =
+    '<div class="m-stat"><b class="st">★ ' + fmtK(r.stars) + "</b><span>Stars</span></div>" +
+    '<div class="m-stat"><b>' + fmtK(r.forks) + "</b><span>Forks</span></div>" +
+    '<div class="m-stat"><b><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + r.langColor + ';margin-right:5px"></i>' + esc(r.lang || "—") + "</b><span>语言</span></div>" +
+    '<div class="m-stat"><b style="font-size:13.5px">' + esc(r.updated || "—") + "</b><span>最近更新</span></div>";
+  mIntro.innerHTML =
+    (r.tag ? '<div class="m-tag">' + esc(r.tag) + "</div>" : "") +
+    (r.body || []).map(p => '<p class="m-p">' + esc(p) + "</p>").join("") +
+    ((r.feats && r.feats.length) ? '<div class="m-feats-label">核心能力</div><ul class="m-feats">' +
+      r.feats.map(f => "<li>" + esc(f) + "</li>").join("") + "</ul>" : "") +
+    (r.fit ? '<div class="m-fit"><b>适合</b>' + esc(r.fit) + "</div>" : "");
+  mEn.textContent = r.desc;
+  mTopics.innerHTML = (r.topics || []).map(t => '<span class="m-topic">#' + esc(t) + "</span>").join("");
+  if (mFav) { mFav.dataset.fav = r.full_name; paintFavBtn(mFav); }
+  loadReadme(r.full_name, ++readmeToken);
+  overlay.classList.add("open");
+  document.body.classList.add("locked");
+  overlay.scrollTop = 0;
+}
+function closeRepo() {
+  if (!overlay) return;
+  overlay.classList.remove("open");
+  document.body.classList.remove("locked");
+  readmeToken++;
+}
+if (overlay) {
+  const btnClose = document.getElementById("mClose");
+  if (btnClose) btnClose.addEventListener("click", closeRepo);
+  overlay.addEventListener("click", e => { if (e.target === overlay) closeRepo(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeRepo(); });
+}
+
+/* ================= 一句话部署 =================
+   网站本身不跑任何命令。这里把「这个项目是谁、怎么找到它、要 AI 做什么」
+   打包成一段自包含的话，访客复制后粘给自己的 AI（WorkBuddy / Claude / Cursor
+   等），由那个 AI 读仓库 README 并决定具体部署方式。这样编号不再依赖本机索引。 */
+function deployPrompt(r) {
+  if (!r) return "";
+  const cm = catMeta(r.catId);
+  const code = r.code || cm.code;
+  const id = code + "-" + pad2(r.rank);
+  const topics = (r.topics || []).slice(0, 6).join(", ");
+  return [
+    "帮我在本机部署这个 GitHub 项目：",
+    "仓库：" + r.full_name + "  " + r.url,
+    "榜单编号：" + id + "（" + (cm.name || "") + " · 第 " + r.rank + " 个 · ★" + fmtK(r.stars) + "）",
+    "它是做什么的：" + (r.tag || r.desc || "开源项目"),
+    "官方简介：" + (r.desc || "—"),
+    "技术栈：" + (r.lang || "未知") + (topics ? " · " + topics : ""),
+    "",
+    "请按这个顺序做：",
+    "1. 先读这个仓库的 README 和安装文档，确认它到底用什么方式运行（Docker / npm / pip / go / cargo / 静态站点等），不要凭语言猜。",
+    "2. 列出我机器上缺哪些依赖、目标端口有没有被占；需要装东西或改配置先告诉我。",
+    "3. 用最稳妥的方式部署，尽量隔离环境（优先 Docker 或虚拟环境），不要污染全局环境。",
+    "4. 跑起来后给我：访问地址、启动 / 停止命令、数据存在哪、以及怎么卸载。",
+    "",
+    "遇到需要 Token / API Key、要拉大镜像、要联网下载大量文件或要改系统配置，先问我再动手；任何一步失败就停下来说明原因，别硬来。"
+  ].join("\n");
+}
+
+/* 轻提示：不复用 fav.js 里的同名函数，避免加载顺序互相覆盖 */
+let flashTimer = null;
+function flash(msg) {
+  let el = document.getElementById("toast");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(() => el.classList.remove("show"), 2600);
+}
+
+function legacyCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.cssText = "position:fixed;top:-2000px;left:0;opacity:0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { ta.setSelectionRange(0, text.length); } catch (e) { /* 某些浏览器不支持 */ }
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+/* 复制彻底失败时，把话摊开让人手动全选，不给「假成功」 */
+function showDeployPanel(text) {
+  let box = document.getElementById("deployPanel");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "deployPanel";
+    box.className = "deploy-panel";
+    box.innerHTML =
+      '<div class="dp-head"><b>手动复制下面这段话</b>' +
+      '<button type="button" class="dp-close" aria-label="关闭">✕</button></div>' +
+      '<textarea id="dpText" spellcheck="false"></textarea>' +
+      '<div class="dp-tip">点一下文本框，按 ⌘A（Windows 用 Ctrl+A）全选，再复制。</div>';
+    document.body.appendChild(box);
+    box.querySelector(".dp-close").addEventListener("click", () => { box.style.display = "none"; });
+  }
+  box.style.display = "block";
+  const ta = document.getElementById("dpText");
+  ta.value = text;
+  ta.focus();
+  ta.select();
+}
+
+function copyDeployPrompt() {
+  if (!currentRepo) return;
+  const text = deployPrompt(currentRepo);
+  if (!text) return;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text)
+      .then(() => flash("已复制部署指令，粘给你自己的 AI 就行"))
+      .catch(() => { if (!legacyCopy(text)) showDeployPanel(text); });
+  } else if (!legacyCopy(text)) {
+    showDeployPanel(text);
+  }
+}
+if (mDeploy) mDeploy.addEventListener("click", e => {
+  e.preventDefault();
+  e.stopPropagation();
+  copyDeployPrompt();
+});
+
+/* ================= 分类页：卡片 / 列表 + 搜索 ================= */
+const cat = PAGE.cat;
+const repos = REPOS;
+setRepos(repos);
+let view = "grid";
+
+function paintGrid(box) {
+  box.innerHTML = '<div class="grid">' + repos.map(r => cardHTML(r)).join("") + "</div>";
+  bindCards(box);
+}
+
+function paintRows(box) {
+  let html = '<div class="rows"><div class="rhead">' +
+    "<span>编号</span><span>项目</span><span>一句话介绍</span>" +
+    '<span style="text-align:right">Stars</span><span style="text-align:right">语言</span><span class="rh-fav">☆</span></div>';
+  repos.forEach(r => {
+    html += '<div class="row ' + (r.rank <= 3 ? "top3" : "") + '" data-full="' + esc(r.full_name) +
+      '" data-search="' + esc(searchText(r)) + '">' +
+      '<span class="rn"><i style="background:' + cat.grad + '"></i>' + pad2(r.rank) + "</span>" +
+      '<span class="rname" title="' + esc(r.full_name) + '">' + esc(r.full_name) + "</span>" +
+      '<span class="rtag">' + esc(r.tag) + "</span>" +
+      '<span class="rstars">★ ' + fmtK(r.stars) + "</span>" +
+      '<span class="rlang"><i style="background:' + r.langColor + '"></i>' + esc(r.lang || "—") + "</span>" +
+      '<button class="favbtn rowfav" data-fav="' + esc(r.full_name) + '" aria-label="收藏"></button>' +
+      "</div>";
+  });
+  html += "</div>";
+  box.innerHTML = html;
+  bindCards(box);
+}
+
+function render() {
+  const box = document.getElementById("listwrap");
+  if (view === "grid") paintGrid(box); else paintRows(box);
+  syncFavUI();
+  applyFilter();
+}
+
+/* ---------- 搜索 ---------- */
+const q = document.getElementById("q"), empty = document.getElementById("empty");
+function applyFilter() {
+  const kw = q.value.trim().toLowerCase();
+  let shown = 0;
+  document.querySelectorAll("#listwrap [data-search]").forEach(el => {
+    const hit = !kw || el.dataset.search.indexOf(kw) >= 0;
+    el.style.display = hit ? "" : "none";
+    if (hit) shown++;
+  });
+  empty.style.display = shown ? "none" : "block";
+}
+q.addEventListener("input", applyFilter);
+
+/* ---------- 视图切换 ---------- */
+document.querySelectorAll(".viewtog button").forEach(b => {
+  b.addEventListener("click", () => {
+    if (b.dataset.v === view) return;
+    view = b.dataset.v;
+    document.querySelectorAll(".viewtog button").forEach(x => x.classList.toggle("on", x.dataset.v === view));
+    render();
+  });
+});
+
+/* 首屏渲染 */
+render();
+
+/* ---------- README: 多源并行竞速 + 自动摘要 / 完整全文 ---------- */
+const readmeCache = new Map();
+const README_TIMEOUT = 6000;
+
+function readmeUrls(full, stage) {
+  const out = [];
+  const branches = ["main", "master"];
+  if (stage === 1) {
+    branches.forEach(b => {
+      out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/" + b + "/README.md", b: b });
+      out.push({ u: "https://gcore.jsdelivr.net/gh/" + full + "@" + b + "/README.md", b: b });
+      out.push({ u: "https://raw.githubusercontent.com/" + full + "/" + b + "/README.md", b: b });
+    });
+  } else {
+    branches.forEach(b => {
+      out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/" + b + "/readme.md", b: b });
+      out.push({ u: "https://gcore.jsdelivr.net/gh/" + full + "@" + b + "/readme.md", b: b });
+    });
+    out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/HEAD/README.md", b: "HEAD" });
+  }
+  return out;
+}
+
+/* 镜像站偶尔会甩一个 403/限流 HTML 页回来，不能当成 README */
+function looksLikeErrorPage(txt) {
+  const head = txt.slice(0, 400).toLowerCase();
+  return head.indexOf("<!doctype html") >= 0 || head.indexOf("<html") >= 0 ||
+         /^\s*(403|404|429|500)\s+forbidden/.test(head) || head.indexOf("rate limit") >= 0;
+}
+
+function fetchText(url, ms) {
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), ms || README_TIMEOUT);
+  return fetch(url, { signal: ac.signal, cache: "force-cache" })
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+    .then(t => { if (!t || t.length < 50 || looksLikeErrorPage(t)) throw new Error("bad body"); return t; })
+    .finally(() => clearTimeout(timer));
+}
+
+function raceStage(full, stage, ms) {
+  const list = readmeUrls(full, stage);
+  return new Promise((resolve, reject) => {
+    let left = list.length, done = false;
+    list.forEach(it => {
+      fetchText(it.u, ms).then(txt => {
+        if (!done) { done = true; resolve({ txt: txt, branch: it.b }); }
+      }).catch(() => { if (--left === 0 && !done) reject(new Error("stage fail")); });
+    });
+  });
+}
+
+async function raceReadme(full, ms) {
+  try { return await raceStage(full, 1, ms); }
+  catch (e) { return await raceStage(full, 2, 4000); }
+}
+
+function paintReadme(full, doc, expanded) {
+  const meta = doc.chars >= 1000 ? (doc.chars / 1000).toFixed(1) + "k" : String(doc.chars);
+  let body;
+  if (expanded) {
+    body = '<div class="rm-scroll"><div class="md">' + doc.full + "</div></div>";
+  } else if (doc.thin || !doc.summary) {
+    body = '<div class="rm-empty">这个仓库的 README 以表格、截图和外链为主，能自动提炼的正文很少。展开完整 README 可以看到它的完整排版。</div>';
+  } else {
+    body = '<div class="md">' + doc.summary + "</div>";
+  }
+  const canExpand = doc.hasMore || expanded;
+  mReadmeBox.innerHTML =
+    '<div class="rm-head"><span class="rm-chip">' + (expanded ? "完整 README" : "自动摘要") + "</span>" +
+      '<span class="rm-meta">全文约 ' + meta + " 字</span></div>" +
+    body +
+    '<div class="rm-actions">' +
+      (canExpand ? '<button class="rm-btn" data-act="' + (expanded ? "collapse" : "expand") + '">' +
+        (expanded ? "收起 ↑" : "展开完整 README ↓") + "</button>" : "") +
+      '<a class="rm-btn ghost" href="https://github.com/' + full + '#readme" target="_blank" rel="noopener">去 GitHub 阅读 ↗</a>' +
+    "</div>";
+  const btn = mReadmeBox.querySelector("[data-act]");
+  if (btn) btn.onclick = () => paintReadme(full, doc, btn.getAttribute("data-act") === "expand");
+}
+
+async function loadReadme(full, token) {
+  const cached = readmeCache.get(full);
+  if (cached) {
+    if (token === readmeToken) paintReadme(full, cached, false);
+    return;
+  }
+  mReadmeBox.innerHTML = '<div class="m-readme-loading"><span class="spin"></span>正在加载 README…</div>';
+  try {
+    const got = await raceReadme(full, README_TIMEOUT);
+    if (token !== readmeToken) return;
+    const doc = MD.render(got.txt, { full: full, branch: got.branch });
+    readmeCache.set(full, doc);
+    paintReadme(full, doc, false);
+  } catch (e) {
+    if (token !== readmeToken) return;
+    mReadmeBox.innerHTML = '<div class="m-readme-err">README 加载失败（网络受限或仓库没有 README）。' +
+      '<button class="rm-retry" id="rmRetry">重试</button>' +
+      ' <a class="rm-gh" href="https://github.com/' + full + '" target="_blank" rel="noopener">去 GitHub 看 →</a></div>';
+    const b = document.getElementById("rmRetry");
+    if (b) b.onclick = () => { readmeCache.delete(full); loadReadme(full, ++readmeToken); };
+  }
+}
+
+/* 悬停预取：停 120ms 就开始后台拉取，点开时秒开（hoverTimer 在 core.js 里声明） */
+function prefetchReadme(full) {
+  if (readmeCache.has(full)) return;
+  raceReadme(full, 7000).then(got => {
+    if (!readmeCache.has(full)) readmeCache.set(full, MD.render(got.txt, { full: full, branch: got.branch }));
+  }).catch(() => {});
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,3984 @@
+{
+ "ai": [
+  {
+   "full_name": "morluto/rea",
+   "name": "rea",
+   "owner": "morluto",
+   "avatar": "https://avatars.githubusercontent.com/u/76467478?v=4",
+   "url": "https://github.com/morluto/rea",
+   "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+   "stars": 427416,
+   "forks": 106384,
+   "lang": "TypeScript",
+   "topics": [
+    "agent-skills",
+    "ai",
+    "android",
+    "claude-code",
+    "cli",
+    "cpp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "openclaw/openclaw",
+   "name": "openclaw",
+   "owner": "openclaw",
+   "avatar": "https://avatars.githubusercontent.com/u/252820863?v=4",
+   "url": "https://github.com/openclaw/openclaw",
+   "desc": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+   "stars": 393869,
+   "forks": 82780,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "assistant",
+    "crustacean",
+    "molty",
+    "openclaw",
+    "own-your-data"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "obra/superpowers",
+   "name": "superpowers",
+   "owner": "obra",
+   "avatar": "https://avatars.githubusercontent.com/u/45416?v=4",
+   "url": "https://github.com/obra/superpowers",
+   "desc": "An agentic skills framework & software development methodology that works.",
+   "stars": 311913,
+   "forks": 27741,
+   "lang": "Shell",
+   "topics": [
+    "ai",
+    "brainstorming",
+    "coding",
+    "obra",
+    "sdlc",
+    "skills"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "NousResearch/hermes-agent",
+   "name": "hermes-agent",
+   "owner": "NousResearch",
+   "avatar": "https://avatars.githubusercontent.com/u/134168893?v=4",
+   "url": "https://github.com/NousResearch/hermes-agent",
+   "desc": "The agent that grows with you",
+   "stars": 260273,
+   "forks": 57358,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-agent",
+    "ai-agents",
+    "anthropic",
+    "chatgpt",
+    "claude"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "n8n-io/n8n",
+   "name": "n8n",
+   "owner": "n8n-io",
+   "avatar": "https://avatars.githubusercontent.com/u/45487711?v=4",
+   "url": "https://github.com/n8n-io/n8n",
+   "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+   "stars": 209491,
+   "forks": 61363,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "apis",
+    "automation",
+    "cli",
+    "data-flow",
+    "development"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "firecrawl/firecrawl",
+   "name": "firecrawl",
+   "owner": "firecrawl",
+   "avatar": "https://avatars.githubusercontent.com/u/135057108?v=4",
+   "url": "https://github.com/firecrawl/firecrawl",
+   "desc": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+   "stars": 198354,
+   "forks": 10468,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "ai-crawler",
+    "ai-scraping",
+    "ai-search",
+    "crawler"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "microsoft/markitdown",
+   "name": "markitdown",
+   "owner": "microsoft",
+   "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+   "url": "https://github.com/microsoft/markitdown",
+   "desc": "Python tool for converting files and office documents to Markdown.",
+   "stars": 193755,
+   "forks": 14544,
+   "lang": "Python",
+   "topics": [
+    "autogen",
+    "autogen-extension",
+    "langchain",
+    "markdown",
+    "microsoft-office",
+    "openai"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "full_name": "Significant-Gravitas/AutoGPT",
+   "name": "AutoGPT",
+   "owner": "Significant-Gravitas",
+   "avatar": "https://avatars.githubusercontent.com/u/130738209?v=4",
+   "url": "https://github.com/Significant-Gravitas/AutoGPT",
+   "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+   "stars": 187890,
+   "forks": 45897,
+   "lang": "Python",
+   "topics": [
+    "agentic-ai",
+    "agents",
+    "ai",
+    "artificial-intelligence",
+    "autonomous-agents",
+    "claude"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "f/prompts.chat",
+   "name": "prompts.chat",
+   "owner": "f",
+   "avatar": "https://avatars.githubusercontent.com/u/196477?v=4",
+   "url": "https://github.com/f/prompts.chat",
+   "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+   "stars": 175739,
+   "forks": 22422,
+   "lang": "MDX",
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "awesome-list",
+    "chatgpt",
+    "chatgpt-prompts",
+    "claude"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "AUTOMATIC1111/stable-diffusion-webui",
+   "name": "stable-diffusion-webui",
+   "owner": "AUTOMATIC1111",
+   "avatar": "https://avatars.githubusercontent.com/u/20920490?v=4",
+   "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+   "desc": "Stable Diffusion web UI",
+   "stars": 165234,
+   "forks": 31914,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-art",
+    "deep-learning",
+    "diffusion",
+    "gradio",
+    "image-generation"
+   ],
+   "updated": "2026-03-02"
+  },
+  {
+   "full_name": "langgenius/dify",
+   "name": "dify",
+   "owner": "langgenius",
+   "avatar": "https://avatars.githubusercontent.com/u/127165244?v=4",
+   "url": "https://github.com/langgenius/dify",
+   "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+   "stars": 160352,
+   "forks": 25359,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "agentic-ai",
+    "agentic-framework",
+    "agentic-workflow",
+    "ai",
+    "automation"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "Snailclimb/JavaGuide",
+   "name": "JavaGuide",
+   "owner": "Snailclimb",
+   "avatar": "https://avatars.githubusercontent.com/u/29880145?v=4",
+   "url": "https://github.com/Snailclimb/JavaGuide",
+   "desc": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+   "stars": 159407,
+   "forks": 46127,
+   "lang": "JavaScript",
+   "topics": [
+    "agent",
+    "ai",
+    "context-engineering",
+    "deepseek",
+    "interview",
+    "java"
+   ],
+   "updated": "2026-10-25"
+  },
+  {
+   "full_name": "open-webui/open-webui",
+   "name": "open-webui",
+   "owner": "open-webui",
+   "avatar": "https://avatars.githubusercontent.com/u/158137808?v=4",
+   "url": "https://github.com/open-webui/open-webui",
+   "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+   "stars": 157701,
+   "forks": 22935,
+   "lang": "Svelte",
+   "topics": [
+    "ai",
+    "llm",
+    "llm-ui",
+    "llm-webui",
+    "llms",
+    "mcp"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "langflow-ai/langflow",
+   "name": "langflow",
+   "owner": "langflow-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/85702467?v=4",
+   "url": "https://github.com/langflow-ai/langflow",
+   "desc": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+   "stars": 156307,
+   "forks": 10317,
+   "lang": "Python",
+   "topics": [
+    "agents",
+    "chatgpt",
+    "generative-ai",
+    "large-language-models",
+    "multiagent",
+    "react-flow"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "farion1231/cc-switch",
+   "name": "cc-switch",
+   "owner": "farion1231",
+   "avatar": "https://avatars.githubusercontent.com/u/44939412?v=4",
+   "url": "https://github.com/farion1231/cc-switch",
+   "desc": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
+   "stars": 151560,
+   "forks": 9956,
+   "lang": "Rust",
+   "topics": [
+    "ai-tools",
+    "claude-code",
+    "codex",
+    "deepseek-harness",
+    "desktop-app",
+    "grok"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "langchain-ai/langchain",
+   "name": "langchain",
+   "owner": "langchain-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/126733545?v=4",
+   "url": "https://github.com/langchain-ai/langchain",
+   "desc": "The agent engineering platform.",
+   "stars": 148978,
+   "forks": 25045,
+   "lang": "Python",
+   "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "anthropic",
+    "chatgpt",
+    "deepagents"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "github/spec-kit",
+   "name": "spec-kit",
+   "owner": "github",
+   "avatar": "https://avatars.githubusercontent.com/u/9919?v=4",
+   "url": "https://github.com/github/spec-kit",
+   "desc": "💫 Toolkit to help you get started with SDD or any other process!",
+   "stars": 146719,
+   "forks": 13153,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "copilot",
+    "development",
+    "engineering",
+    "prd",
+    "spec"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "Comfy-Org/ComfyUI",
+   "name": "ComfyUI",
+   "owner": "Comfy-Org",
+   "avatar": "https://avatars.githubusercontent.com/u/166579949?v=4",
+   "url": "https://github.com/Comfy-Org/ComfyUI",
+   "desc": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+   "stars": 144894,
+   "forks": 17241,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "comfy",
+    "comfyui",
+    "python",
+    "pytorch",
+    "stable-diffusion"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+   "name": "system-prompts-and-models-of-ai-tools",
+   "owner": "x1xhlol",
+   "avatar": "https://avatars.githubusercontent.com/u/185671340?v=4",
+   "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+   "desc": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+   "stars": 144448,
+   "forks": 34710,
+   "lang": null,
+   "topics": [
+    "ai",
+    "bolt",
+    "cluely",
+    "copilot",
+    "cursor",
+    "cursorai"
+   ],
+   "updated": "2026-10-12"
+  },
+  {
+   "full_name": "shadcn-ui/ui",
+   "name": "ui",
+   "owner": "shadcn-ui",
+   "avatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+   "url": "https://github.com/shadcn-ui/ui",
+   "desc": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+   "stars": 127289,
+   "forks": 12003,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "base-ui",
+    "components",
+    "gen-ui",
+    "generative-ai",
+    "generative-ui"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "microsoft/generative-ai-for-beginners",
+   "name": "generative-ai-for-beginners",
+   "owner": "microsoft",
+   "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+   "url": "https://github.com/microsoft/generative-ai-for-beginners",
+   "desc": "21 Lessons, Get Started Building with Generative AI",
+   "stars": 122933,
+   "forks": 65845,
+   "lang": "Jupyter Notebook",
+   "topics": [
+    "ai",
+    "azure",
+    "chatgpt",
+    "dall-e",
+    "generative-ai",
+    "generativeai"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "browser-use/browser-use",
+   "name": "browser-use",
+   "owner": "browser-use",
+   "avatar": "https://avatars.githubusercontent.com/u/192012301?v=4",
+   "url": "https://github.com/browser-use/browser-use",
+   "desc": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+   "stars": 119970,
+   "forks": 13368,
+   "lang": "Python",
+   "topics": [
+    "ai-agents",
+    "ai-tools",
+    "browser-agent",
+    "browser-automation",
+    "browser-use",
+    "cdp"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "JuliusBrussee/caveman",
+   "name": "caveman",
+   "owner": "JuliusBrussee",
+   "avatar": "https://avatars.githubusercontent.com/u/104168679?v=4",
+   "url": "https://github.com/JuliusBrussee/caveman",
+   "desc": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+   "stars": 117248,
+   "forks": 6805,
+   "lang": "Go",
+   "topics": [
+    "ai",
+    "anthropic",
+    "caveman",
+    "claude",
+    "claude-code",
+    "llm"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "supabase/supabase",
+   "name": "supabase",
+   "owner": "supabase",
+   "avatar": "https://avatars.githubusercontent.com/u/54469796?v=4",
+   "url": "https://github.com/supabase/supabase",
+   "desc": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+   "stars": 114494,
+   "forks": 15775,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "alternative",
+    "auth",
+    "database",
+    "deno",
+    "embeddings"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "thedotmack/claude-mem",
+   "name": "claude-mem",
+   "owner": "thedotmack",
+   "avatar": "https://avatars.githubusercontent.com/u/683968?v=4",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "desc": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+   "stars": 112009,
+   "forks": 9746,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "ai-memory",
+    "anthropic",
+    "artificial-intelligence",
+    "chromadb"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "paperclipai/paperclip",
+   "name": "paperclip",
+   "owner": "paperclipai",
+   "avatar": "https://avatars.githubusercontent.com/u/264498616?v=4",
+   "url": "https://github.com/paperclipai/paperclip",
+   "desc": "The open-source app everyone uses to manage agents at work",
+   "stars": 110850,
+   "forks": 18357,
+   "lang": "TypeScript",
+   "topics": [
+    "acpx",
+    "agent-orchestration",
+    "agent-skills",
+    "agentic-ai",
+    "ai-agents",
+    "ai-engineering"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "google-gemini/gemini-cli",
+   "name": "gemini-cli",
+   "owner": "google-gemini",
+   "avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
+   "url": "https://github.com/google-gemini/gemini-cli",
+   "desc": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+   "stars": 108709,
+   "forks": 14916,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "cli",
+    "gemini",
+    "gemini-api",
+    "mcp-client"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "rasbt/LLMs-from-scratch",
+   "name": "LLMs-from-scratch",
+   "owner": "rasbt",
+   "avatar": "https://avatars.githubusercontent.com/u/5618407?v=4",
+   "url": "https://github.com/rasbt/LLMs-from-scratch",
+   "desc": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+   "stars": 107775,
+   "forks": 16648,
+   "lang": "Jupyter Notebook",
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "attention-mechanism",
+    "deep-learning",
+    "finetuning",
+    "from-scratch"
+   ],
+   "updated": "2026-10-30"
+  },
+  {
+   "full_name": "pbakaus/impeccable",
+   "name": "impeccable",
+   "owner": "pbakaus",
+   "avatar": "https://avatars.githubusercontent.com/u/43004?v=4",
+   "url": "https://github.com/pbakaus/impeccable",
+   "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+   "stars": 101625,
+   "forks": 5992,
+   "lang": "Rust",
+   "topics": [
+    "agent-skills",
+    "ai",
+    "anti-slop",
+    "design",
+    "slop"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "debpalash/VoiceStudio",
+   "name": "VoiceStudio",
+   "owner": "debpalash",
+   "avatar": "https://avatars.githubusercontent.com/u/4178343?v=4",
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "stars": 100172,
+   "forks": 11089,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "audiobook",
+    "cuda",
+    "dubbing",
+    "elevenlabs-alternative",
+    "huggingface"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "hacksider/Deep-Live-Cam",
+   "name": "Deep-Live-Cam",
+   "owner": "hacksider",
+   "avatar": "https://avatars.githubusercontent.com/u/1267200?v=4",
+   "url": "https://github.com/hacksider/Deep-Live-Cam",
+   "desc": "real time face swap and one-click video deepfake with only a single image",
+   "stars": 97603,
+   "forks": 14230,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-deep-fake",
+    "ai-face",
+    "ai-webcam",
+    "artificial-intelligence",
+    "deep-fake"
+   ],
+   "updated": "2026-10-27"
+  },
+  {
+   "full_name": "punkpeye/awesome-mcp-servers",
+   "name": "awesome-mcp-servers",
+   "owner": "punkpeye",
+   "avatar": "https://avatars.githubusercontent.com/u/108313943?v=4",
+   "url": "https://github.com/punkpeye/awesome-mcp-servers",
+   "desc": "A collection of MCP servers.",
+   "stars": 97266,
+   "forks": 19157,
+   "lang": null,
+   "topics": [
+    "ai",
+    "mcp"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "D4Vinci/Scrapling",
+   "name": "Scrapling",
+   "owner": "D4Vinci",
+   "avatar": "https://avatars.githubusercontent.com/u/20604835?v=4",
+   "url": "https://github.com/D4Vinci/Scrapling",
+   "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+   "stars": 95003,
+   "forks": 9961,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-scraping",
+    "automation",
+    "crawler",
+    "crawling",
+    "crawling-python"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "infiniflow/ragflow",
+   "name": "ragflow",
+   "owner": "infiniflow",
+   "avatar": "https://avatars.githubusercontent.com/u/69962740?v=4",
+   "url": "https://github.com/infiniflow/ragflow",
+   "desc": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.",
+   "stars": 93455,
+   "forks": 11214,
+   "lang": "Go",
+   "topics": [
+    "agent-harness",
+    "agent-native-database",
+    "agentic-ai",
+    "agentic-retrieval",
+    "agentic-search",
+    "ai"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "koala73/worldmonitor",
+   "name": "worldmonitor",
+   "owner": "koala73",
+   "avatar": "https://avatars.githubusercontent.com/u/996596?v=4",
+   "url": "https://github.com/koala73/worldmonitor",
+   "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+   "stars": 90104,
+   "forks": 13922,
+   "lang": "TypeScript",
+   "topics": [
+    "agent",
+    "ai",
+    "dashboard",
+    "geopolitics",
+    "mcp",
+    "mcp-server"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "unclecode/crawl4ai",
+   "name": "crawl4ai",
+   "owner": "unclecode",
+   "avatar": "https://avatars.githubusercontent.com/u/12494079?v=4",
+   "url": "https://github.com/unclecode/crawl4ai",
+   "desc": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key. Join our Discord https://discord.gg/VuxzM8mtf",
+   "stars": 86858,
+   "forks": 9046,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "crawler",
+    "data-extraction",
+    "llm",
+    "markdown"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "bytedance/deer-flow",
+   "name": "deer-flow",
+   "owner": "bytedance",
+   "avatar": "https://avatars.githubusercontent.com/u/4158466?v=4",
+   "url": "https://github.com/bytedance/deer-flow",
+   "desc": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+   "stars": 84961,
+   "forks": 11934,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "agentic",
+    "agentic-framework",
+    "agentic-workflow",
+    "ai",
+    "ai-agents"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "lobehub/lobehub",
+   "name": "lobehub",
+   "owner": "lobehub",
+   "avatar": "https://avatars.githubusercontent.com/u/131470832?v=4",
+   "url": "https://github.com/lobehub/lobehub",
+   "desc": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+   "stars": 83794,
+   "forks": 16034,
+   "lang": "TypeScript",
+   "topics": [
+    "agent",
+    "agent-collaboration",
+    "agent-harness",
+    "ai",
+    "cao",
+    "chatgpt"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "netdata/netdata",
+   "name": "netdata",
+   "owner": "netdata",
+   "avatar": "https://avatars.githubusercontent.com/u/43390781?v=4",
+   "url": "https://github.com/netdata/netdata",
+   "desc": "The fastest path to AI-powered full stack observability, even for lean teams.",
+   "stars": 81267,
+   "forks": 6715,
+   "lang": "Go",
+   "topics": [
+    "ai",
+    "alerting",
+    "cncf",
+    "data-visualization",
+    "database",
+    "devops"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "dair-ai/Prompt-Engineering-Guide",
+   "name": "Prompt-Engineering-Guide",
+   "owner": "dair-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/30384625?v=4",
+   "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+   "desc": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+   "stars": 79780,
+   "forks": 8762,
+   "lang": "MDX",
+   "topics": [
+    "agent",
+    "agents",
+    "ai-agents",
+    "chatgpt",
+    "deep-learning",
+    "generative-ai"
+   ],
+   "updated": "2026-03-11"
+  },
+  {
+   "full_name": "unslothai/unsloth",
+   "name": "unsloth",
+   "owner": "unslothai",
+   "avatar": "https://avatars.githubusercontent.com/u/150920049?v=4",
+   "url": "https://github.com/unslothai/unsloth",
+   "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
+   "stars": 79029,
+   "forks": 7352,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "chatgpt",
+    "deepseek",
+    "fine-tuning",
+    "gemma"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "microsoft/ai-agents-for-beginners",
+   "name": "ai-agents-for-beginners",
+   "owner": "microsoft",
+   "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+   "url": "https://github.com/microsoft/ai-agents-for-beginners",
+   "desc": "18 Lessons to Get Started Building AI Agents",
+   "stars": 78844,
+   "forks": 25820,
+   "lang": "Jupyter Notebook",
+   "topics": [
+    "agentic-ai",
+    "agentic-framework",
+    "agentic-rag",
+    "ai-agents",
+    "ai-agents-framework",
+    "autogen"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "headroomlabs-ai/headroom",
+   "name": "headroom",
+   "owner": "headroomlabs-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/294291659?v=4",
+   "url": "https://github.com/headroomlabs-ai/headroom",
+   "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+   "stars": 78764,
+   "forks": 6152,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "anthropic",
+    "claude-code",
+    "compression",
+    "context-engineering"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "heygen-com/hyperframes",
+   "name": "hyperframes",
+   "owner": "heygen-com",
+   "avatar": "https://avatars.githubusercontent.com/u/65394575?v=4",
+   "url": "https://github.com/heygen-com/hyperframes",
+   "desc": "Write HTML. Render video. Built for agents.",
+   "stars": 78423,
+   "forks": 7217,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "animation",
+    "claude-code",
+    "ffmpeg",
+    "framework"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "rohitg00/ai-engineering-from-scratch",
+   "name": "ai-engineering-from-scratch",
+   "owner": "rohitg00",
+   "avatar": "https://avatars.githubusercontent.com/u/48523873?v=4",
+   "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+   "desc": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+   "stars": 76691,
+   "forks": 13581,
+   "lang": "Python",
+   "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "ai-engineering",
+    "computer-vision",
+    "course"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "calesthio/OpenMontage",
+   "name": "OpenMontage",
+   "owner": "calesthio",
+   "avatar": "https://avatars.githubusercontent.com/u/213189893?v=4",
+   "url": "https://github.com/calesthio/OpenMontage",
+   "desc": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+   "stars": 76017,
+   "forks": 10067,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "agentic-ai",
+    "ai",
+    "claude",
+    "copilot",
+    "cursor"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "hiyouga/LlamaFactory",
+   "name": "LlamaFactory",
+   "owner": "hiyouga",
+   "avatar": "https://avatars.githubusercontent.com/u/16256802?v=4",
+   "url": "https://github.com/hiyouga/LlamaFactory",
+   "desc": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+   "stars": 75874,
+   "forks": 9338,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "deepseek",
+    "fine-tuning",
+    "gemma",
+    "gpt"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "openbq-org/OpenBB",
+   "name": "OpenBB",
+   "owner": "openbq-org",
+   "avatar": "https://avatars.githubusercontent.com/u/328144346?v=4",
+   "url": "https://github.com/openbq-org/OpenBB",
+   "desc": "Open Data Platform for analysts, quants and AI agents.",
+   "stars": 75061,
+   "forks": 7840,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "crypto",
+    "derivatives",
+    "economics",
+    "equity",
+    "finance"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "Fission-AI/OpenSpec",
+   "name": "OpenSpec",
+   "owner": "Fission-AI",
+   "avatar": "https://avatars.githubusercontent.com/u/203414896?v=4",
+   "url": "https://github.com/Fission-AI/OpenSpec",
+   "desc": "Spec-driven development (SDD) for AI coding assistants.",
+   "stars": 73836,
+   "forks": 5057,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "context-engineering",
+    "engineering",
+    "planning",
+    "prd",
+    "sdd"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "daytonaio/daytona",
+   "name": "daytona",
+   "owner": "daytonaio",
+   "avatar": "https://avatars.githubusercontent.com/u/130513197?v=4",
+   "url": "https://github.com/daytonaio/daytona",
+   "desc": "Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code",
+   "stars": 71384,
+   "forks": 5651,
+   "lang": null,
+   "topics": [
+    "agentic-workflow",
+    "ai",
+    "ai-agents",
+    "ai-runtime",
+    "ai-sandboxes",
+    "code-execution"
+   ],
+   "updated": "2026-07-24"
+  },
+  {
+   "full_name": "asgeirtj/system_prompts_leaks",
+   "name": "system_prompts_leaks",
+   "owner": "asgeirtj",
+   "avatar": "https://avatars.githubusercontent.com/u/27446620?v=4",
+   "url": "https://github.com/asgeirtj/system_prompts_leaks",
+   "desc": "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
+   "stars": 70721,
+   "forks": 11446,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "ai-prompts",
+    "anthropic",
+    "chatbot",
+    "chatgpt"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "code-yeongyu/oh-my-openagent",
+   "name": "oh-my-openagent",
+   "owner": "code-yeongyu",
+   "avatar": "https://avatars.githubusercontent.com/u/11153873?v=4",
+   "url": "https://github.com/code-yeongyu/oh-my-openagent",
+   "desc": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
+   "stars": 70672,
+   "forks": 5829,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "anthropic",
+    "chatgpt",
+    "claude",
+    "claude-skills"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "microsoft/AI-For-Beginners",
+   "name": "AI-For-Beginners",
+   "owner": "microsoft",
+   "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+   "url": "https://github.com/microsoft/AI-For-Beginners",
+   "desc": "12 Weeks, 24 Lessons, AI for All!",
+   "stars": 70543,
+   "forks": 13729,
+   "lang": "Jupyter Notebook",
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "cnn",
+    "computer-vision",
+    "deep-learning",
+    "gan"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "docling-project/docling",
+   "name": "docling",
+   "owner": "docling-project",
+   "avatar": "https://avatars.githubusercontent.com/u/188446108?v=4",
+   "url": "https://github.com/docling-project/docling",
+   "desc": "Get your documents ready for gen AI",
+   "stars": 70080,
+   "forks": 5253,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "convert",
+    "document-parser",
+    "document-parsing",
+    "documents",
+    "docx"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "ai-job-search-dev/ai-job-search",
+   "name": "ai-job-search",
+   "owner": "ai-job-search-dev",
+   "avatar": "https://avatars.githubusercontent.com/u/345951025?v=4",
+   "url": "https://github.com/ai-job-search-dev/ai-job-search",
+   "desc": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+   "stars": 69401,
+   "forks": 22274,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "career",
+    "claude-code",
+    "cover-letter",
+    "cv"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "shanraisshan/claude-code-best-practice",
+   "name": "claude-code-best-practice",
+   "owner": "shanraisshan",
+   "avatar": "https://avatars.githubusercontent.com/u/11731897?v=4",
+   "url": "https://github.com/shanraisshan/claude-code-best-practice",
+   "desc": "from vibe coding to agentic engineering - practice makes claude perfect",
+   "stars": 68513,
+   "forks": 6822,
+   "lang": "HTML",
+   "topics": [
+    "agentic-ai",
+    "agentic-coding",
+    "agentic-engineering",
+    "agentic-workflow",
+    "ai",
+    "ai-agents"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "mem0ai/mem0",
+   "name": "mem0",
+   "owner": "mem0ai",
+   "avatar": "https://avatars.githubusercontent.com/u/137054526?v=4",
+   "url": "https://github.com/mem0ai/mem0",
+   "desc": "The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.",
+   "stars": 68357,
+   "forks": 8111,
+   "lang": "Python",
+   "topics": [
+    "agentic-memory",
+    "agentic-memory-system",
+    "agents",
+    "ai",
+    "ai-agents",
+    "chatgpt"
+   ],
+   "updated": "2026-10-30"
+  },
+  {
+   "full_name": "sansan0/TrendRadar",
+   "name": "TrendRadar",
+   "owner": "sansan0",
+   "avatar": "https://avatars.githubusercontent.com/u/77180927?v=4",
+   "url": "https://github.com/sansan0/TrendRadar",
+   "desc": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+   "stars": 63405,
+   "forks": 24919,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "bark",
+    "data-analysis",
+    "docker",
+    "hot-news",
+    "llm"
+   ],
+   "updated": "2026-10-29"
+  },
+  {
+   "full_name": "BerriAI/litellm",
+   "name": "litellm",
+   "owner": "BerriAI",
+   "avatar": "https://avatars.githubusercontent.com/u/121462774?v=4",
+   "url": "https://github.com/BerriAI/litellm",
+   "desc": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
+   "stars": 62653,
+   "forks": 12990,
+   "lang": "Python",
+   "topics": [
+    "ai-gateway",
+    "anthropic",
+    "azure-openai",
+    "bedrock",
+    "gateway",
+    "langchain"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "microsoft/autogen",
+   "name": "autogen",
+   "owner": "microsoft",
+   "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+   "url": "https://github.com/microsoft/autogen",
+   "desc": "A programming framework for agentic AI",
+   "stars": 61694,
+   "forks": 9359,
+   "lang": "Python",
+   "topics": [
+    "agentic",
+    "agentic-agi",
+    "agents",
+    "ai",
+    "autogen",
+    "autogen-ecosystem"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "full_name": "crewAIInc/crewAI",
+   "name": "crewAI",
+   "owner": "crewAIInc",
+   "avatar": "https://avatars.githubusercontent.com/u/170677839?v=4",
+   "url": "https://github.com/crewAIInc/crewAI",
+   "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+   "stars": 60465,
+   "forks": 9023,
+   "lang": "Python",
+   "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "aiagentframework",
+    "llms"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "MemPalace/mempalace",
+   "name": "mempalace",
+   "owner": "MemPalace",
+   "avatar": "https://avatars.githubusercontent.com/u/275135684?v=4",
+   "url": "https://github.com/MemPalace/mempalace",
+   "desc": "The best-benchmarked open-source AI memory system. And it's free.",
+   "stars": 60341,
+   "forks": 7645,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "chromadb",
+    "llm",
+    "mcp",
+    "memory",
+    "python"
+   ],
+   "updated": "2026-10-31"
+  },
+  {
+   "full_name": "meilisearch/meilisearch",
+   "name": "meilisearch",
+   "owner": "meilisearch",
+   "avatar": "https://avatars.githubusercontent.com/u/43250847?v=4",
+   "url": "https://github.com/meilisearch/meilisearch",
+   "desc": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
+   "stars": 59771,
+   "forks": 2784,
+   "lang": "Rust",
+   "topics": [
+    "ai",
+    "api",
+    "app-search",
+    "database",
+    "enterprise-search",
+    "faceting"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "jamiepine/voicebox",
+   "name": "voicebox",
+   "owner": "jamiepine",
+   "avatar": "https://avatars.githubusercontent.com/u/32987599?v=4",
+   "url": "https://github.com/jamiepine/voicebox",
+   "desc": "The open-source AI voice studio. Clone, dictate, create.",
+   "stars": 59365,
+   "forks": 7444,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "cuda",
+    "mlx",
+    "qwen3-tts",
+    "qwen3-tts-ui",
+    "voice-ai"
+   ],
+   "updated": "2026-10-07"
+  },
+  {
+   "full_name": "zylon-ai/private-gpt",
+   "name": "private-gpt",
+   "owner": "zylon-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/143802295?v=4",
+   "url": "https://github.com/zylon-ai/private-gpt",
+   "desc": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+   "stars": 57628,
+   "forks": 7622,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-tools",
+    "on-premise"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "aaif-goose/goose",
+   "name": "goose",
+   "owner": "aaif-goose",
+   "avatar": "https://avatars.githubusercontent.com/u/271095942?v=4",
+   "url": "https://github.com/aaif-goose/goose",
+   "desc": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+   "stars": 56192,
+   "forks": 6556,
+   "lang": "Rust",
+   "topics": [
+    "acp",
+    "ai",
+    "ai-agents",
+    "mcp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "FlowiseAI/Flowise",
+   "name": "Flowise",
+   "owner": "FlowiseAI",
+   "avatar": "https://avatars.githubusercontent.com/u/128289781?v=4",
+   "url": "https://github.com/FlowiseAI/Flowise",
+   "desc": "Build AI Agents, Visually",
+   "stars": 55547,
+   "forks": 25082,
+   "lang": "TypeScript",
+   "topics": [
+    "agentic-ai",
+    "agentic-workflow",
+    "agents",
+    "artificial-intelligence",
+    "chatbot",
+    "chatgpt"
+   ],
+   "updated": "2026-08-13"
+  },
+  {
+   "full_name": "AntonOsika/gpt-engineer",
+   "name": "gpt-engineer",
+   "owner": "AntonOsika",
+   "avatar": "https://avatars.githubusercontent.com/u/4467025?v=4",
+   "url": "https://github.com/AntonOsika/gpt-engineer",
+   "desc": "CLI platform to experiment with codegen. Precursor to: https://lovable.dev",
+   "stars": 54986,
+   "forks": 7266,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "autonomous-agent",
+    "code-generation",
+    "codebase-generation",
+    "codegen",
+    "coding-assistant"
+   ],
+   "updated": "2025-05-14"
+  },
+  {
+   "full_name": "bmad-code-org/BMAD-METHOD",
+   "name": "BMAD-METHOD",
+   "owner": "bmad-code-org",
+   "avatar": "https://avatars.githubusercontent.com/u/224091849?v=4",
+   "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+   "desc": "Breakthrough Method for Agile Ai Driven Development",
+   "stars": 54960,
+   "forks": 6138,
+   "lang": "Python",
+   "topics": [
+    "agile",
+    "ai",
+    "context-engineering",
+    "sdlc",
+    "spec-driven-development"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "lencx/ChatGPT",
+   "name": "ChatGPT",
+   "owner": "lencx",
+   "avatar": "https://avatars.githubusercontent.com/u/16164244?v=4",
+   "url": "https://github.com/lencx/ChatGPT",
+   "desc": "❄️ ChatGPT Desktop Application (Mac, Windows and Linux)",
+   "stars": 54669,
+   "forks": 6148,
+   "lang": "Rust",
+   "topics": [
+    "ai",
+    "app",
+    "application",
+    "chatgpt",
+    "desktop-app",
+    "gpt"
+   ],
+   "updated": "2024-08-29"
+  },
+  {
+   "full_name": "dbeaver/dbeaver",
+   "name": "dbeaver",
+   "owner": "dbeaver",
+   "avatar": "https://avatars.githubusercontent.com/u/34743864?v=4",
+   "url": "https://github.com/dbeaver/dbeaver",
+   "desc": "Free universal database tool and SQL client",
+   "stars": 52294,
+   "forks": 4443,
+   "lang": "Java",
+   "topics": [
+    "ai",
+    "database",
+    "databricks",
+    "db2",
+    "dbeaver",
+    "erd"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "elder-plinius/CL4R1T4S",
+   "name": "CL4R1T4S",
+   "owner": "elder-plinius",
+   "avatar": "https://avatars.githubusercontent.com/u/133052465?v=4",
+   "url": "https://github.com/elder-plinius/CL4R1T4S",
+   "desc": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+   "stars": 51738,
+   "forks": 10551,
+   "lang": null,
+   "topics": [
+    "agents",
+    "ai",
+    "chatgpt",
+    "gemini",
+    "google",
+    "grok"
+   ],
+   "updated": "2026-09-22"
+  },
+  {
+   "full_name": "upscayl/upscayl",
+   "name": "upscayl",
+   "owner": "upscayl",
+   "avatar": "https://avatars.githubusercontent.com/u/112148288?v=4",
+   "url": "https://github.com/upscayl/upscayl",
+   "desc": "🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.",
+   "stars": 51704,
+   "forks": 2700,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "electron",
+    "esrgan",
+    "gigapixel",
+    "gigapixel-images",
+    "image"
+   ],
+   "updated": "2026-10-05"
+  },
+  {
+   "full_name": "ClickHouse/ClickHouse",
+   "name": "ClickHouse",
+   "owner": "ClickHouse",
+   "avatar": "https://avatars.githubusercontent.com/u/54801242?v=4",
+   "url": "https://github.com/ClickHouse/ClickHouse",
+   "desc": "ClickHouse® is a real-time analytics database management system",
+   "stars": 50738,
+   "forks": 9216,
+   "lang": "C++",
+   "topics": [
+    "ai",
+    "analytics",
+    "big-data",
+    "clickhouse",
+    "cloud-native",
+    "cpp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "mudler/LocalAI",
+   "name": "LocalAI",
+   "owner": "mudler",
+   "avatar": "https://avatars.githubusercontent.com/u/2420543?v=4",
+   "url": "https://github.com/mudler/LocalAI",
+   "desc": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+   "stars": 50185,
+   "forks": 4574,
+   "lang": "Go",
+   "topics": [
+    "agents",
+    "ai",
+    "api",
+    "audio-generation",
+    "decentralized",
+    "distributed"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "GitHubDaily/GitHubDaily",
+   "name": "GitHubDaily",
+   "owner": "GitHubDaily",
+   "avatar": "https://avatars.githubusercontent.com/u/46262515?v=4",
+   "url": "https://github.com/GitHubDaily/GitHubDaily",
+   "desc": "坚持分享 GitHub 上高质量、有趣实用的开源技术教程、开发者工具、编程网站、技术资讯。A list cool, interesting projects of GitHub.",
+   "stars": 48367,
+   "forks": 4718,
+   "lang": null,
+   "topics": [
+    "ai",
+    "algorithms-and-data-structures",
+    "backend",
+    "developer-tools",
+    "development",
+    "frontend"
+   ],
+   "updated": "2025-12-31"
+  },
+  {
+   "full_name": "jeecgboot/JeecgBoot",
+   "name": "JeecgBoot",
+   "owner": "jeecgboot",
+   "avatar": "https://avatars.githubusercontent.com/u/86360035?v=4",
+   "url": "https://github.com/jeecgboot/JeecgBoot",
+   "desc": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
+   "stars": 48366,
+   "forks": 16223,
+   "lang": "Java",
+   "topics": [
+    "activiti",
+    "agent",
+    "ai",
+    "antd",
+    "claude-code",
+    "cli"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "herdrdev/herdr",
+   "name": "herdr",
+   "owner": "herdrdev",
+   "avatar": "https://avatars.githubusercontent.com/u/309108654?v=4",
+   "url": "https://github.com/herdrdev/herdr",
+   "desc": "the runtime your coding agents live on",
+   "stars": 47897,
+   "forks": 3844,
+   "lang": "Rust",
+   "topics": [
+    "agent",
+    "agent-orchestration",
+    "ai",
+    "ai-agents",
+    "claude-code",
+    "cli"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "zhayujie/CowAgent",
+   "name": "CowAgent",
+   "owner": "zhayujie",
+   "avatar": "https://avatars.githubusercontent.com/u/26161723?v=4",
+   "url": "https://github.com/zhayujie/CowAgent",
+   "desc": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
+   "stars": 47773,
+   "forks": 10412,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "ai-agent",
+    "ai-agents",
+    "chatgpt-on-wechat",
+    "claude",
+    "claude-code"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "paperless-ngx/paperless-ngx",
+   "name": "paperless-ngx",
+   "owner": "paperless-ngx",
+   "avatar": "https://avatars.githubusercontent.com/u/99562962?v=4",
+   "url": "https://github.com/paperless-ngx/paperless-ngx",
+   "desc": "A community-supported supercharged document management system: scan, index and archive all your documents",
+   "stars": 47654,
+   "forks": 3336,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "angular",
+    "archiving",
+    "django",
+    "dms",
+    "document-management"
+   ],
+   "updated": "2026-11-04"
+  }
+ ],
+ "productivity": [
+  {
+   "full_name": "affaan-m/ECC",
+   "name": "ECC",
+   "owner": "affaan-m",
+   "avatar": "https://avatars.githubusercontent.com/u/124439313?v=4",
+   "url": "https://github.com/affaan-m/ECC",
+   "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+   "stars": 296599,
+   "forks": 43859,
+   "lang": "JavaScript",
+   "topics": [
+    "ai-agents",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "developer-tools",
+    "llm"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "ohmyzsh/ohmyzsh",
+   "name": "ohmyzsh",
+   "owner": "ohmyzsh",
+   "avatar": "https://avatars.githubusercontent.com/u/22552083?v=4",
+   "url": "https://github.com/ohmyzsh/ohmyzsh",
+   "desc": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+   "stars": 190303,
+   "forks": 28036,
+   "lang": "Shell",
+   "topics": [
+    "cli",
+    "cli-app",
+    "oh-my-zsh",
+    "oh-my-zsh-plugin",
+    "oh-my-zsh-theme",
+    "ohmyzsh"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "excalidraw/excalidraw",
+   "name": "excalidraw",
+   "owner": "excalidraw",
+   "avatar": "https://avatars.githubusercontent.com/u/59452120?v=4",
+   "url": "https://github.com/excalidraw/excalidraw",
+   "desc": "Virtual whiteboard for sketching hand-drawn like diagrams",
+   "stars": 135123,
+   "forks": 16001,
+   "lang": "TypeScript",
+   "topics": [
+    "canvas",
+    "collaboration",
+    "diagrams",
+    "drawing",
+    "hacktoberfest",
+    "productivity"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "rtk-ai/rtk",
+   "name": "rtk",
+   "owner": "rtk-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/258253854?v=4",
+   "url": "https://github.com/rtk-ai/rtk",
+   "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+   "stars": 85491,
+   "forks": 5468,
+   "lang": "Rust",
+   "topics": [
+    "agentic-coding",
+    "ai-coding",
+    "anthropic",
+    "claude-code",
+    "cli",
+    "command-line-tool"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "ayghri/i-have-adhd",
+   "name": "i-have-adhd",
+   "owner": "ayghri",
+   "avatar": "https://avatars.githubusercontent.com/u/32200675?v=4",
+   "url": "https://github.com/ayghri/i-have-adhd",
+   "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+   "stars": 59961,
+   "forks": 3494,
+   "lang": "Python",
+   "topics": [
+    "adhd",
+    "claude-",
+    "claude-code-plugin",
+    "claude-skills",
+    "developer-tools",
+    "productivity"
+   ],
+   "updated": "2026-10-19"
+  },
+  {
+   "full_name": "files-community/Files",
+   "name": "Files",
+   "owner": "files-community",
+   "avatar": "https://avatars.githubusercontent.com/u/65931357?v=4",
+   "url": "https://github.com/files-community/Files",
+   "desc": "A modern file manager that helps users organize their files and folders.",
+   "stars": 46481,
+   "forks": 3015,
+   "lang": "C#",
+   "topics": [
+    "alternatives",
+    "csharp",
+    "customization",
+    "developer-tools",
+    "dotnet",
+    "file-manager"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "sxyazi/yazi",
+   "name": "yazi",
+   "owner": "sxyazi",
+   "avatar": "https://avatars.githubusercontent.com/u/17523360?v=4",
+   "url": "https://github.com/sxyazi/yazi",
+   "desc": "💥 Blazing fast terminal file manager written in Rust, based on async I/O.",
+   "stars": 43213,
+   "forks": 1058,
+   "lang": "Rust",
+   "topics": [
+    "android",
+    "asyncio",
+    "cli",
+    "command-line",
+    "concurrency",
+    "cross-platform"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "CorentinTh/it-tools",
+   "name": "it-tools",
+   "owner": "CorentinTh",
+   "avatar": "https://avatars.githubusercontent.com/u/25065347?v=4",
+   "url": "https://github.com/CorentinTh/it-tools",
+   "desc": "Collection of handy online tools for developers, with great UX.",
+   "stars": 41112,
+   "forks": 5559,
+   "lang": "Vue",
+   "topics": [
+    "converter",
+    "developer-productivity",
+    "developer-tools",
+    "frontend",
+    "javascript",
+    "productivity"
+   ],
+   "updated": "2026-10-27"
+  },
+  {
+   "full_name": "ShareX/ShareX",
+   "name": "ShareX",
+   "owner": "ShareX",
+   "avatar": "https://avatars.githubusercontent.com/u/5548736?v=4",
+   "url": "https://github.com/ShareX/ShareX",
+   "desc": "ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.",
+   "stars": 40609,
+   "forks": 4025,
+   "lang": "C#",
+   "topics": [
+    "avalonia",
+    "capture",
+    "color-picker",
+    "csharp",
+    "dropbox",
+    "file-sharing"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "khoj-ai/khoj",
+   "name": "khoj",
+   "owner": "khoj-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/134046886?v=4",
+   "url": "https://github.com/khoj-ai/khoj",
+   "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+   "stars": 37971,
+   "forks": 2531,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "assistant",
+    "chat",
+    "chatgpt",
+    "emacs"
+   ],
+   "updated": "2026-08-02"
+  },
+  {
+   "full_name": "Wox-launcher/Wox",
+   "name": "Wox",
+   "owner": "Wox-launcher",
+   "avatar": "https://avatars.githubusercontent.com/u/15628601?v=4",
+   "url": "https://github.com/Wox-launcher/Wox",
+   "desc": "A cross-platform launcher that simply works",
+   "stars": 27597,
+   "forks": 2443,
+   "lang": "Go",
+   "topics": [
+    "alfred",
+    "app-launcher",
+    "launcher",
+    "launchpad",
+    "launchy",
+    "productivity"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "lissy93/dashy",
+   "name": "dashy",
+   "owner": "lissy93",
+   "avatar": "https://avatars.githubusercontent.com/u/1862727?v=4",
+   "url": "https://github.com/lissy93/dashy",
+   "desc": "🚀 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!",
+   "stars": 26908,
+   "forks": 1966,
+   "lang": "Vue",
+   "topics": [
+    "awesome",
+    "dashboard",
+    "docker",
+    "homelab",
+    "homepage",
+    "mit"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "nylas/nylas-mail",
+   "name": "nylas-mail",
+   "owner": "nylas",
+   "avatar": "https://avatars.githubusercontent.com/u/4219865?v=4",
+   "url": "https://github.com/nylas/nylas-mail",
+   "desc": ":love_letter: An extensible desktop mail app built on the modern web.  Forks welcome!",
+   "stars": 24725,
+   "forks": 1340,
+   "lang": "JavaScript",
+   "topics": [
+    "babel",
+    "electron",
+    "email",
+    "flux",
+    "javascript",
+    "linux"
+   ],
+   "updated": "2026-06-25"
+  },
+  {
+   "full_name": "plotly/dash",
+   "name": "dash",
+   "owner": "plotly",
+   "avatar": "https://avatars.githubusercontent.com/u/5997976?v=4",
+   "url": "https://github.com/plotly/dash",
+   "desc": "Data Apps & Dashboards for Python. No JavaScript Required.",
+   "stars": 24478,
+   "forks": 2337,
+   "lang": "Python",
+   "topics": [
+    "ai",
+    "bioinformatics",
+    "charting",
+    "dash",
+    "dashboards",
+    "data-science"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "super-productivity/super-productivity",
+   "name": "super-productivity",
+   "owner": "super-productivity",
+   "avatar": "https://avatars.githubusercontent.com/u/215719836?v=4",
+   "url": "https://github.com/super-productivity/super-productivity",
+   "desc": "Super Productivity is an advanced todo list app with integrated Timeboxing and time tracking capabilities. It also comes with integrations for Jira, GitLab, GitHub and Open Project.",
+   "stars": 23395,
+   "forks": 2253,
+   "lang": "TypeScript",
+   "topics": [
+    "android",
+    "flowmodoro",
+    "flowtime",
+    "habit-tracker",
+    "ios",
+    "issue-tracker"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "wavetermdev/waveterm",
+   "name": "waveterm",
+   "owner": "wavetermdev",
+   "avatar": "https://avatars.githubusercontent.com/u/120279640?v=4",
+   "url": "https://github.com/wavetermdev/waveterm",
+   "desc": "An open-source, AI-integrated, cross-platform terminal for seamless workflows",
+   "stars": 22649,
+   "forks": 1185,
+   "lang": "Go",
+   "topics": [
+    "command-line",
+    "developer-tools",
+    "linux",
+    "macos",
+    "productivity",
+    "terminal"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "jarun/nnn",
+   "name": "nnn",
+   "owner": "jarun",
+   "avatar": "https://avatars.githubusercontent.com/u/5959286?v=4",
+   "url": "https://github.com/jarun/nnn",
+   "desc": "n³ The unorthodox terminal file manager",
+   "stars": 22108,
+   "forks": 834,
+   "lang": "C",
+   "topics": [
+    "android",
+    "batch-rename",
+    "c",
+    "cli",
+    "command-line",
+    "developer-tools"
+   ],
+   "updated": "2026-11-01"
+  },
+  {
+   "full_name": "danielmiessler/LifeOS",
+   "name": "LifeOS",
+   "owner": "danielmiessler",
+   "avatar": "https://avatars.githubusercontent.com/u/50654?v=4",
+   "url": "https://github.com/danielmiessler/LifeOS",
+   "desc": "⛰️ LifeOS — The universal AI Harness designed to move you from Current to Ideal state in both life and work.",
+   "stars": 19694,
+   "forks": 2513,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-harness",
+    "augmentation",
+    "coding",
+    "humans",
+    "intent-engineering"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "full_name": "ActivityWatch/activitywatch",
+   "name": "activitywatch",
+   "owner": "ActivityWatch",
+   "avatar": "https://avatars.githubusercontent.com/u/18249061?v=4",
+   "url": "https://github.com/ActivityWatch/activitywatch",
+   "desc": "The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.",
+   "stars": 19493,
+   "forks": 1070,
+   "lang": "Python",
+   "topics": [
+    "activitywatch",
+    "afk",
+    "analytics",
+    "app",
+    "cross-platform",
+    "dashboard"
+   ],
+   "updated": "2026-11-01"
+  },
+  {
+   "full_name": "wulkano/Kap",
+   "name": "Kap",
+   "owner": "wulkano",
+   "avatar": "https://avatars.githubusercontent.com/u/16321113?v=4",
+   "url": "https://github.com/wulkano/Kap",
+   "desc": "An open-source screen recorder built with web technology",
+   "stars": 19413,
+   "forks": 902,
+   "lang": "TypeScript",
+   "topics": [
+    "aperture",
+    "app",
+    "capture",
+    "communication",
+    "electron",
+    "javascript"
+   ],
+   "updated": "2024-11-12"
+  }
+ ],
+ "fun": [
+  {
+   "full_name": "juliangarnier/anime",
+   "name": "anime",
+   "owner": "juliangarnier",
+   "avatar": "https://avatars.githubusercontent.com/u/1268691?v=4",
+   "url": "https://github.com/juliangarnier/anime",
+   "desc": "JavaScript animation engine",
+   "stars": 74256,
+   "forks": 5050,
+   "lang": "JavaScript",
+   "topics": [
+    "animation",
+    "anime",
+    "canvas",
+    "css",
+    "javascript",
+    "javascript-library"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "remotion-dev/remotion",
+   "name": "remotion",
+   "owner": "remotion-dev",
+   "avatar": "https://avatars.githubusercontent.com/u/85344006?v=4",
+   "url": "https://github.com/remotion-dev/remotion",
+   "desc": "🎥      Make videos programmatically with React",
+   "stars": 70474,
+   "forks": 5801,
+   "lang": "TypeScript",
+   "topics": [
+    "javascript",
+    "react",
+    "video"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "FFmpeg/FFmpeg",
+   "name": "FFmpeg",
+   "owner": "FFmpeg",
+   "avatar": "https://avatars.githubusercontent.com/u/729418?v=4",
+   "url": "https://github.com/FFmpeg/FFmpeg",
+   "desc": "Mirror of https://git.ffmpeg.org/ffmpeg.git",
+   "stars": 66427,
+   "forks": 14510,
+   "lang": "C",
+   "topics": [
+    "audio",
+    "c",
+    "ffmpeg",
+    "fft",
+    "hevc",
+    "hls"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "dkhamsing/open-source-ios-apps",
+   "name": "open-source-ios-apps",
+   "owner": "dkhamsing",
+   "avatar": "https://avatars.githubusercontent.com/u/4723115?v=4",
+   "url": "https://github.com/dkhamsing/open-source-ios-apps",
+   "desc": ":iphone: Collaborative List of Open-Source iOS Apps",
+   "stars": 53003,
+   "forks": 6168,
+   "lang": null,
+   "topics": [
+    "app",
+    "apple",
+    "apple-tv",
+    "apple-vision-pro",
+    "awesome",
+    "cocoapods"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "team-spotube/spotube",
+   "name": "spotube",
+   "owner": "team-spotube",
+   "avatar": "https://avatars.githubusercontent.com/u/263316120?v=4",
+   "url": "https://github.com/team-spotube/spotube",
+   "desc": "🎧 Open source music streaming app! Available for both desktop & mobile!",
+   "stars": 50572,
+   "forks": 2384,
+   "lang": "Kotlin",
+   "topics": [
+    "android",
+    "android-client",
+    "android-music-player",
+    "desktop-client",
+    "fdroid",
+    "flutter"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "pixijs/pixijs",
+   "name": "pixijs",
+   "owner": "pixijs",
+   "avatar": "https://avatars.githubusercontent.com/u/5406849?v=4",
+   "url": "https://github.com/pixijs/pixijs",
+   "desc": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
+   "stars": 48621,
+   "forks": 5136,
+   "lang": "TypeScript",
+   "topics": [
+    "canvas",
+    "canvas2d",
+    "data-visualization",
+    "game",
+    "glsl",
+    "javascript"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "iina/iina",
+   "name": "iina",
+   "owner": "iina",
+   "avatar": "https://avatars.githubusercontent.com/u/35151645?v=4",
+   "url": "https://github.com/iina/iina",
+   "desc": "The modern video player for macOS.",
+   "stars": 47001,
+   "forks": 2987,
+   "lang": "Swift",
+   "topics": [
+    "hacktoberfest",
+    "macos",
+    "mpv",
+    "swift",
+    "video",
+    "video-player"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "imputnet/cobalt",
+   "name": "cobalt",
+   "owner": "imputnet",
+   "avatar": "https://avatars.githubusercontent.com/u/152056268?v=4",
+   "url": "https://github.com/imputnet/cobalt",
+   "desc": "best way to save what you love",
+   "stars": 45774,
+   "forks": 4040,
+   "lang": "Svelte",
+   "topics": [
+    "collaboration",
+    "downloader",
+    "instagram",
+    "javascript",
+    "music",
+    "reddit"
+   ],
+   "updated": "2026-04-06"
+  },
+  {
+   "full_name": "mifi/lossless-cut",
+   "name": "lossless-cut",
+   "owner": "mifi",
+   "avatar": "https://avatars.githubusercontent.com/u/402547?v=4",
+   "url": "https://github.com/mifi/lossless-cut",
+   "desc": "The swiss army knife of lossless video/audio editing",
+   "stars": 45677,
+   "forks": 2303,
+   "lang": "TypeScript",
+   "topics": [
+    "codec",
+    "cut",
+    "editor",
+    "ffmpeg",
+    "lossless",
+    "losslesscut"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "TeamNewPipe/NewPipe",
+   "name": "NewPipe",
+   "owner": "TeamNewPipe",
+   "avatar": "https://avatars.githubusercontent.com/u/22159318?v=4",
+   "url": "https://github.com/TeamNewPipe/NewPipe",
+   "desc": "A libre lightweight streaming front-end for Android.",
+   "stars": 40415,
+   "forks": 3947,
+   "lang": "Java",
+   "topics": [
+    "4k",
+    "android",
+    "bandcamp",
+    "download-videos",
+    "newpipe",
+    "peertube"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "videojs/video.js",
+   "name": "video.js",
+   "owner": "videojs",
+   "avatar": "https://avatars.githubusercontent.com/u/3287189?v=4",
+   "url": "https://github.com/videojs/video.js",
+   "desc": "Video.js v10 - open source media player framework for HTML and React.",
+   "stars": 40067,
+   "forks": 7485,
+   "lang": "TypeScript",
+   "topics": [
+    "dash",
+    "hls",
+    "html",
+    "html5",
+    "html5-audio",
+    "html5-video"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "mpv-player/mpv",
+   "name": "mpv",
+   "owner": "mpv-player",
+   "avatar": "https://avatars.githubusercontent.com/u/2550273?v=4",
+   "url": "https://github.com/mpv-player/mpv",
+   "desc": "🎥 Command line media player",
+   "stars": 37695,
+   "forks": 3624,
+   "lang": "C",
+   "topics": [
+    "audio",
+    "c",
+    "ffmpeg",
+    "mplayer",
+    "mpv",
+    "multimedia"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "pear-devs/pear-desktop",
+   "name": "pear-desktop",
+   "owner": "pear-devs",
+   "avatar": "https://avatars.githubusercontent.com/u/232770603?v=4",
+   "url": "https://github.com/pear-devs/pear-desktop",
+   "desc": "Pear 🍐 is extension for music player",
+   "stars": 33975,
+   "forks": 2033,
+   "lang": "TypeScript",
+   "topics": [
+    "desktop-app",
+    "electron",
+    "linux",
+    "mac",
+    "macosx",
+    "music"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "qier222/YesPlayMusic",
+   "name": "YesPlayMusic",
+   "owner": "qier222",
+   "avatar": "https://avatars.githubusercontent.com/u/68148142?v=4",
+   "url": "https://github.com/qier222/YesPlayMusic",
+   "desc": "高颜值的第三方网易云播放器，支持 Windows / macOS / Linux :electron:",
+   "stars": 33533,
+   "forks": 4669,
+   "lang": "Vue",
+   "topics": [
+    "electron",
+    "javascript",
+    "linux",
+    "mac",
+    "macos",
+    "music"
+   ],
+   "updated": "2026-10-10"
+  },
+  {
+   "full_name": "bilibili/ijkplayer",
+   "name": "ijkplayer",
+   "owner": "bilibili",
+   "avatar": "https://avatars.githubusercontent.com/u/12002442?v=4",
+   "url": "https://github.com/bilibili/ijkplayer",
+   "desc": "Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.",
+   "stars": 33234,
+   "forks": 8243,
+   "lang": "C",
+   "topics": [
+    "android",
+    "ffmpeg",
+    "ijkplayer",
+    "ios",
+    "player",
+    "video"
+   ],
+   "updated": "2024-08-13"
+  },
+  {
+   "full_name": "iawia002/lux",
+   "name": "lux",
+   "owner": "iawia002",
+   "avatar": "https://avatars.githubusercontent.com/u/9134003?v=4",
+   "url": "https://github.com/iawia002/lux",
+   "desc": "👾 Fast and simple video download library and CLI tool written in Go",
+   "stars": 31820,
+   "forks": 3331,
+   "lang": "Go",
+   "topics": [
+    "bilibili",
+    "crawler",
+    "download",
+    "downloader",
+    "go",
+    "golang"
+   ],
+   "updated": "2026-03-29"
+  },
+  {
+   "full_name": "jitsi/jitsi-meet",
+   "name": "jitsi-meet",
+   "owner": "jitsi",
+   "avatar": "https://avatars.githubusercontent.com/u/3671647?v=4",
+   "url": "https://github.com/jitsi/jitsi-meet",
+   "desc": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.",
+   "stars": 30189,
+   "forks": 8122,
+   "lang": "TypeScript",
+   "topics": [
+    "debian",
+    "deep-video",
+    "jitsi",
+    "jitsi-meet",
+    "scalable-video-conferences",
+    "sfu"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "Anuken/Mindustry",
+   "name": "Mindustry",
+   "owner": "Anuken",
+   "avatar": "https://avatars.githubusercontent.com/u/10100000?v=4",
+   "url": "https://github.com/Anuken/Mindustry",
+   "desc": "The automation tower defense RTS",
+   "stars": 29589,
+   "forks": 3841,
+   "lang": "Java",
+   "topics": [
+    "android",
+    "desktop",
+    "game",
+    "java",
+    "mindustry",
+    "mobile-game"
+   ],
+   "updated": "2026-11-01"
+  },
+  {
+   "full_name": "ossrs/srs",
+   "name": "srs",
+   "owner": "ossrs",
+   "avatar": "https://avatars.githubusercontent.com/u/12165287?v=4",
+   "url": "https://github.com/ossrs/srs",
+   "desc": "SRS is a simple, high-performance, AI-driven real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181, with codec support for H.264, H.265, AV1, VP9, AAC, Opus, and G.711.",
+   "stars": 29424,
+   "forks": 5709,
+   "lang": "C++",
+   "topics": [
+    "ai-driven",
+    "audio",
+    "c-plus-plus",
+    "dash",
+    "hevc",
+    "hls"
+   ],
+   "updated": "2026-10-31"
+  },
+  {
+   "full_name": "4ian/GDevelop",
+   "name": "GDevelop",
+   "owner": "4ian",
+   "avatar": "https://avatars.githubusercontent.com/u/1280130?v=4",
+   "url": "https://github.com/4ian/GDevelop",
+   "desc": "🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.",
+   "stars": 28410,
+   "forks": 1644,
+   "lang": "JavaScript",
+   "topics": [
+    "2d-game",
+    "2d-game-engine",
+    "3d",
+    "3d-game",
+    "3d-game-engine",
+    "game"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "NickeManarin/ScreenToGif",
+   "name": "ScreenToGif",
+   "owner": "NickeManarin",
+   "avatar": "https://avatars.githubusercontent.com/u/14798947?v=4",
+   "url": "https://github.com/NickeManarin/ScreenToGif",
+   "desc": "🎬 ScreenToGif allows you to record a selected area of your screen, edit and save it as a gif or video.",
+   "stars": 27887,
+   "forks": 2382,
+   "lang": "C#",
+   "topics": [
+    "editor",
+    "gif",
+    "recorder",
+    "sketchboard",
+    "video",
+    "webcam"
+   ],
+   "updated": "2026-10-14"
+  },
+  {
+   "full_name": "hypit-ai/hypit",
+   "name": "hypit",
+   "owner": "hypit-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/274059971?v=4",
+   "url": "https://github.com/hypit-ai/hypit",
+   "desc": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+   "stars": 27776,
+   "forks": 3206,
+   "lang": "TypeScript",
+   "topics": [
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-video",
+    "compiler",
+    "dsl"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "Anjok07/ultimatevocalremovergui",
+   "name": "ultimatevocalremovergui",
+   "owner": "Anjok07",
+   "avatar": "https://avatars.githubusercontent.com/u/68268275?v=4",
+   "url": "https://github.com/Anjok07/ultimatevocalremovergui",
+   "desc": "GUI for a Vocal Remover that uses Deep Neural Networks.",
+   "stars": 26945,
+   "forks": 2059,
+   "lang": "Python",
+   "topics": [
+    "audio",
+    "instrumental",
+    "karaoke",
+    "kareokee",
+    "music",
+    "pytorch"
+   ],
+   "updated": "2026-10-06"
+  },
+  {
+   "full_name": "Igglybuff/awesome-piracy",
+   "name": "awesome-piracy",
+   "owner": "Igglybuff",
+   "avatar": "https://avatars.githubusercontent.com/u/8899226?v=4",
+   "url": "https://github.com/Igglybuff/awesome-piracy",
+   "desc": "A curated list of awesome warez and piracy links",
+   "stars": 26918,
+   "forks": 2288,
+   "lang": "HTML",
+   "topics": [
+    "audiobooks",
+    "awesome-list",
+    "comics",
+    "ebooks",
+    "movies",
+    "music"
+   ],
+   "updated": "2023-06-18"
+  },
+  {
+   "full_name": "spotDL/spotify-downloader",
+   "name": "spotify-downloader",
+   "owner": "spotDL",
+   "avatar": "https://avatars.githubusercontent.com/u/71949218?v=4",
+   "url": "https://github.com/spotDL/spotify-downloader",
+   "desc": "Download your Spotify playlists and songs along with album art and metadata (from YouTube if a match is found).",
+   "stars": 26575,
+   "forks": 2300,
+   "lang": "Python",
+   "topics": [
+    "download-music",
+    "hacktoberfest",
+    "mp3",
+    "music",
+    "playlists",
+    "python"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "iv-org/invidious",
+   "name": "invidious",
+   "owner": "iv-org",
+   "avatar": "https://avatars.githubusercontent.com/u/68407447?v=4",
+   "url": "https://github.com/iv-org/invidious",
+   "desc": "Invidious is an alternative front-end to YouTube",
+   "stars": 25855,
+   "forks": 2898,
+   "lang": "Crystal",
+   "topics": [
+    "agplv3",
+    "hacktoberfest",
+    "invidious",
+    "libre",
+    "video",
+    "watch"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "libgdx/libgdx",
+   "name": "libgdx",
+   "owner": "libgdx",
+   "avatar": "https://avatars.githubusercontent.com/u/509841?v=4",
+   "url": "https://github.com/libgdx/libgdx",
+   "desc": "Desktop/Android/HTML5/iOS Java game development framework",
+   "stars": 25507,
+   "forks": 6522,
+   "lang": "Java",
+   "topics": [
+    "2d",
+    "3d",
+    "android",
+    "cross-platform",
+    "framework",
+    "game"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "leereilly/games",
+   "name": "games",
+   "owner": "leereilly",
+   "avatar": "https://avatars.githubusercontent.com/u/121322?v=4",
+   "url": "https://github.com/leereilly/games",
+   "desc": "Archived — A list of games, add-ons, maps, etc. hosted on GitHub. Any genre. Any platform. Any engine.",
+   "stars": 24998,
+   "forks": 3583,
+   "lang": null,
+   "topics": [
+    "game",
+    "game-development",
+    "game-engine",
+    "gamedev",
+    "games",
+    "html5-games"
+   ],
+   "updated": "2025-09-13"
+  },
+  {
+   "full_name": "navidrome/navidrome",
+   "name": "navidrome",
+   "owner": "navidrome",
+   "avatar": "https://avatars.githubusercontent.com/u/26692192?v=4",
+   "url": "https://github.com/navidrome/navidrome",
+   "desc": "🎧 Your Personal Streaming Service",
+   "stars": 24508,
+   "forks": 1801,
+   "lang": "Go",
+   "topics": [
+    "airsonic",
+    "madsonic",
+    "media-server",
+    "music",
+    "music-server",
+    "navidrome"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "cat-milk/Anime-Girls-Holding-Programming-Books",
+   "name": "Anime-Girls-Holding-Programming-Books",
+   "owner": "cat-milk",
+   "avatar": "https://avatars.githubusercontent.com/u/43044190?v=4",
+   "url": "https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books",
+   "desc": "Anime Girls Holding Programming Books",
+   "stars": 22662,
+   "forks": 1038,
+   "lang": null,
+   "topics": [
+    "anime"
+   ],
+   "updated": "2026-03-10"
+  },
+  {
+   "full_name": "FreeTubeApp/FreeTube",
+   "name": "FreeTube",
+   "owner": "FreeTubeApp",
+   "avatar": "https://avatars.githubusercontent.com/u/35975737?v=4",
+   "url": "https://github.com/FreeTubeApp/FreeTube",
+   "desc": "An Open Source YouTube app for privacy",
+   "stars": 22311,
+   "forks": 1569,
+   "lang": "Vue",
+   "topics": [
+    "freetube",
+    "privacy",
+    "subscriptions",
+    "video",
+    "videos",
+    "youtube"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "livekit/livekit",
+   "name": "livekit",
+   "owner": "livekit",
+   "avatar": "https://avatars.githubusercontent.com/u/69438833?v=4",
+   "url": "https://github.com/livekit/livekit",
+   "desc": "End-to-end realtime stack for connecting humans and AI",
+   "stars": 22025,
+   "forks": 2528,
+   "lang": "Go",
+   "topics": [
+    "golang",
+    "media-server",
+    "sfu",
+    "video",
+    "voice",
+    "voice-ai"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "bloc97/Anime4K",
+   "name": "Anime4K",
+   "owner": "bloc97",
+   "avatar": "https://avatars.githubusercontent.com/u/567732?v=4",
+   "url": "https://github.com/bloc97/Anime4K",
+   "desc": "A High-Quality Real Time Upscaler for Anime Video",
+   "stars": 21601,
+   "forks": 1404,
+   "lang": "Jupyter Notebook",
+   "topics": [
+    "anime",
+    "anime-upscaling",
+    "anime4k",
+    "cnn",
+    "computer-graphics",
+    "convolutional-neural-networks"
+   ],
+   "updated": "2024-08-17"
+  },
+  {
+   "full_name": "CarGuo/GSYVideoPlayer",
+   "name": "GSYVideoPlayer",
+   "owner": "CarGuo",
+   "avatar": "https://avatars.githubusercontent.com/u/10770362?v=4",
+   "url": "https://github.com/CarGuo/GSYVideoPlayer",
+   "desc": "Video players (IJKplayer, ExoPlayer, MediaPlayer), HTTPS, 16k page size, danmaku (bullet chat) support, external subtitles, support for filters, watermarks, and GIF screenshots, pre-roll and mid-roll ads, multiple simultaneous playback, basic seeking/dragging, volume and brightness adjustment, play-while-cache support",
+   "stars": 21528,
+   "forks": 4318,
+   "lang": "Java",
+   "topics": [
+    "16k",
+    "android",
+    "exoplayer",
+    "ffmpeg",
+    "gsy",
+    "ijkplayer"
+   ],
+   "updated": "2026-10-10"
+  },
+  {
+   "full_name": "open-ani/animeko",
+   "name": "animeko",
+   "owner": "open-ani",
+   "avatar": "https://avatars.githubusercontent.com/u/166622089?v=4",
+   "url": "https://github.com/open-ani/animeko",
+   "desc": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
+   "stars": 21464,
+   "forks": 647,
+   "lang": "Kotlin",
+   "topics": [
+    "android",
+    "ani",
+    "anime",
+    "bangumi",
+    "bittorrent",
+    "bt"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "charmbracelet/vhs",
+   "name": "vhs",
+   "owner": "charmbracelet",
+   "avatar": "https://avatars.githubusercontent.com/u/57376114?v=4",
+   "url": "https://github.com/charmbracelet/vhs",
+   "desc": "Your CLI home video recorder 📼",
+   "stars": 21261,
+   "forks": 492,
+   "lang": "Go",
+   "topics": [
+    "ascii",
+    "cli",
+    "command-line",
+    "gif",
+    "recording",
+    "terminal"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "you-dont-need/You-Dont-Need-JavaScript",
+   "name": "You-Dont-Need-JavaScript",
+   "owner": "you-dont-need",
+   "avatar": "https://avatars.githubusercontent.com/u/21141794?v=4",
+   "url": "https://github.com/you-dont-need/You-Dont-Need-JavaScript",
+   "desc": "CSS is powerful, you can do a lot of things without JS.",
+   "stars": 20572,
+   "forks": 1493,
+   "lang": "HTML",
+   "topics": [
+    "accordion",
+    "burger-menu",
+    "carousel",
+    "counter",
+    "css",
+    "font"
+   ],
+   "updated": "2025-12-04"
+  },
+  {
+   "full_name": "ppy/osu",
+   "name": "osu",
+   "owner": "ppy",
+   "avatar": "https://avatars.githubusercontent.com/u/995763?v=4",
+   "url": "https://github.com/ppy/osu",
+   "desc": "rhythm is just a *click* away!",
+   "stars": 19369,
+   "forks": 2872,
+   "lang": "C#",
+   "topics": [
+    "beatmap",
+    "catch",
+    "game",
+    "mania",
+    "osu",
+    "rhythm"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "lichess-org/lila",
+   "name": "lila",
+   "owner": "lichess-org",
+   "avatar": "https://avatars.githubusercontent.com/u/16491637?v=4",
+   "url": "https://github.com/lichess-org/lila",
+   "desc": "♞ lichess.org: the forever free, adless and open source chess server ♞",
+   "stars": 18941,
+   "forks": 2801,
+   "lang": "Scala",
+   "topics": [
+    "chess",
+    "free-software",
+    "functional-programming",
+    "game",
+    "lichess",
+    "non-profit"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "alyssaxuu/screenity",
+   "name": "screenity",
+   "owner": "alyssaxuu",
+   "avatar": "https://avatars.githubusercontent.com/u/7581348?v=4",
+   "url": "https://github.com/alyssaxuu/screenity",
+   "desc": "The free and privacy-friendly screen recorder with no limits 🎥",
+   "stars": 18937,
+   "forks": 1543,
+   "lang": "JavaScript",
+   "topics": [
+    "annotation",
+    "annotation-tool",
+    "audio",
+    "camera",
+    "chrome-extension",
+    "design"
+   ],
+   "updated": "2026-10-25"
+  }
+ ],
+ "devtools": [
+  {
+   "full_name": "morluto/rea",
+   "name": "rea",
+   "owner": "morluto",
+   "avatar": "https://avatars.githubusercontent.com/u/76467478?v=4",
+   "url": "https://github.com/morluto/rea",
+   "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+   "stars": 427419,
+   "forks": 106387,
+   "lang": "TypeScript",
+   "topics": [
+    "agent-skills",
+    "ai",
+    "android",
+    "claude-code",
+    "cli",
+    "cpp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "n8n-io/n8n",
+   "name": "n8n",
+   "owner": "n8n-io",
+   "avatar": "https://avatars.githubusercontent.com/u/45487711?v=4",
+   "url": "https://github.com/n8n-io/n8n",
+   "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+   "stars": 209490,
+   "forks": 61363,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "apis",
+    "automation",
+    "cli",
+    "data-flow",
+    "development"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "yt-dlp/yt-dlp",
+   "name": "yt-dlp",
+   "owner": "yt-dlp",
+   "avatar": "https://avatars.githubusercontent.com/u/79589310?v=4",
+   "url": "https://github.com/yt-dlp/yt-dlp",
+   "desc": "A feature-rich command-line audio/video downloader",
+   "stars": 205031,
+   "forks": 18012,
+   "lang": "Python",
+   "topics": [
+    "cli",
+    "downloader",
+    "python",
+    "sponsorblock",
+    "youtube-dl",
+    "youtube-downloader"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "ohmyzsh/ohmyzsh",
+   "name": "ohmyzsh",
+   "owner": "ohmyzsh",
+   "avatar": "https://avatars.githubusercontent.com/u/22552083?v=4",
+   "url": "https://github.com/ohmyzsh/ohmyzsh",
+   "desc": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+   "stars": 190303,
+   "forks": 28036,
+   "lang": "Shell",
+   "topics": [
+    "cli",
+    "cli-app",
+    "oh-my-zsh",
+    "oh-my-zsh-plugin",
+    "oh-my-zsh-theme",
+    "ohmyzsh"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "google-gemini/gemini-cli",
+   "name": "gemini-cli",
+   "owner": "google-gemini",
+   "avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
+   "url": "https://github.com/google-gemini/gemini-cli",
+   "desc": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+   "stars": 108709,
+   "forks": 14916,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "cli",
+    "gemini",
+    "gemini-api",
+    "mcp-client"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "Panniantong/Agent-Reach",
+   "name": "Agent-Reach",
+   "owner": "Panniantong",
+   "avatar": "https://avatars.githubusercontent.com/u/73925474?v=4",
+   "url": "https://github.com/Panniantong/Agent-Reach",
+   "desc": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+   "stars": 108475,
+   "forks": 9675,
+   "lang": "Python",
+   "topics": [
+    "agent-infrastructure",
+    "ai-agent",
+    "ai-search",
+    "automation",
+    "bilibili",
+    "claude-code"
+   ],
+   "updated": "2026-11-01"
+  },
+  {
+   "full_name": "sherlock-project/sherlock",
+   "name": "sherlock",
+   "owner": "sherlock-project",
+   "avatar": "https://avatars.githubusercontent.com/u/48293496?v=4",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "desc": "Hunt down social media accounts by username across social networks",
+   "stars": 95517,
+   "forks": 11390,
+   "lang": "Python",
+   "topics": [
+    "cli",
+    "cti",
+    "cybersecurity",
+    "forensics",
+    "hacktoberfest",
+    "information-gathering"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "OpenHands/OpenHands",
+   "name": "OpenHands",
+   "owner": "OpenHands",
+   "avatar": "https://avatars.githubusercontent.com/u/225919603?v=4",
+   "url": "https://github.com/OpenHands/OpenHands",
+   "desc": "🙌 OpenHands: AI-Driven Development",
+   "stars": 92596,
+   "forks": 12350,
+   "lang": "TypeScript",
+   "topics": [
+    "agent",
+    "artificial-intelligence",
+    "chatgpt",
+    "claude-ai",
+    "cli",
+    "developer-tools"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "rtk-ai/rtk",
+   "name": "rtk",
+   "owner": "rtk-ai",
+   "avatar": "https://avatars.githubusercontent.com/u/258253854?v=4",
+   "url": "https://github.com/rtk-ai/rtk",
+   "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+   "stars": 85491,
+   "forks": 5468,
+   "lang": "Rust",
+   "topics": [
+    "agentic-coding",
+    "ai-coding",
+    "anthropic",
+    "claude-code",
+    "cli",
+    "command-line-tool"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "junegunn/fzf",
+   "name": "fzf",
+   "owner": "junegunn",
+   "avatar": "https://avatars.githubusercontent.com/u/700826?v=4",
+   "url": "https://github.com/junegunn/fzf",
+   "desc": ":cherry_blossom: A command-line fuzzy finder",
+   "stars": 83996,
+   "forks": 4153,
+   "lang": "Go",
+   "topics": [
+    "bash",
+    "cli",
+    "fish",
+    "fzf",
+    "go",
+    "neovim"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "jesseduffield/lazygit",
+   "name": "lazygit",
+   "owner": "jesseduffield",
+   "avatar": "https://avatars.githubusercontent.com/u/8456633?v=4",
+   "url": "https://github.com/jesseduffield/lazygit",
+   "desc": "simple terminal UI for git commands",
+   "stars": 83638,
+   "forks": 3244,
+   "lang": "Go",
+   "topics": [
+    "cli",
+    "git",
+    "terminal"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "BurntSushi/ripgrep",
+   "name": "ripgrep",
+   "owner": "BurntSushi",
+   "avatar": "https://avatars.githubusercontent.com/u/456674?v=4",
+   "url": "https://github.com/BurntSushi/ripgrep",
+   "desc": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+   "stars": 69687,
+   "forks": 4185,
+   "lang": "Rust",
+   "topics": [
+    "cli",
+    "command-line",
+    "command-line-tool",
+    "gitignore",
+    "grep",
+    "recursively-search"
+   ],
+   "updated": "2026-10-27"
+  },
+  {
+   "full_name": "tldr-pages/tldr",
+   "name": "tldr",
+   "owner": "tldr-pages",
+   "avatar": "https://avatars.githubusercontent.com/u/7366472?v=4",
+   "url": "https://github.com/tldr-pages/tldr",
+   "desc": "Collaborative cheatsheets for console commands 📚.",
+   "stars": 64118,
+   "forks": 5651,
+   "lang": "Markdown",
+   "topics": [
+    "android",
+    "bsd",
+    "cheatsheet",
+    "cheatsheets",
+    "cli",
+    "command-line"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "tw93/Pake",
+   "name": "Pake",
+   "owner": "tw93",
+   "avatar": "https://avatars.githubusercontent.com/u/8736212?v=4",
+   "url": "https://github.com/tw93/Pake",
+   "desc": "Turn any website into a lightweight desktop app with one command, on macOS, Windows and Linux.",
+   "stars": 62794,
+   "forks": 12923,
+   "lang": "Rust",
+   "topics": [
+    "chatgpt",
+    "claude",
+    "cli",
+    "desktop",
+    "desktop-app",
+    "electron-alternative"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "Raphire/Win11Debloat",
+   "name": "Win11Debloat",
+   "owner": "Raphire",
+   "avatar": "https://avatars.githubusercontent.com/u/9938813?v=4",
+   "url": "https://github.com/Raphire/Win11Debloat",
+   "desc": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+   "stars": 61626,
+   "forks": 2730,
+   "lang": "PowerShell",
+   "topics": [
+    "automated",
+    "bloatware",
+    "bloatware-removal",
+    "cleanup",
+    "cli",
+    "debloat"
+   ],
+   "updated": "2026-11-01"
+  },
+  {
+   "full_name": "sharkdp/bat",
+   "name": "bat",
+   "owner": "sharkdp",
+   "avatar": "https://avatars.githubusercontent.com/u/4209276?v=4",
+   "url": "https://github.com/sharkdp/bat",
+   "desc": "A cat(1) clone with wings.",
+   "stars": 61055,
+   "forks": 3068,
+   "lang": "Rust",
+   "topics": [
+    "cli",
+    "command-line",
+    "git",
+    "hacktoberfest",
+    "rust",
+    "syntax-highlighting"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "wagoodman/dive",
+   "name": "dive",
+   "owner": "wagoodman",
+   "avatar": "https://avatars.githubusercontent.com/u/590471?v=4",
+   "url": "https://github.com/wagoodman/dive",
+   "desc": "A tool for exploring each layer in a docker image",
+   "stars": 54699,
+   "forks": 2011,
+   "lang": "Go",
+   "topics": [
+    "cli",
+    "docker",
+    "docker-image",
+    "explorer",
+    "inspector",
+    "tui"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "kepano/obsidian-skills",
+   "name": "obsidian-skills",
+   "owner": "kepano",
+   "avatar": "https://avatars.githubusercontent.com/u/10565871?v=4",
+   "url": "https://github.com/kepano/obsidian-skills",
+   "desc": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+   "stars": 50705,
+   "forks": 3584,
+   "lang": null,
+   "topics": [
+    "agents",
+    "agentskills",
+    "bases",
+    "claude",
+    "clawdbot",
+    "cli"
+   ],
+   "updated": "2026-09-15"
+  },
+  {
+   "full_name": "Aider-AI/aider",
+   "name": "aider",
+   "owner": "Aider-AI",
+   "avatar": "https://avatars.githubusercontent.com/u/172139148?v=4",
+   "url": "https://github.com/Aider-AI/aider",
+   "desc": "aider is AI pair programming in your terminal",
+   "stars": 49931,
+   "forks": 5133,
+   "lang": "Python",
+   "topics": [
+    "anthropic",
+    "chatgpt",
+    "claude-3",
+    "cli",
+    "command-line",
+    "gemini"
+   ],
+   "updated": "2026-05-22"
+  },
+  {
+   "full_name": "jeecgboot/JeecgBoot",
+   "name": "JeecgBoot",
+   "owner": "jeecgboot",
+   "avatar": "https://avatars.githubusercontent.com/u/86360035?v=4",
+   "url": "https://github.com/jeecgboot/JeecgBoot",
+   "desc": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
+   "stars": 48366,
+   "forks": 16223,
+   "lang": "Java",
+   "topics": [
+    "activiti",
+    "agent",
+    "ai",
+    "antd",
+    "claude-code",
+    "cli"
+   ],
+   "updated": "2026-11-03"
+  }
+ ],
+ "frontend": [
+  {
+   "full_name": "freeCodeCamp/freeCodeCamp",
+   "name": "freeCodeCamp",
+   "owner": "freeCodeCamp",
+   "avatar": "https://avatars.githubusercontent.com/u/9892522?v=4",
+   "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+   "desc": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+   "stars": 458507,
+   "forks": 48151,
+   "lang": "TypeScript",
+   "topics": [
+    "careers",
+    "certification",
+    "community",
+    "curriculum",
+    "d3",
+    "education"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "morluto/rea",
+   "name": "rea",
+   "owner": "morluto",
+   "avatar": "https://avatars.githubusercontent.com/u/76467478?v=4",
+   "url": "https://github.com/morluto/rea",
+   "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+   "stars": 427419,
+   "forks": 106387,
+   "lang": "TypeScript",
+   "topics": [
+    "agent-skills",
+    "ai",
+    "android",
+    "claude-code",
+    "cli",
+    "cpp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "react/react",
+   "name": "react",
+   "owner": "react",
+   "avatar": "https://avatars.githubusercontent.com/u/102812?v=4",
+   "url": "https://github.com/react/react",
+   "desc": "The library for web and native user interfaces.",
+   "stars": 251902,
+   "forks": 51628,
+   "lang": "JavaScript",
+   "topics": [
+    "declarative",
+    "frontend",
+    "javascript",
+    "library",
+    "react",
+    "ui"
+   ],
+   "updated": "2026-10-31"
+  },
+  {
+   "full_name": "vuejs/vue",
+   "name": "vue",
+   "owner": "vuejs",
+   "avatar": "https://avatars.githubusercontent.com/u/6128107?v=4",
+   "url": "https://github.com/vuejs/vue",
+   "desc": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core",
+   "stars": 212500,
+   "forks": 33642,
+   "lang": "TypeScript",
+   "topics": [
+    "framework",
+    "frontend",
+    "javascript",
+    "vue"
+   ],
+   "updated": "2024-10-10"
+  },
+  {
+   "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "name": "ui-ux-pro-max-skill",
+   "owner": "nextlevelbuilder",
+   "avatar": "https://avatars.githubusercontent.com/u/246974152?v=4",
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+   "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
+   "stars": 144806,
+   "forks": 15315,
+   "lang": "Python",
+   "topics": [
+    "ai-skills",
+    "antigravity",
+    "claude",
+    "claude-code",
+    "codex",
+    "command-line"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "vercel/next.js",
+   "name": "next.js",
+   "owner": "vercel",
+   "avatar": "https://avatars.githubusercontent.com/u/14985020?v=4",
+   "url": "https://github.com/vercel/next.js",
+   "desc": "The React Framework",
+   "stars": 143250,
+   "forks": 33586,
+   "lang": "JavaScript",
+   "topics": [
+    "blog",
+    "browser",
+    "compiler",
+    "components",
+    "hybrid",
+    "nextjs"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "shadcn-ui/ui",
+   "name": "ui",
+   "owner": "shadcn-ui",
+   "avatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+   "url": "https://github.com/shadcn-ui/ui",
+   "desc": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+   "stars": 127289,
+   "forks": 12003,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "base-ui",
+    "components",
+    "gen-ui",
+    "generative-ai",
+    "generative-ui"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "react/react-native",
+   "name": "react-native",
+   "owner": "react",
+   "avatar": "https://avatars.githubusercontent.com/u/102812?v=4",
+   "url": "https://github.com/react/react-native",
+   "desc": "A framework for building native applications using React",
+   "stars": 126854,
+   "forks": 25483,
+   "lang": "C++",
+   "topics": [
+    "android",
+    "app-framework",
+    "cross-platform",
+    "ios",
+    "mobile",
+    "mobile-development"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "justjavac/free-programming-books-zh_CN",
+   "name": "free-programming-books-zh_CN",
+   "owner": "justjavac",
+   "avatar": "https://avatars.githubusercontent.com/u/359395?v=4",
+   "url": "https://github.com/justjavac/free-programming-books-zh_CN",
+   "desc": ":books: 免费的计算机编程类中文书籍，欢迎投稿",
+   "stars": 119498,
+   "forks": 28260,
+   "lang": null,
+   "topics": [
+    "android",
+    "angular",
+    "books",
+    "free",
+    "ios",
+    "javascript"
+   ],
+   "updated": "2026-07-29"
+  },
+  {
+   "full_name": "Leonxlnx/taste-skill",
+   "name": "taste-skill",
+   "owner": "Leonxlnx",
+   "avatar": "https://avatars.githubusercontent.com/u/219127460?v=4",
+   "url": "https://github.com/Leonxlnx/taste-skill",
+   "desc": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+   "stars": 109547,
+   "forks": 7363,
+   "lang": "JavaScript",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "anti-slop",
+    "claude-code",
+    "codex",
+    "cursor"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "react/create-react-app",
+   "name": "create-react-app",
+   "owner": "react",
+   "avatar": "https://avatars.githubusercontent.com/u/102812?v=4",
+   "url": "https://github.com/react/create-react-app",
+   "desc": "Set up a modern web app by running one command.",
+   "stars": 103239,
+   "forks": 26872,
+   "lang": "JavaScript",
+   "topics": [
+    "build-tools",
+    "react",
+    "zero-configuration"
+   ],
+   "updated": "2025-02-15"
+  },
+  {
+   "full_name": "ruvnet/RuView",
+   "name": "RuView",
+   "owner": "ruvnet",
+   "avatar": "https://avatars.githubusercontent.com/u/2934394?v=4",
+   "url": "https://github.com/ruvnet/RuView",
+   "desc": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+   "stars": 102274,
+   "forks": 13283,
+   "lang": "Rust",
+   "topics": [
+    "awesome",
+    "claude",
+    "densepose",
+    "esp32",
+    "firmware",
+    "home-assistant"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "ant-design/ant-design",
+   "name": "ant-design",
+   "owner": "ant-design",
+   "avatar": "https://avatars.githubusercontent.com/u/12101536?v=4",
+   "url": "https://github.com/ant-design/ant-design",
+   "desc": "An enterprise-class UI design language and React UI library",
+   "stars": 100067,
+   "forks": 54628,
+   "lang": "TypeScript",
+   "topics": [
+    "ant-design",
+    "antd",
+    "design-systems",
+    "react",
+    "typescript",
+    "ui-kit"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "mui/material-ui",
+   "name": "material-ui",
+   "owner": "mui",
+   "avatar": "https://avatars.githubusercontent.com/u/33663932?v=4",
+   "url": "https://github.com/mui/material-ui",
+   "desc": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
+   "stars": 99296,
+   "forks": 32509,
+   "lang": "JavaScript",
+   "topics": [
+    "design-system",
+    "material-design",
+    "material-ui",
+    "react",
+    "react-components"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "oven-sh/bun",
+   "name": "bun",
+   "owner": "oven-sh",
+   "avatar": "https://avatars.githubusercontent.com/u/108928776?v=4",
+   "url": "https://github.com/oven-sh/bun",
+   "desc": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+   "stars": 96530,
+   "forks": 5257,
+   "lang": "Rust",
+   "topics": [
+    "bun",
+    "bundler",
+    "javascript",
+    "javascriptcore",
+    "jsx",
+    "nodejs"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "storybookjs/storybook",
+   "name": "storybook",
+   "owner": "storybookjs",
+   "avatar": "https://avatars.githubusercontent.com/u/22632046?v=4",
+   "url": "https://github.com/storybookjs/storybook",
+   "desc": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation",
+   "stars": 91445,
+   "forks": 10491,
+   "lang": "TypeScript",
+   "topics": [
+    "angular",
+    "components",
+    "design-systems",
+    "documentation",
+    "html",
+    "javascript"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "ChatGPTNextWeb/NextChat",
+   "name": "NextChat",
+   "owner": "ChatGPTNextWeb",
+   "avatar": "https://avatars.githubusercontent.com/u/153288546?v=4",
+   "url": "https://github.com/ChatGPTNextWeb/NextChat",
+   "desc": "✨ Zero-config AI chat assistant. No API key needed — sign up and instantly chat with GPT-5, Claude 4, Gemini 2.5, DeepSeek & 100+ top models. Pay-as-you-go saves you more. Available on Web, iOS, macOS, Android, Linux, Windows.",
+   "stars": 88938,
+   "forks": 58635,
+   "lang": "TypeScript",
+   "topics": [
+    "calclaude",
+    "claude",
+    "cross-platform",
+    "desktop",
+    "fe",
+    "gemini"
+   ],
+   "updated": "2026-10-20"
+  },
+  {
+   "full_name": "vitejs/vite",
+   "name": "vite",
+   "owner": "vitejs",
+   "avatar": "https://avatars.githubusercontent.com/u/65625612?v=4",
+   "url": "https://github.com/vitejs/vite",
+   "desc": "Next generation frontend tooling. It's fast!",
+   "stars": 83713,
+   "forks": 9073,
+   "lang": "TypeScript",
+   "topics": [
+    "build-tool",
+    "dev-server",
+    "frontend",
+    "hmr",
+    "vite"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "typicode/json-server",
+   "name": "json-server",
+   "owner": "typicode",
+   "avatar": "https://avatars.githubusercontent.com/u/5502029?v=4",
+   "url": "https://github.com/typicode/json-server",
+   "desc": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)",
+   "stars": 75734,
+   "forks": 7280,
+   "lang": "JavaScript",
+   "topics": [
+    "api",
+    "fake",
+    "frontend",
+    "json",
+    "mock",
+    "rest"
+   ],
+   "updated": "2026-03-23"
+  },
+  {
+   "full_name": "apache/superset",
+   "name": "superset",
+   "owner": "apache",
+   "avatar": "https://avatars.githubusercontent.com/u/47359?v=4",
+   "url": "https://github.com/apache/superset",
+   "desc": "Apache Superset is a Data Visualization and Data Exploration Platform",
+   "stars": 75401,
+   "forks": 18572,
+   "lang": "Python",
+   "topics": [
+    "analytics",
+    "apache",
+    "apache-superset",
+    "asf",
+    "bi",
+    "business-analytics"
+   ],
+   "updated": "2026-11-04"
+  }
+ ],
+ "selfhosted": [
+  {
+   "full_name": "awesome-selfhosted/awesome-selfhosted",
+   "name": "awesome-selfhosted",
+   "owner": "awesome-selfhosted",
+   "avatar": "https://avatars.githubusercontent.com/u/24270415?v=4",
+   "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+   "desc": "A list of Free Software network services and web applications which can be hosted on your own servers",
+   "stars": 333473,
+   "forks": 15703,
+   "lang": null,
+   "topics": [
+    "awesome",
+    "awesome-list",
+    "cloud",
+    "free-software",
+    "hosting",
+    "privacy"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "n8n-io/n8n",
+   "name": "n8n",
+   "owner": "n8n-io",
+   "avatar": "https://avatars.githubusercontent.com/u/45487711?v=4",
+   "url": "https://github.com/n8n-io/n8n",
+   "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+   "stars": 209490,
+   "forks": 61363,
+   "lang": "TypeScript",
+   "topics": [
+    "ai",
+    "apis",
+    "automation",
+    "cli",
+    "data-flow",
+    "development"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "open-webui/open-webui",
+   "name": "open-webui",
+   "owner": "open-webui",
+   "avatar": "https://avatars.githubusercontent.com/u/158137808?v=4",
+   "url": "https://github.com/open-webui/open-webui",
+   "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+   "stars": 157701,
+   "forks": 22935,
+   "lang": "Svelte",
+   "topics": [
+    "ai",
+    "llm",
+    "llm-ui",
+    "llm-webui",
+    "llms",
+    "mcp"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "immich-app/immich",
+   "name": "immich",
+   "owner": "immich-app",
+   "avatar": "https://avatars.githubusercontent.com/u/109746326?v=4",
+   "url": "https://github.com/immich-app/immich",
+   "desc": "High performance self-hosted photo and video management solution.",
+   "stars": 118141,
+   "forks": 7467,
+   "lang": "TypeScript",
+   "topics": [
+    "backup-tool",
+    "flutter",
+    "google-photos",
+    "google-photos-alternative",
+    "javascript",
+    "mobile-app"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "Stirling-Tools/Stirling-PDF",
+   "name": "Stirling-PDF",
+   "owner": "Stirling-Tools",
+   "avatar": "https://avatars.githubusercontent.com/u/139791695?v=4",
+   "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+   "desc": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+   "stars": 95697,
+   "forks": 10012,
+   "lang": "TypeScript",
+   "topics": [
+    "docker",
+    "hacktoberfest",
+    "java",
+    "pdf",
+    "pdf-converter",
+    "pdf-editor"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "louislam/uptime-kuma",
+   "name": "uptime-kuma",
+   "owner": "louislam",
+   "avatar": "https://avatars.githubusercontent.com/u/1336778?v=4",
+   "url": "https://github.com/louislam/uptime-kuma",
+   "desc": "A fancy self-hosted monitoring tool",
+   "stars": 93226,
+   "forks": 8657,
+   "lang": "JavaScript",
+   "topics": [
+    "docker",
+    "monitor",
+    "monitoring",
+    "responsive",
+    "self-hosted",
+    "selfhosted"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "unslothai/unsloth",
+   "name": "unsloth",
+   "owner": "unslothai",
+   "avatar": "https://avatars.githubusercontent.com/u/150920049?v=4",
+   "url": "https://github.com/unslothai/unsloth",
+   "desc": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
+   "stars": 79029,
+   "forks": 7352,
+   "lang": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "chatgpt",
+    "deepseek",
+    "fine-tuning",
+    "gemma"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "coollabsio/coolify",
+   "name": "coolify",
+   "owner": "coollabsio",
+   "avatar": "https://avatars.githubusercontent.com/u/60715044?v=4",
+   "url": "https://github.com/coollabsio/coolify",
+   "desc": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
+   "stars": 65592,
+   "forks": 5915,
+   "lang": "PHP",
+   "topics": [
+    "coolify",
+    "databases",
+    "deployment",
+    "docker",
+    "docker-compose",
+    "inertiajs"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "usememos/memos",
+   "name": "memos",
+   "owner": "usememos",
+   "avatar": "https://avatars.githubusercontent.com/u/95764151?v=4",
+   "url": "https://github.com/usememos/memos",
+   "desc": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
+   "stars": 64256,
+   "forks": 4934,
+   "lang": "Go",
+   "topics": [
+    "docker",
+    "foss",
+    "go",
+    "markdown",
+    "memo",
+    "microblog"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "go-gitea/gitea",
+   "name": "gitea",
+   "owner": "go-gitea",
+   "avatar": "https://avatars.githubusercontent.com/u/12724356?v=4",
+   "url": "https://github.com/go-gitea/gitea",
+   "desc": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
+   "stars": 58861,
+   "forks": 7353,
+   "lang": "Go",
+   "topics": [
+    "bitbucket",
+    "cicd",
+    "devops",
+    "docker-registry-v2",
+    "git",
+    "git-gui"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "pathwaycom/serviette",
+   "name": "serviette",
+   "owner": "pathwaycom",
+   "avatar": "https://avatars.githubusercontent.com/u/25750857?v=4",
+   "url": "https://github.com/pathwaycom/serviette",
+   "desc": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
+   "stars": 58726,
+   "forks": 1542,
+   "lang": "Python",
+   "topics": [
+    "chromadb",
+    "document-qa",
+    "document-search",
+    "duckdb",
+    "live-data",
+    "llm"
+   ],
+   "updated": "2026-11-02"
+  },
+  {
+   "full_name": "appwrite/appwrite",
+   "name": "appwrite",
+   "owner": "appwrite",
+   "avatar": "https://avatars.githubusercontent.com/u/25003669?v=4",
+   "url": "https://github.com/appwrite/appwrite",
+   "desc": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+   "stars": 57861,
+   "forks": 5831,
+   "lang": "TypeScript",
+   "topics": [
+    "android",
+    "appwrite",
+    "backend",
+    "backend-as-a-service",
+    "docker",
+    "firebase"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "QuantumNous/new-api",
+   "name": "new-api",
+   "owner": "QuantumNous",
+   "avatar": "https://avatars.githubusercontent.com/u/205075698?v=4",
+   "url": "https://github.com/QuantumNous/new-api",
+   "desc": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
+   "stars": 51302,
+   "forks": 12459,
+   "lang": "Go",
+   "topics": [
+    "ai-gateway",
+    "api-management",
+    "claude",
+    "deepseek",
+    "gemini",
+    "llm-gateway"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "ClickHouse/ClickHouse",
+   "name": "ClickHouse",
+   "owner": "ClickHouse",
+   "avatar": "https://avatars.githubusercontent.com/u/54801242?v=4",
+   "url": "https://github.com/ClickHouse/ClickHouse",
+   "desc": "ClickHouse® is a real-time analytics database management system",
+   "stars": 50738,
+   "forks": 9216,
+   "lang": "C++",
+   "topics": [
+    "ai",
+    "analytics",
+    "big-data",
+    "clickhouse",
+    "cloud-native",
+    "cpp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "HKUDS/nanobot",
+   "name": "nanobot",
+   "owner": "HKUDS",
+   "avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
+   "url": "https://github.com/HKUDS/nanobot",
+   "desc": "Your lightweight open-source personal agent.",
+   "stars": 49803,
+   "forks": 8711,
+   "lang": "Python",
+   "topics": [
+    "agent-framework",
+    "ai-agent",
+    "ai-agents",
+    "chatbot",
+    "chatops",
+    "discord-bot"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "gogs/gogs",
+   "name": "gogs",
+   "owner": "gogs",
+   "avatar": "https://avatars.githubusercontent.com/u/6656686?v=4",
+   "url": "https://github.com/gogs/gogs",
+   "desc": "The painless way to host your own Git service",
+   "stars": 47913,
+   "forks": 5077,
+   "lang": "Go",
+   "topics": [
+    "docker",
+    "git",
+    "go",
+    "gogs",
+    "mysql",
+    "postgresql"
+   ],
+   "updated": "2026-11-03"
+  },
+  {
+   "full_name": "siyuan-note/siyuan",
+   "name": "siyuan",
+   "owner": "siyuan-note",
+   "avatar": "https://avatars.githubusercontent.com/u/70468694?v=4",
+   "url": "https://github.com/siyuan-note/siyuan",
+   "desc": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
+   "stars": 47063,
+   "forks": 3097,
+   "lang": "TypeScript",
+   "topics": [
+    "agentic-ai",
+    "ai-agent",
+    "knowledge-base",
+    "local-first",
+    "markdown",
+    "mcp"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "janhq/jan",
+   "name": "jan",
+   "owner": "janhq",
+   "avatar": "https://avatars.githubusercontent.com/u/102363196?v=4",
+   "url": "https://github.com/janhq/jan",
+   "desc": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+   "stars": 45407,
+   "forks": 3145,
+   "lang": "Rust",
+   "topics": [
+    "chatgpt",
+    "gpt",
+    "llamacpp",
+    "llm",
+    "localai",
+    "open-source"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "reactive-resume/reactive-resume",
+   "name": "reactive-resume",
+   "owner": "reactive-resume",
+   "avatar": "https://avatars.githubusercontent.com/u/245328954?v=4",
+   "url": "https://github.com/reactive-resume/reactive-resume",
+   "desc": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+   "stars": 45297,
+   "forks": 4913,
+   "lang": "TypeScript",
+   "topics": [
+    "agent-skills",
+    "ai",
+    "dsh-plugin",
+    "hacktoberfest",
+    "javascript",
+    "mcp-server"
+   ],
+   "updated": "2026-11-04"
+  },
+  {
+   "full_name": "ToolJet/ToolJet",
+   "name": "ToolJet",
+   "owner": "ToolJet",
+   "avatar": "https://avatars.githubusercontent.com/u/82193554?v=4",
+   "url": "https://github.com/ToolJet/ToolJet",
+   "desc": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from Claude Code, Codex and Cursor over MCP 🚀",
+   "stars": 41187,
+   "forks": 5511,
+   "lang": "HTML",
+   "topics": [
+    "ai-app-builder",
+    "docker",
+    "internal-applications",
+    "internal-project",
+    "internal-tool",
+    "internal-tools"
+   ],
+   "updated": "2026-11-04"
+  }
+ ]
+}

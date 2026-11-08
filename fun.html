@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>休闲娱乐（30 个）· GitHub 精选</title>
+<link id="siteCss" rel="stylesheet" href="assets/site.css">
+<script>
+/* 分享链接靠 ?sharecode= 放行。站内跳转一旦丢掉这个参数，在没有 cookie 的环境
+   （内嵌 webview、隐私模式、聊天工具转发截断）就会直接 403「链接不完整」。
+   这里把参数补回当前地址、样式表和所有站内链接；拿不到参数时什么也不做。 */
+(function () {
+  var sc = "";
+  try {
+    var m = location.search.match(/[?&]sharecode=([^&]+)/);
+    if (m) sc = decodeURIComponent(m[1]);
+    if (!sc) {
+      var m2 = (document.referrer || "").match(/[?&]sharecode=([^&]+)/);
+      if (m2) sc = decodeURIComponent(m2[1]);
+    }
+  } catch (e) { return; }
+  if (!sc) return;
+  window.__SHARECODE = sc;
+  if (!/[?&]sharecode=/.test(location.search)) {
+    try { history.replaceState(null, "", location.pathname + "?sharecode=" + encodeURIComponent(sc) + location.hash); } catch (e) {}
+  }
+  /* 样式表也是被同一道网关拦的：不补参数会出现「页面能开但没样式」 */
+  var css = document.getElementById("siteCss");
+  if (css) css.href = "assets/site.css?sharecode=" + encodeURIComponent(sc);
+  function fix(h) {
+    if (!h) return null;
+    if (h.charAt(0) === "#") return null;
+    if (h.indexOf("//") === 0) return null;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(h)) return null;
+    if (/[?&]sharecode=/.test(h)) return null;
+    return h + (h.indexOf("?") >= 0 ? "&" : "?") + "sharecode=" + encodeURIComponent(sc);
+  }
+  function patch() {
+    var as = document.querySelectorAll("a[href]");
+    for (var i = 0; i < as.length; i++) {
+      var n = fix(as[i].getAttribute("href"));
+      if (n) as[i].setAttribute("href", n);
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", patch);
+  else patch();
+  /* 卡片重绘、视图切换会换掉节点，点之前再兜一次 */
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    while (t && t !== document && (!t.tagName || t.tagName.toLowerCase() !== "a")) t = t.parentNode;
+    if (!t || t === document) return;
+    var n = fix(t.getAttribute("href"));
+    if (n) t.setAttribute("href", n);
+  }, true);
+})();
+</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="index.html"><span class="mark">⚡</span><span>GitHub 精选<small>AWESOME REPOS</small></span></a>
+    <div class="search"><span class="ico">🔍</span><input id="q" type="text" placeholder="在 休闲娱乐 里搜索…"></div>
+    <a class="fav-link" href="favorites.html" title="我的收藏"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M6.5 3h11A1.5 1.5 0 0 1 19 4.5V21l-7-4.4L5 21V4.5A1.5 1.5 0 0 1 6.5 3z"/></svg><span class="fav-txt">收藏</span><span class="fav-count">0</span></a>
+    <a class="gh-link" href="index.html">全部项目</a>
+  </div>
+</div>
+<header class="chero">
+  <div class="chero-row">
+    <div class="chero-icon" style="background:linear-gradient(135deg,#ec4899,#f43f5e)">🎮</div>
+    <div>
+      <h1>休闲娱乐<span class="code">FUN</span></h1>
+      <p class="desc">音乐、视频、游戏、追番，开源世界也很好玩</p>
+      <div class="pills">
+        <span class="pill">共 <b>30</b> 个项目</span>
+        <span class="pill">编号 <b>#01 – #30</b></span>
+        <span class="pill">累计 <b>★ 1.07M</b></span>
+        <span class="pill">引用格式 <b>FUN-12</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="switchbar"><div class="switchbar-inner">
+  <a class="cchip" href="ai.html">🤖 AI 工具 <span class="n">76</span></a><a class="cchip" href="productivity.html">⚡ 效率办公 <span class="n">20</span></a><a class="cchip active" href="fun.html">🎮 休闲娱乐 <span class="n">30</span></a><a class="cchip" href="devtools.html">🛠️ 开发者工具 <span class="n">16</span></a><a class="cchip" href="frontend.html">🎨 前端框架 <span class="n">19</span></a><a class="cchip" href="selfhosted.html">🏠 自托管服务 <span class="n">12</span></a>
+  <div class="viewtog">
+    <button data-v="grid" class="on">卡片</button>
+    <button data-v="rows">列表</button>
+  </div>
+</div></nav>
+
+<main>
+  <section class="listwrap" id="listwrap"></section>
+  <div class="empty" id="empty">😕 这个分类里没有匹配的项目，换个关键词试试</div>
+</main>
+<footer>
+  <div class="foot-inner">
+    <b>GitHub 精选</b> · 优质开源项目集合 · 共 173 个项目 / 6 大分类<br>
+    数据来源 GitHub Search API · Star 数截至 2026-11-04 · 每个分类内按 Star 降序编号 #01–#N<br>
+    Made with ⚡ by WorkBuddy
+  </div>
+</footer>
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="m-hero" id="mHero">
+      <button class="m-close" id="mClose" aria-label="关闭">✕</button>
+      <div class="m-top">
+        <img class="m-avatar" id="mAvatar" alt="">
+        <div class="m-title">
+          <h3><span id="mName"></span><span class="m-id" id="mId"></span><span class="cat-tag" id="mCat"></span></h3>
+          <div class="sub" id="mSub"></div>
+        </div>
+      </div>
+      <div class="m-btns">
+        <button class="m-btn ghost with-label" id="mFav" aria-label="收藏">收藏</button>
+        <button class="m-btn deploy" id="mDeploy" type="button" title="复制一段可直接粘给 AI 的部署指令">⚡ 复制部署指令</button>
+        <a class="m-btn solid" id="mGithub" target="_blank" rel="noopener">在 GitHub 打开 ↗</a>
+      </div>
+    </div>
+    <div class="m-body">
+      <div class="m-stats" id="mStats"></div>
+      <div class="m-intro" id="mIntro"></div>
+      <details class="m-en-box"><summary>英文原始描述</summary><p class="m-en" id="mEn"></p></details>
+      <div class="m-topics" id="mTopics"></div>
+      <div class="m-readme">
+        <span class="m-sec-label">README 摘要</span>
+        <div class="m-readme-box" id="mReadmeBox"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const PAGE = {"cat": {"id": "fun", "code": "FUN", "name": "休闲娱乐", "icon": "🎮", "grad": "linear-gradient(135deg,#ec4899,#f43f5e)", "desc": "音乐、视频、游戏、追番，开源世界也很好玩", "count": 30}};
+const CATS = {"ai":{"id":"ai","code":"AI","name":"AI 工具","icon":"🤖","grad":"linear-gradient(135deg,#6366f1,#a855f7)"},"productivity":{"id":"productivity","code":"WORK","name":"效率办公","icon":"⚡","grad":"linear-gradient(135deg,#f59e0b,#f97316)"},"fun":{"id":"fun","code":"FUN","name":"休闲娱乐","icon":"🎮","grad":"linear-gradient(135deg,#ec4899,#f43f5e)"},"devtools":{"id":"devtools","code":"DEV","name":"开发者工具","icon":"🛠️","grad":"linear-gradient(135deg,#0ea5e9,#06b6d4)"},"frontend":{"id":"frontend","code":"WEB","name":"前端框架","icon":"🎨","grad":"linear-gradient(135deg,#10b981,#14b8a6)"},"selfhosted":{"id":"selfhosted","code":"SELF","name":"自托管服务","icon":"🏠","grad":"linear-gradient(135deg,#8b5cf6,#6366f1)"}};
+const REPOS = [{"full_name":"juliangarnier/anime","name":"anime","owner":"juliangarnier","avatar":"https://avatars.githubusercontent.com/u/1268691?v=4","url":"https://github.com/juliangarnier/anime","desc":"JavaScript animation engine","stars":74256,"forks":5050,"lang":"JavaScript","topics":["animation","anime","canvas","css","javascript","javascript-library"],"updated":"2026-11-02","tag":"轻量但强大的 JS 动画引擎","body":["anime.js 是一个只有几 KB 的动画库，却能把 CSS 属性、SVG 路径、DOM 变换、JS 对象数值统一成一套 API 来驱动，时间轴、缓动、交错动画都写得很顺手。","v4 版本重写后支持更细粒度的控制与更好的性能，常见于官网动效、数据可视化过渡、SVG 图标动画。相比 GSAP 更轻，学习成本也低。"],"feats":["体积小，无依赖","CSS / SVG / JS 对象统一驱动","时间轴与交错动画","缓动函数丰富"],"fit":"做官网动效、可视化过渡的前端开发者","rank":1,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#f1e05a"},{"full_name":"remotion-dev/remotion","name":"remotion","owner":"remotion-dev","avatar":"https://avatars.githubusercontent.com/u/85344006?v=4","url":"https://github.com/remotion-dev/remotion","desc":"🎥      Make videos programmatically with React","stars":70474,"forks":5801,"lang":"TypeScript","topics":["javascript","react","video"],"updated":"2026-11-03","tag":"用 React 写视频","body":["Remotion 让你用 React 组件描述视频画面：每一帧就是一个组件状态，用 CSS、Canvas、SVG 想怎么画就怎么画，最后渲染成真正的 MP4。","因为是代码，视频可以参数化、批量生成、接入接口和数据库——做数据驱动的短视频、个性化营销视频、自动生成的报表动画非常合适。"],"feats":["React 组件即视频帧","参数化与批量渲染","支持 Canvas / SVG / 三方库","可与后端服务集成"],"fit":"做程序化视频、批量内容生成的前端团队","rank":2,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3178c6"},{"full_name":"FFmpeg/FFmpeg","name":"FFmpeg","owner":"FFmpeg","avatar":"https://avatars.githubusercontent.com/u/729418?v=4","url":"https://github.com/FFmpeg/FFmpeg","desc":"Mirror of https://git.ffmpeg.org/ffmpeg.git","stars":66427,"forks":14510,"lang":"C","topics":["audio","c","ffmpeg","fft","hevc","hls"],"updated":"2026-11-04","tag":"音视频处理的绝对基础设施","body":["FFmpeg 是音视频领域的事实标准：几乎你能想到的格式转换、剪辑、拼接、转码、滤镜、推流，都能用一行命令完成。","它被无数播放器、剪辑软件、直播平台当作底层引擎，命令行参数多到可以写一本书，但一旦熟悉，处理批量媒体任务的效率无可替代。"],"feats":["几乎全格式编解码","剪辑 / 拼接 / 转码 / 滤镜","推流与录流","被大量软件作为底层引擎"],"fit":"音视频工程师、需要批量处理媒体的开发者","rank":3,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#555555"},{"full_name":"team-spotube/spotube","name":"spotube","owner":"team-spotube","avatar":"https://avatars.githubusercontent.com/u/263316120?v=4","url":"https://github.com/team-spotube/spotube","desc":"🎧 Open source music streaming app! Available for both desktop & mobile!","stars":50572,"forks":2384,"lang":"Kotlin","topics":["android","android-client","android-music-player","desktop-client","fdroid","flutter"],"updated":"2026-11-03","tag":"不依赖 Spotify Premium 的开源音乐客户端","body":["Spotube 的做法很聪明：它用 Spotify 的元数据和歌单来管理你的音乐库，但音频实际从 YouTube 等公开源获取，因此不需要 Premium 就能完整播放。","它支持桌面和移动端、离线下载、歌词显示、跨平台同步，界面现代。适合已有 Spotify 歌单、又不想付费或受地区限制的用户。"],"feats":["用 Spotify 歌单管理，公开源播放","桌面 + 移动端","离线下载与歌词","免费开源"],"fit":"有 Spotify 歌单但不愿订阅的音乐爱好者","rank":4,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#A97BFF"},{"full_name":"pixijs/pixijs","name":"pixijs","owner":"pixijs","avatar":"https://avatars.githubusercontent.com/u/5406849?v=4","url":"https://github.com/pixijs/pixijs","desc":"The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.","stars":48621,"forks":5136,"lang":"TypeScript","topics":["canvas","canvas2d","data-visualization","game","glsl","javascript"],"updated":"2026-11-03","tag":"最快的 2D WebGL 渲染引擎","body":["PixiJS 是前端 2D 图形领域的老牌强者：基于 WebGL（可回退 Canvas）提供精灵、纹理、滤镜、粒子、遮罩等能力，渲染性能接近原生。","它不做游戏逻辑，只专注「把画面高效画出来」，因此既能做游戏渲染层，也能做数据可视化、互动广告、交互动效等高性能场景。"],"feats":["WebGL 高性能 2D 渲染","精灵 / 滤镜 / 粒子 / 遮罩","跨平台，兼容 Canvas 回退","生态插件丰富"],"fit":"做 H5 游戏、互动视觉的开发者","rank":5,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3178c6"},{"full_name":"iina/iina","name":"iina","owner":"iina","avatar":"https://avatars.githubusercontent.com/u/35151645?v=4","url":"https://github.com/iina/iina","desc":"The modern video player for macOS.","stars":47001,"forks":2987,"lang":"Swift","topics":["hacktoberfest","macos","mpv","swift","video","video-player"],"updated":"2026-11-03","tag":"macOS 上最好看的视频播放器","body":["IINA 是专为 macOS 打造的现代播放器：基于 mpv 内核，支持几乎所有格式和字幕，界面遵循原生设计规范，深色模式、画中画、触控条都做得很到位。","它支持 YouTube 直链播放、字幕在线搜索、逐帧浏览、音频均衡器，兼顾了美观与硬核功能，是 Mac 上替代 QuickTime 的首选。"],"feats":["mpv 内核，全格式支持","原生 macOS 界面与画中画","在线字幕搜索","支持网络串流"],"fit":"macOS 用户、影迷与字幕党","rank":6,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#F05138"},{"full_name":"imputnet/cobalt","name":"cobalt","owner":"imputnet","avatar":"https://avatars.githubusercontent.com/u/152056268?v=4","url":"https://github.com/imputnet/cobalt","desc":"best way to save what you love","stars":45774,"forks":4040,"lang":"Svelte","topics":["collaboration","downloader","instagram","javascript","music","reddit"],"updated":"2026-04-06","tag":"干净好用的媒体下载工具","body":["cobalt 是一个极简的媒体下载服务：粘贴链接，选择画质或只要音频，直接拿到文件——没有广告、没有跳转、没有捆绑软件。","它支持 YouTube、Twitter、TikTok、Reddit 等主流平台，可自托管成私有实例，也有官方公共实例。界面清爽到几乎没有学习成本。"],"feats":["多平台媒体下载","可选画质 / 仅音频","无广告无追踪","可自托管"],"fit":"需要保存网络音视频的普通用户","rank":7,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#ff3e00"},{"full_name":"mifi/lossless-cut","name":"lossless-cut","owner":"mifi","avatar":"https://avatars.githubusercontent.com/u/402547?v=4","url":"https://github.com/mifi/lossless-cut","desc":"The swiss army knife of lossless video/audio editing","stars":45677,"forks":2303,"lang":"TypeScript","topics":["codec","cut","editor","ffmpeg","lossless","losslesscut"],"updated":"2026-11-03","tag":"无损剪切视频的瑞士军刀","body":["LosslessCut 用 FFmpeg 做「不重新编码」的剪切：把视频按关键帧切开、删掉不要的片段、合并多个文件，几分钟的片子几秒就处理完，画质零损失。","它适合从录屏、演唱会、长视频里快速抠片段。需要精确到帧或重新编码时，也能调用 FFmpeg 高级参数。"],"feats":["无损剪切，秒级处理","多文件合并与音轨提取","关键帧精确跳转","跨平台，免费开源"],"fit":"需要快速剪辑素材的创作者","rank":8,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3178c6"},{"full_name":"TeamNewPipe/NewPipe","name":"NewPipe","owner":"TeamNewPipe","avatar":"https://avatars.githubusercontent.com/u/22159318?v=4","url":"https://github.com/TeamNewPipe/NewPipe","desc":"A libre lightweight streaming front-end for Android.","stars":40415,"forks":3947,"lang":"Java","topics":["4k","android","bandcamp","download-videos","newpipe","peertube"],"updated":"2026-11-03","tag":"安卓上无广告的 YouTube 前端","body":["NewPipe 是一个轻量级安卓流媒体前端：不依赖 Google 服务框架，没有广告和推荐算法干扰，支持后台播放、画中画、下载音视频。","除 YouTube 外还支持 SoundCloud、PeerTube 等平台。它把「看视频」这件事还原成最纯粹的样子，也是安卓开源客户端里的经典项目。"],"feats":["无广告、无 Google 服务依赖","后台播放与画中画","音视频下载","支持多平台内容源"],"fit":"安卓用户、讨厌广告与算法推荐的人","rank":9,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#b07219"},{"full_name":"videojs/video.js","name":"video.js","owner":"videojs","avatar":"https://avatars.githubusercontent.com/u/3287189?v=4","url":"https://github.com/videojs/video.js","desc":"Video.js v10 - open source media player framework for HTML and React.","stars":40067,"forks":7485,"lang":"TypeScript","topics":["dash","hls","html","html5","html5-audio","html5-video"],"updated":"2026-11-04","tag":"Web 视频播放器的老牌标准","body":["Video.js 是最早也最广泛使用的 HTML5 播放器框架：一套 API 兼容各种浏览器，字幕、清晰度切换、直播、广告插件都有成熟方案。","v10 版本重写为基于 Web Components，同时提供 React 封装。需要在自己的网站里放一个可控、可定制、兼容性好的播放器时，它依然是稳妥选择。"],"feats":["跨浏览器兼容","字幕 / 清晰度 / 直播支持","插件与皮肤体系","Web Components + React 封装"],"fit":"需要在网站集成视频播放的前端开发者","rank":10,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3178c6"},{"full_name":"mpv-player/mpv","name":"mpv","owner":"mpv-player","avatar":"https://avatars.githubusercontent.com/u/2550273?v=4","url":"https://github.com/mpv-player/mpv","desc":"🎥 Command line media player","stars":37695,"forks":3624,"lang":"C","topics":["audio","c","ffmpeg","mplayer","mpv","multimedia"],"updated":"2026-11-03","tag":"极客最爱的命令行播放器","body":["mpv 是一个基于 MPlayer 血统的命令行播放器：启动快、资源占用低、格式支持极全，画质缩放算法可自由选择，几乎什么都能播。","它通过配置文件与 Lua 脚本实现高度定制，能做自动去隔行、着色器增强、字幕样式、快捷键宏。很多图形播放器（含 IINA）其实是它的前端。"],"feats":["命令行驱动，极低占用","全格式与硬件解码","着色器画质增强","Lua 脚本与配置高度可定制"],"fit":"极客用户、追求画质与性能的影迷","rank":11,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#555555"},{"full_name":"pear-devs/pear-desktop","name":"pear-desktop","owner":"pear-devs","avatar":"https://avatars.githubusercontent.com/u/232770603?v=4","url":"https://github.com/pear-devs/pear-desktop","desc":"Pear 🍐 is extension for music player","stars":33975,"forks":2033,"lang":"TypeScript","topics":["desktop-app","electron","linux","mac","macosx","music"],"updated":"2026-11-03","tag":"给 YouTube Music 加上桌面端体验","body":["Pear 是一个封装 YouTube Music 的桌面客户端：在浏览器版基础上补上了全局媒体键、桌面歌词、音频均衡器、插件系统和更好的通知。","对习惯用 YouTube Music 听歌的人来说，它把网页版的短板基本补齐了，还支持插件扩展（如赞助跳过、音量增强）。"],"feats":["YouTube Music 桌面封装","全局媒体键与通知","插件系统与均衡器","跨平台"],"fit":"YouTube Music 用户","rank":12,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3178c6"},{"full_name":"qier222/YesPlayMusic","name":"YesPlayMusic","owner":"qier222","avatar":"https://avatars.githubusercontent.com/u/68148142?v=4","url":"https://github.com/qier222/YesPlayMusic","desc":"高颜值的第三方网易云播放器，支持 Windows / macOS / Linux :electron:","stars":33533,"forks":4669,"lang":"Vue","topics":["electron","javascript","linux","mac","macos","music"],"updated":"2026-10-10","tag":"高颜值的第三方网易云播放器","body":["YesPlayMusic 是一个开源的网易云音乐第三方客户端：界面比官方更简洁现代，支持登录同步歌单、每日推荐、歌词滚动、无损音质。","它用 Vue + Electron 实现，跨 Windows / macOS / Linux，也能部署成网页版。适合喜欢网易云曲库但嫌官方客户端臃肿的用户。"],"feats":["网易云账号登录与歌单同步","简洁现代的界面","歌词与无损播放","桌面 + 网页双形态"],"fit":"网易云音乐用户、喜欢折腾客户端的玩家","rank":13,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#41b883"},{"full_name":"bilibili/ijkplayer","name":"ijkplayer","owner":"bilibili","avatar":"https://avatars.githubusercontent.com/u/12002442?v=4","url":"https://github.com/bilibili/ijkplayer","desc":"Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.","stars":33234,"forks":8243,"lang":"C","topics":["android","ffmpeg","ijkplayer","ios","player","video"],"updated":"2024-08-13","tag":"B 站开源的移动端播放内核","body":["ijkplayer 是 B 站基于 FFmpeg 定制的 Android/iOS 播放器内核，针对移动端做了硬解码适配（MediaCodec、VideoToolbox）和播放器状态管理。","它曾经是国内移动端视频 App 的标配内核，支持几乎全部封装格式与协议。虽然官方维护节奏放缓，仍是学习播放器架构的重要参考。"],"feats":["基于 FFmpeg 的移动端内核","硬解码适配 Android / iOS","全格式与流协议支持","成熟的播放器状态机"],"fit":"做移动端播放器的 Android / iOS 开发者","rank":14,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#555555"},{"full_name":"iawia002/lux","name":"lux","owner":"iawia002","avatar":"https://avatars.githubusercontent.com/u/9134003?v=4","url":"https://github.com/iawia002/lux","desc":"👾 Fast and simple video download library and CLI tool written in Go","stars":31820,"forks":3331,"lang":"Go","topics":["bilibili","crawler","download","downloader","go","golang"],"updated":"2026-03-29","tag":"Go 写的视频下载命令行工具","body":["lux 是一个用 Go 实现的视频下载器：给它一个链接，自动识别平台、解析清晰度、下载并合并音视频，支持 B 站、YouTube、抖音等数十个站点。","单二进制、跨平台、速度快，还支持批量下载与自定义输出模板。比 yt-dlp 更轻，适合集成进脚本或自建下载服务。"],"feats":["数十个站点的链接解析","清晰度选择与自动合并","单二进制，跨平台","支持批量与模板化输出"],"fit":"需要批量保存视频的开发者与用户","rank":15,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#00ADD8"},{"full_name":"Anuken/Mindustry","name":"Mindustry","owner":"Anuken","avatar":"https://avatars.githubusercontent.com/u/10100000?v=4","url":"https://github.com/Anuken/Mindustry","desc":"The automation tower defense RTS","stars":29589,"forks":3841,"lang":"Java","topics":["android","desktop","game","java","mindustry","mobile-game"],"updated":"2026-11-01","tag":"塔防 + 自动化 + RTS 的开源神作","body":["Mindustry 把「自动化流水线」和「塔防」缝在了一起：你一边设计传送带、机械臂和工厂网络生产弹药，一边用炮塔架起防线，抵御一波波敌人。","它用 Java 写成，跨桌面与移动端，支持多人联机和玩家自制地图/模组，玩法深度极高却又轻量。喜欢 Factorio 和塔防的人几乎必玩。"],"feats":["自动化生产线 + 塔防玩法","多人联机与模组支持","桌面 / 移动端跨平台","地图编辑器与创意工坊"],"fit":"喜欢自动化与塔防的玩家","rank":16,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#b07219"},{"full_name":"ossrs/srs","name":"srs","owner":"ossrs","avatar":"https://avatars.githubusercontent.com/u/12165287?v=4","url":"https://github.com/ossrs/srs","desc":"SRS is a simple, high-performance, AI-driven real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181, with codec support for H.264, H.265, AV1, VP9, AAC, Opus, and G.711.","stars":29424,"forks":5709,"lang":"C++","topics":["ai-driven","audio","c-plus-plus","dash","hevc","hls"],"updated":"2026-10-31","tag":"高性能实时音视频服务器","body":["SRS（Simple Realtime Server）是国产开源流媒体服务器的代表：支持 RTMP、HLS、WebRTC、SRT 等协议，能扛住大规模并发推拉流。","它被广泛用于直播、在线教育、安防监控等场景，提供 Docker 部署、集群方案与边缘分发，新版本还加入了 AI 相关的媒体处理能力。"],"feats":["RTMP / HLS / WebRTC / SRT","高并发低延迟分发","Docker 与集群部署","直播 / 监控 / 教育场景成熟"],"fit":"做直播、监控、实时音视频的后端团队","rank":17,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#f34b7d"},{"full_name":"4ian/GDevelop","name":"GDevelop","owner":"4ian","avatar":"https://avatars.githubusercontent.com/u/1280130?v=4","url":"https://github.com/4ian/GDevelop","desc":"🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.","stars":28410,"forks":1644,"lang":"JavaScript","topics":["2d-game","2d-game-engine","3d","3d-game","3d-game-engine","game"],"updated":"2026-11-04","tag":"不用写代码做 2D/3D 游戏","body":["GDevelop 是一个面向所有人的开源游戏引擎：用可视化事件表描述「当什么发生时做什么」，不用写代码就能做出完整的 2D/3D 游戏。","它支持物理、粒子、骨骼动画、多人联机和一键导出到 Web / 移动端 / 桌面。对想快速做原型或教学的人来说，比 Unity 轻得多。"],"feats":["可视化事件逻辑，零代码","2D / 3D、物理与粒子","一键导出多平台","素材商店与教程丰富"],"fit":"游戏爱好者、教学场景、独立开发者","rank":18,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#f1e05a"},{"full_name":"NickeManarin/ScreenToGif","name":"ScreenToGif","owner":"NickeManarin","avatar":"https://avatars.githubusercontent.com/u/14798947?v=4","url":"https://github.com/NickeManarin/ScreenToGif","desc":"🎬 ScreenToGif allows you to record a selected area of your screen, edit and save it as a gif or video.","stars":27887,"forks":2382,"lang":"C#","topics":["editor","gif","recorder","sketchboard","video","webcam"],"updated":"2026-10-14","tag":"Windows 上的 GIF 录制与编辑神器","body":["ScreenToGif 可以录制屏幕的指定区域、窗口或摄像头画面，然后逐帧编辑：删帧、加字幕、裁剪、变速，直接导出 GIF 或视频。","它把「录制 → 编辑 → 导出」做在一个轻量工具里，写教程、提 Bug、做演示时非常高效，是 Windows 上最经典的 GIF 工具之一。"],"feats":["区域 / 窗口 / 摄像头录制","逐帧编辑与字幕","导出 GIF / APNG / 视频","轻量免安装"],"fit":"写教程、提 Bug、做演示的 Windows 用户","rank":19,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#178600"},{"full_name":"Anjok07/ultimatevocalremovergui","name":"ultimatevocalremovergui","owner":"Anjok07","avatar":"https://avatars.githubusercontent.com/u/68268275?v=4","url":"https://github.com/Anjok07/ultimatevocalremovergui","desc":"GUI for a Vocal Remover that uses Deep Neural Networks.","stars":26945,"forks":2059,"lang":"Python","topics":["audio","instrumental","karaoke","kareokee","music","pytorch"],"updated":"2026-10-06","tag":"一键分离人声与伴奏","body":["Ultimate Vocal Remover 把多种深度学习音源分离模型（Demucs、MDX、VR 等）打包成图形界面：导入歌曲，选模型，几秒就得到干净的人声与伴奏。","它支持 GPU 加速、批量处理、多模型叠加，效果远超传统相位消除法。做翻唱、remix、卡拉 OK 伴奏都很实用。"],"feats":["多种 SOTA 分离模型","GUI 操作，支持批量","GPU 加速","可导出多轨 stems"],"fit":"音乐制作人、翻唱爱好者、音频工程师","rank":20,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3572A5"},{"full_name":"spotDL/spotify-downloader","name":"spotify-downloader","owner":"spotDL","avatar":"https://avatars.githubusercontent.com/u/71949218?v=4","url":"https://github.com/spotDL/spotify-downloader","desc":"Download your Spotify playlists and songs along with album art and metadata (from YouTube if a match is found).","stars":26575,"forks":2300,"lang":"Python","topics":["download-music","hacktoberfest","mp3","music","playlists","python"],"updated":"2026-11-03","tag":"把 Spotify 歌单变成本地文件","body":["spotDL 读取 Spotify 的歌单、专辑或单曲信息，匹配 YouTube 上的对应音频下载，并自动写入 ID3 标签、专辑封面和歌词。","它支持批量下载整个歌单、跳过已存在文件、按模板命名整理目录。对想把自己收藏的歌单离线保存的人来说非常省事。"],"feats":["歌单 / 专辑批量下载","自动匹配音源","写入标签、封面与歌词","目录整理与增量跳过"],"fit":"想离线保存歌单的音乐爱好者","rank":21,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#3572A5"},{"full_name":"iv-org/invidious","name":"invidious","owner":"iv-org","avatar":"https://avatars.githubusercontent.com/u/68407447?v=4","url":"https://github.com/iv-org/invidious","desc":"Invidious is an alternative front-end to YouTube","stars":25855,"forks":2898,"lang":"Crystal","topics":["agplv3","hacktoberfest","invidious","libre","video","watch"],"updated":"2026-11-03","tag":"轻量的 YouTube 替代前端","body":["Invidious 是一个独立的 YouTube 前端：不加载官方页面的脚本与追踪，没有广告，界面极轻，还能订阅频道、导出订阅、后台播放。","它可以自托管，也能用公共实例访问，还提供 API 供第三方客户端调用。对注重隐私和低带宽环境的用户特别友好。"],"feats":["无广告、无追踪的 YouTube 前端","轻量界面，低带宽友好","可自托管并提供 API","订阅与播放列表管理"],"fit":"注重隐私的用户、低配设备与弱网环境","rank":22,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#000100"},{"full_name":"libgdx/libgdx","name":"libgdx","owner":"libgdx","avatar":"https://avatars.githubusercontent.com/u/509841?v=4","url":"https://github.com/libgdx/libgdx","desc":"Desktop/Android/HTML5/iOS Java game development framework","stars":25507,"forks":6522,"lang":"Java","topics":["2d","3d","android","cross-platform","framework","game"],"updated":"2026-11-03","tag":"跨平台 Java 游戏开发框架","body":["libGDX 是 Java 生态最成熟的游戏框架：一套代码可以发布到 Windows、macOS、Linux、Android、iOS 和 Web。","它提供图形渲染、物理、音频、输入、资源管理等底层能力，但不强制架构，开发者可以自由组织。对 Java/Kotlin 背景的开发者来说上手很快。"],"feats":["一套代码多平台发布","OpenGL 渲染与 2D/3D 支持","物理引擎与音频集成","Java / Kotlin 友好"],"fit":"Java / Kotlin 开发者、独立游戏团队","rank":23,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#b07219"},{"full_name":"navidrome/navidrome","name":"navidrome","owner":"navidrome","avatar":"https://avatars.githubusercontent.com/u/26692192?v=4","url":"https://github.com/navidrome/navidrome","desc":"🎧 Your Personal Streaming Service","stars":24508,"forks":1801,"lang":"Go","topics":["airsonic","madsonic","media-server","music","music-server","navidrome"],"updated":"2026-11-03","tag":"把自己的音乐库变成流媒体服务","body":["Navidrome 是一个轻量自托管音乐服务器：扫描你的音乐文件夹，自动读取标签与封面，然后通过网页或 Subsonic 协议客户端随时随地点播。","它支持数十万首曲库、智能播放列表、转码、多用户与分享，资源占用极低（树莓派就能跑）。配合音流、DSub 等客户端体验接近商业流媒体。"],"feats":["自动扫描与标签识别","Subsonic 协议，客户端丰富","转码与多用户支持","极低资源占用"],"fit":"有本地曲库、想随时在线听的音乐爱好者","rank":24,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#00ADD8"},{"full_name":"FreeTubeApp/FreeTube","name":"FreeTube","owner":"FreeTubeApp","avatar":"https://avatars.githubusercontent.com/u/35975737?v=4","url":"https://github.com/FreeTubeApp/FreeTube","desc":"An Open Source YouTube app for privacy","stars":22311,"forks":1569,"lang":"Vue","topics":["freetube","privacy","subscriptions","video","videos","youtube"],"updated":"2026-11-04","tag":"注重隐私的桌面 YouTube 客户端","body":["FreeTube 用官方 API 或 Invidious 实例获取内容，在本地渲染播放，避免 Google 的追踪脚本与个性化广告，还能导出/导入订阅。","它支持订阅列表、播放列表、频道浏览、视频下载、代理设置，桌面端体验接近原生。对隐私敏感又想看 YouTube 的人很合适。"],"feats":["无追踪、无广告","本地订阅与播放列表","支持代理与多实例","跨平台桌面应用"],"fit":"注重隐私的 YouTube 观众","rank":25,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#41b883"},{"full_name":"bloc97/Anime4K","name":"Anime4K","owner":"bloc97","avatar":"https://avatars.githubusercontent.com/u/567732?v=4","url":"https://github.com/bloc97/Anime4K","desc":"A High-Quality Real Time Upscaler for Anime Video","stars":21601,"forks":1404,"lang":"Jupyter Notebook","topics":["anime","anime-upscaling","anime4k","cnn","computer-graphics","convolutional-neural-networks"],"updated":"2024-08-17","tag":"让老番在 4K 屏上变清晰","body":["Anime4K 是一套针对动画视频的实时超分算法：用 OpenGL/Vulkan 着色器在播放时把低分辨率动画放大并锐化线条，几乎没有性能负担。","它被集成进 mpv、PotPlayer 等播放器，能显著改善老番在大屏上的观感。算法专为动画的色块与线条特征设计，比通用超分更自然。"],"feats":["动画专用实时超分","GPU 着色器实现，开销低","可接入 mpv / PotPlayer","多档画质预设"],"fit":"看番党、老番收藏者、大屏用户","rank":26,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#DA5B0B"},{"full_name":"open-ani/animeko","name":"animeko","owner":"open-ani","avatar":"https://avatars.githubusercontent.com/u/166622089?v=4","url":"https://github.com/open-ani/animeko","desc":"集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform","stars":21464,"forks":647,"lang":"Kotlin","topics":["android","ani","anime","bangumi","bittorrent","bt"],"updated":"2026-11-02","tag":"一站式追番平台","body":["Animeko 把「找番、追番、看番」做在一个应用里：聚合多个数据源与播放源，支持弹幕、云收藏同步（Bangumi）、离线缓存和 BitTorrent 下载。","它用 100% Kotlin/Compose 实现，覆盖桌面与移动端，界面是针对番剧场景专门设计的。对重度追番用户来说，比在多个站点之间跳转省心得多。"],"feats":["多源聚合找番 / 播放","弹幕与云收藏同步","离线缓存与 BT 下载","Kotlin Multiplatform 跨平台"],"fit":"重度追番用户","rank":27,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#A97BFF"},{"full_name":"ppy/osu","name":"osu","owner":"ppy","avatar":"https://avatars.githubusercontent.com/u/995763?v=4","url":"https://github.com/ppy/osu","desc":"rhythm is just a *click* away!","stars":19369,"forks":2872,"lang":"C#","topics":["beatmap","catch","game","mania","osu","rhythm"],"updated":"2026-11-03","tag":"免费开源的节奏游戏","body":["osu! 是全球最受欢迎的节奏游戏之一：跟着音乐点击、拖拽、转圈，四种玩法模式（std / taiko / catch / mania）覆盖不同偏好。","它完全免费、无广告，拥有庞大的玩家自制谱面库和活跃的排名系统。开源代码也让社区能持续贡献玩法与优化。"],"feats":["四种玩法模式","海量玩家自制谱面","在线排名与多人对战","跨平台，完全免费"],"fit":"节奏游戏玩家、音游爱好者","rank":28,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#178600"},{"full_name":"lichess-org/lila","name":"lila","owner":"lichess-org","avatar":"https://avatars.githubusercontent.com/u/16491637?v=4","url":"https://github.com/lichess-org/lila","desc":"♞ lichess.org: the forever free, adless and open source chess server ♞","stars":18941,"forks":2801,"lang":"Scala","topics":["chess","free-software","functional-programming","game","lichess","non-profit"],"updated":"2026-11-03","tag":"永远免费、没有广告的国际象棋平台","body":["Lichess 是完全免费的开源国际象棋服务器：对局、残局练习、战术题、开局数据库、AI 对战、赛事组织一应俱全，且没有广告和付费墙。","它由社区资助运营，代码全开源，支持多语言，还能自建实例。是 Chess.com 之外最受严肃棋手认可的替代方案。"],"feats":["免费无广告的对局与赛事","战术题、残局与研究工具","内置 Stockfish 分析","开源可自托管"],"fit":"国际象棋爱好者、俱乐部与教练","rank":29,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#c22d40"},{"full_name":"alyssaxuu/screenity","name":"screenity","owner":"alyssaxuu","avatar":"https://avatars.githubusercontent.com/u/7581348?v=4","url":"https://github.com/alyssaxuu/screenity","desc":"The free and privacy-friendly screen recorder with no limits 🎥","stars":18937,"forks":1543,"lang":"JavaScript","topics":["annotation","annotation-tool","audio","camera","chrome-extension","design"],"updated":"2026-10-25","tag":"无时长限制的浏览器录屏扩展","body":["Screenity 是一个 Chrome 扩展形态的录屏工具：录屏幕、录标签页或摄像头，支持在页面上手绘标注、加箭头和文字，导出为 MP4 或 GIF。","它不限录制时长、无水印、完全免费开源，数据不上传。做产品演示、问题反馈、教学视频时非常方便。"],"feats":["屏幕 / 标签页 / 摄像头录制","页面实时标注与手绘","不限时长，无水印","导出 MP4 / GIF，本地处理"],"fit":"做演示与教学的用户、产品与测试人员","rank":30,"cat":"休闲娱乐","catId":"fun","code":"FUN","langColor":"#f1e05a"}];
+/* ------------------------------------------------------------------
+ * md.js — 轻量 Markdown 渲染器 + README 摘要提炼（零依赖）
+ * 浏览器挂到 window.MD；Node 下 module.exports，便于离线测试
+ * ------------------------------------------------------------------ */
+(function (root, factory) {
+  var API = factory();
+  if (typeof module === 'object' && module.exports) module.exports = API;
+  else root.MD = API;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+
+  var CJK = /[\u2e80-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff00-\uffef]/;
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function stripTags(s) { return String(s).replace(/<[^>]*>/g, ''); }
+  function isCJK(ch) { return !!ch && CJK.test(ch); }
+
+  /* ---------------- 1. 预处理：把 HTML 风格 README 归一化成 Markdown ---------------- */
+
+  var LANG_NAMES = /(english|中文|简体中文|正體中文|繁體中文|日本語|日本语|한국어|deutsch|français|francais|español|espanol|italiano|português|portugues|русский|українська|polski|nederlands|svenska|türkçe|turkce|tiếng việt|ภาษาไทย|العربية|עברית|bahasa indonesia|malayalam|മലയാളം|bengali|हिन्दी|हिंदी)/gi;
+
+  function prep(src) {
+    var s = String(src || '')
+      .replace(/\r\n?/g, '\n')
+      .replace(/^\uFEFF/, '');
+
+    s = s.replace(/<!--[\s\S]*?-->/g, '');                       // HTML 注释
+    s = s.replace(/^---\n[\s\S]{0,600}?\n---\n/, '');            // YAML front matter
+    s = s.replace(/<details[\s\S]*?<\/details>/gi, '\n');        // 折叠块（目录/语言切换/FAQ）
+    s = s.replace(/<\/?(picture|source|video|audio|iframe)[^>]*>/gi, '');
+
+    // 块级 HTML → Markdown
+    s = s.replace(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi, function (m, lv, t) {
+      return '\n' + new Array(+lv + 1).join('#') + ' ' + stripTags(t).replace(/\s+/g, ' ').trim() + '\n';
+    });
+    s = s.replace(/<br\s*\/?>/gi, '\n');
+    s = s.replace(/<a\s[^>]*href\s*=\s*["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi, function (m, href, txt) {
+      var t = stripTags(txt).replace(/\s+/g, ' ').trim();
+      return t ? '[' + t.replace(/\]/g, '') + '](' + href + ')' : '';
+    });
+    s = s.replace(/<(b|strong)>([\s\S]*?)<\/\1>/gi, '**$2**');
+    s = s.replace(/<(i|em)>([\s\S]*?)<\/\1>/gi, '*$2*');
+    s = s.replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, '`$1`');
+    s = s.replace(/<li[^>]*>/gi, '\n- ').replace(/<\/li>/gi, '');
+    s = s.replace(/<\/p>|<p[^>]*>/gi, '\n\n');
+    s = s.replace(/<hr[^>]*>/gi, '\n\n---\n\n');
+    s = s.replace(/<img[^>]*>/gi, '');                           // 图片一律丢弃（徽章是噪音，截图走外链太慢）
+    s = s.replace(/<\/?(div|span|center|summary|table|thead|tbody|tfoot|tr|td|th|ul|ol|dl|dt|dd|section|article|header|footer|main|aside|nav|font|sup|sub|mark|kbd|small|big|figure|figcaption|blockquote|pre)[^>]*>/gi, '');
+
+    // 行内图片 / 空链接 / 徽章残渣
+    s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+    s = s.replace(/\[\s*\]\([^)]*\)/g, '');
+
+    // 目录块（连续 >=3 行纯锚点链接）整块删除
+    var lines = s.split('\n');
+    var out = [], run = [];
+    var isToc = function (l) { return /^\s*[-*+]?\s*\[[^\]]{1,60}\]\(#[^)]*\)\s*$/.test(l); };
+    var flush = function () {
+      if (run.length && run.length >= 3) { out.push(''); }
+      else { out.push.apply(out, run); }
+      run = [];
+    };
+    for (var i = 0; i < lines.length; i++) {
+      if (isToc(lines[i])) run.push(lines[i]);
+      else { if (run.length) flush(); out.push(lines[i]); }
+    }
+    if (run.length) flush();
+    s = out.join('\n');
+
+    // 参考式链接定义：[id]: https://... （正文里只留引用，定义单独存）
+    var refs = {};
+    s = s.replace(/^ {0,3}\[([^\]\n]{1,80})\]:\s*<?([^\s>]+)>?(?:\s+["'(][^\n]*)?$/gm, function (m, id, url) {
+      var key = id.trim().toLowerCase();
+      if (!refs[key]) refs[key] = url.trim();
+      return '';
+    });
+
+    // 导航行 / 语言切换行过滤（段落级在 parse 里做，这里只处理明显的链接串）
+    s = s.split('\n').filter(function (l) { return !isNavLine(l); }).join('\n');
+
+    // 清理空行堆积与行尾空白
+    s = s.replace(/[ \t]+$/gm, '').replace(/\n{3,}/g, '\n\n').replace(/^\n+/, '').trim();
+    return { text: s, refs: refs };
+  }
+
+  function isNavLine(l) {
+    if (!l.trim()) return false;
+    if (/^\s{0,3}([-*+]|\d{1,2}[.)])\s/.test(l)) return false;   // 列表项保留
+    if (l.indexOf('|') >= 0 && !/\]\(/.test(l)) return false;      // 表格行保留（无链接）
+    if (/^\s{0,3}#{1,6}\s/.test(l)) return false;                 // 标题保留
+    return isNavText(l);
+  }
+
+  // 整段都是链接/语言项 → 导航条，丢弃
+  function isNavText(t) {
+    var links = t.match(/!?\[[^\]]*\]\([^)]*\)/g) || [];
+    if (!links.length) {
+      return t.length < 80 && (t.match(/[·•|]/g) || []).length >= 2 && !/[.!?。！？]/.test(t);
+    }
+    var rest = t.replace(/!?\[[^\]]*\]\([^)]*\)/g, '')
+                .replace(/[\[\]()<>·|/\\–—•*_,.;:+\-]+/g, ' ')
+                .trim();
+    var langs = t.match(LANG_NAMES) || [];
+    if (links.length >= 2 && rest.length < 14) return true;
+    if (links.length === 1 && rest.length < 4 && t.length < 100) return true;   // 单一 CTA 按钮
+    if (langs.length >= 3 && links.length >= 2 && rest.length < 40) return true;
+    if (links.length >= 2 && rest.length < 60 && !/[.!?。！？]/.test(rest) && rest.split(/\s+/).filter(Boolean).length <= 6) return true;
+    return false;
+  }
+
+  /* ---------------- 2. 块级解析 ---------------- */
+
+  var RE_FENCE = /^\s{0,3}(```+|~~~+)\s*([\w+#.\-]*)/;
+  var RE_HEAD = /^\s{0,3}(#{1,6})\s+(.*?)\s*#*\s*$/;
+  var RE_HR = /^\s{0,3}((\*\s*){3,}|(-\s*){3,}|(_\s*){3,})$/;
+  var RE_UL = /^([ \t]*)([-*+])\s+(.*)$/;
+  var RE_OL = /^([ \t]*)(\d{1,2})[.)]\s+(.*)$/;
+  var RE_QUOTE = /^\s{0,3}>\s?/;
+  var RE_TSEP = /^\s*\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?\s*$/;
+
+  function splitRow(line) {
+    var s = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+    return s.split('|').map(function (c) { return c.trim().replace(/\\\|/g, '|'); });
+  }
+
+  function joinLines(arr) {
+    var s = '';
+    for (var i = 0; i < arr.length; i++) {
+      if (!i) { s = arr[i]; continue; }
+      var prev = s.charAt(s.length - 1), next = arr[i].charAt(0);
+      s += (isCJK(prev) || isCJK(next) ? '' : ' ') + arr[i];
+    }
+    return s;
+  }
+
+  function blockStart(lines, i) {
+    var l = lines[i];
+    if (!l.trim()) return true;
+    if (RE_FENCE.test(l) || RE_HEAD.test(l) || RE_HR.test(l) || RE_QUOTE.test(l)) return true;
+    if (RE_UL.test(l) || RE_OL.test(l)) return true;
+    if (l.indexOf('|') >= 0 && lines[i + 1] && RE_TSEP.test(lines[i + 1])) return true;
+    return false;
+  }
+
+  function parse(md) {
+    var lines = md.split('\n'), out = [], i = 0, n = lines.length, m;
+    while (i < n) {
+      var line = lines[i];
+      if (!line.trim()) { i++; continue; }
+
+      // 围栏代码
+      if ((m = line.match(RE_FENCE))) {
+        var mark = m[1].charAt(0) === '`' ? '```' : '~~~';
+        var lang = (m[2] || '').toLowerCase(), buf = [];
+        i++;
+        while (i < n && lines[i].indexOf(mark) !== 0 && !new RegExp('^\\s{0,3}' + mark).test(lines[i])) {
+          buf.push(lines[i]); i++;
+        }
+        if (i < n) i++;
+        out.push({ type: 'code', lang: lang, text: buf.join('\n') });
+        continue;
+      }
+
+      // 标题
+      if ((m = line.match(RE_HEAD))) {
+        out.push({ type: 'heading', level: m[1].length, text: m[2].trim() });
+        i++; continue;
+      }
+
+      // 分隔线
+      if (RE_HR.test(line)) { out.push({ type: 'hr' }); i++; continue; }
+
+      // 表格
+      if (line.indexOf('|') >= 0 && lines[i + 1] && RE_TSEP.test(lines[i + 1])) {
+        var head = splitRow(line), rows = [];
+        i += 2;
+        while (i < n && lines[i].trim() && lines[i].indexOf('|') >= 0) {
+          rows.push(splitRow(lines[i])); i++;
+        }
+        out.push({ type: 'table', head: head, rows: rows });
+        continue;
+      }
+
+      // 引用
+      if (RE_QUOTE.test(line)) {
+        var q = [];
+        while (i < n && RE_QUOTE.test(lines[i])) { q.push(lines[i].replace(RE_QUOTE, '')); i++; }
+        out.push({ type: 'quote', text: q.join(' ') });
+        continue;
+      }
+
+      // 列表
+      if (RE_UL.test(line) || RE_OL.test(line)) {
+        var ordered = !RE_UL.test(line), items = [], base = null;
+        while (i < n && (RE_UL.test(lines[i]) || RE_OL.test(lines[i]))) {
+          var lm = lines[i].match(RE_UL);
+          var om = lm ? null : lines[i].match(RE_OL);
+          var indent = (lm ? lm[1] : om[1]).replace(/\t/g, '    ').length;
+          var text = lm ? lm[3] : om[3];
+          if (base === null) base = indent;
+          var lvl = Math.min(2, Math.max(0, Math.round((indent - base) / 2)));
+          var checked = null;
+          var cm = text.match(/^\[([ xX])\]\s+(.*)$/);
+          if (cm) { checked = cm[1].toLowerCase() === 'x'; text = cm[2]; }
+          items.push({ level: lvl, text: text, checked: checked });
+          i++;
+          while (i < n && lines[i].trim() && !RE_UL.test(lines[i]) && !RE_OL.test(lines[i]) &&
+                 !RE_HEAD.test(lines[i]) && !RE_FENCE.test(lines[i]) && /^\s{2,}/.test(lines[i])) {
+            items[items.length - 1].text += ' ' + lines[i].trim();
+            i++;
+          }
+        }
+        var pureLinks = items.length >= 3 && items.every(function (it) {
+          return /^\[[^\]]+\]\([^)]*\)$/.test(it.text.trim());
+        });
+        if (!pureLinks) out.push({ type: 'list', ordered: ordered, items: items });
+        continue;
+      }
+
+      // 段落
+      var para = [line.trim()];
+      i++;
+      while (i < n && !blockStart(lines, i)) { para.push(lines[i].trim()); i++; }
+      var ptext = joinLines(para);
+      if (isNavText(ptext)) continue;                            // 合并后才成形的导航条
+      out.push({ type: 'para', text: ptext });
+    }
+    return out;
+  }
+
+  /* ---------------- 3. 行内渲染 ---------------- */
+
+  function resolveUrl(url, ctx) {
+    var u = String(url || '').trim().replace(/^<|>$/g, '');
+    if (!u) return '';
+    if (/^(https?:|mailto:|#|\/\/)/i.test(u)) return u;
+    u = u.replace(/^\.\//, '').replace(/^\//, '');
+    var base = 'https://github.com/' + (ctx.full || '') + '/blob/' + (ctx.branch || 'main') + '/';
+    return base + u.replace(/^\.\.\//, '');
+  }
+
+  function inline(text, ctx) {
+    var s = String(text == null ? '' : text);
+    var codes = [];
+    s = s.replace(/`([^`]+)`/g, function (m, c) {
+      codes.push(c);
+      return '\u0001C' + (codes.length - 1) + '\u0001';
+    });
+
+    s = esc(s);
+    s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+
+    // 参考式链接 [text][id] 与快捷引用 [id]
+    s = s.replace(/\[([^\]]{0,200})\]\[([^\]]{0,80})\]/g, function (m, label, id) {
+      var u = ctx.refs && ctx.refs[(id || label).trim().toLowerCase()];
+      if (!u) return label;
+      return '<a href="' + esc(resolveUrl(u, ctx)) + '" target="_blank" rel="noopener nofollow">' + label + '</a>';
+    });
+    s = s.replace(/\[([^\]\n]{1,80})\](?!\()/g, function (m, id) {
+      var u = ctx.refs && ctx.refs[id.trim().toLowerCase()];
+      return u ? '<a href="' + esc(resolveUrl(u, ctx)) + '" target="_blank" rel="noopener nofollow">' + id + '</a>' : m;
+    });
+
+    // 链接
+    s = s.replace(/\[([^\]]{0,200})\]\(\s*([^)\s]{1,400})(?:\s+&quot;[^&]*&quot;)?\s*\)/g, function (m, label, url) {
+      var href = resolveUrl(url, ctx);
+      if (!href) return label;
+      return '<a href="' + esc(href) + '" target="_blank" rel="noopener nofollow">' + label + '</a>';
+    });
+
+    // <autolink>
+    s = s.replace(/&lt;((?:https?:\/\/|mailto:)[^\s&]+)&gt;/g, function (m, u) {
+      return '<a href="' + esc(u) + '" target="_blank" rel="noopener nofollow">' + u.replace(/^mailto:/, '') + '</a>';
+    });
+
+    // 强调
+    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
+    s = s.replace(/~~([^~\n]+)~~/g, '<del>$1</del>');
+    s = s.replace(/(^|[\s(（])\*([^*\n]+)\*(?=[\s)）,.!?;:，。！？；：]|$)/g, '$1<em>$2</em>');
+
+    // 还原行内代码
+    s = s.replace(/\u0001C(\d+)\u0001/g, function (m, idx) {
+      return '<code>' + esc(codes[+idx]) + '</code>';
+    });
+    return s;
+  }
+
+  /* ---------------- 4. 块级渲染 ---------------- */
+
+  function renderList(b, ctx) {
+    var open = b.ordered ? '<ol>' : '<ul>', close = b.ordered ? '</ol>' : '</ul>';
+    var html = '', depth = 0;
+    b.items.forEach(function (it) {
+      while (depth < it.level) { html += b.ordered ? '<ol>' : '<ul>'; depth++; }
+      while (depth > it.level) { html += close; depth--; }
+      var box = '';
+      if (it.checked === true) box = '<span class="cb on"></span>';
+      else if (it.checked === false) box = '<span class="cb"></span>';
+      html += '<li' + (it.checked !== null ? ' class="task"' : '') + '>' + box + inline(it.text, ctx) + '</li>';
+    });
+    while (depth >= 0) { if (depth === 0) break; html += close; depth--; }
+    return open + html + close;
+  }
+
+  function renderTable(b, ctx) {
+    var h = '<div class="md-table"><table><thead><tr>';
+    b.head.forEach(function (c) { h += '<th>' + inline(c, ctx) + '</th>'; });
+    h += '</tr></thead><tbody>';
+    b.rows.forEach(function (row) {
+      h += '<tr>';
+      for (var c = 0; c < b.head.length; c++) h += '<td>' + inline(row[c] || '', ctx) + '</td>';
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div>';
+  }
+
+  function toHtml(blocks, ctx) {
+    var h = [];
+    for (var i = 0; i < blocks.length; i++) {
+      var b = blocks[i];
+      if (b.type === 'heading') {
+        var lv = Math.min(Math.max(b.level, 2), 5);
+        h.push('<h' + lv + '>' + inline(b.text, ctx) + '</h' + lv + '>');
+      } else if (b.type === 'para') {
+        h.push('<p>' + inline(b.text, ctx) + '</p>');
+      } else if (b.type === 'code') {
+        h.push('<pre' + (b.lang ? ' data-lang="' + esc(b.lang) + '"' : '') + '><code>' + esc(b.text) + '</code></pre>');
+      } else if (b.type === 'quote') {
+        h.push('<blockquote>' + inline(b.text, ctx) + '</blockquote>');
+      } else if (b.type === 'hr') {
+        h.push('<hr>');
+      } else if (b.type === 'list') {
+        h.push(renderList(b, ctx));
+      } else if (b.type === 'table') {
+        h.push(renderTable(b, ctx));
+      }
+    }
+    return h.join('\n');
+  }
+
+  /* ---------------- 5. 摘要提炼 ---------------- */
+
+  // 到了这些章节说明「介绍」部分结束了
+  var STOP = /^(table of contents?|contents?|目录|安装|安装指南|install(ation)?|how to|quick ?start|getting started|使用|使用方法|用法|快速开始|快速上手|快速入门|documentation|docs?|文档|配置|configuration|setup|deploy(ment)?|部署|api( reference)?|license|licen[cs]e|许可|许可证|开源协议|contribut\w*|贡献|acknowledg\w*|致谢|sponsor\w*|赞助|star history|changelog|更新日志|release notes|faq|常见问题|roadmap|development|develop|开发|build|构建|credits|related|相关|disclaimer|免责声明|screenshots?|截图|demo|预览)/i;
+
+  // 纯导航性质的标题，直接丢弃
+  var NAV_HEAD = /^(external links?|links?|link list|badges?|navigation|menu|languages?|语言|目录|table of contents?|contents?|community|社区|social|关注我们|backers?|sponsors?)$/i;
+
+  function textLen(b) {
+    if (b.type === 'list') return b.items.reduce(function (a, i) { return a + i.text.length; }, 0);
+    return (b.text || '').length;
+  }
+
+  function isNoise(b) {
+    if (b.type === 'hr' || b.type === 'code' || b.type === 'table') return true;
+    if (b.type === 'quote') return true;
+    var t = (b.text || '').trim();
+    if (t.length < 2) return true;
+    if (/^[\s\-–—|·•*]+$/.test(t)) return true;
+    if (/(free credits?|become a sponsor|buy me a coffee|ko-fi\.com|patreon\.com|open collective|sponsors? us)/i.test(t)) return true;
+    if (/^(loved|trusted|used|chosen|adopted) by\b/i.test(t) && t.length < 100) return true;
+    if (/^(access|see|read|check|visit|click|try|view|explore|find|learn)\b[\s\S]{0,120}\b(here|demo|docs?|documentation|more|website|details?)\b/i.test(t) && t.length < 140) return true;
+    if (/^(english|中文|简体中文|繁體中文|日本語|한국어|english\s*\|.*)$/i.test(t)) return true;
+    if (/^(english|中文|简体中文|繁體中文|日本語|한국어)(\s*[|/·]\s*(english|中文|简体中文|繁體中文|日本語|한국어))+$/i.test(t)) return true;
+    return false;
+  }
+
+  // 后面紧跟另一个标题（或直接结束）的标题 = 空章节
+  function isEmptyHeading(blocks, i) {
+    for (var j = i + 1; j < blocks.length; j++) {
+      if (blocks[j].type === 'heading') return true;
+      if (isNoise(blocks[j])) continue;
+      return false;
+    }
+    return true;
+  }
+
+  // 属于「介绍区」的章节名，可以继续读下去
+  var ALLOW_HEAD = /^(overview|about|introduction|intro|what'?s? (this|inside|new)|what is|features?|highlights?|key features|core features|main features|why\b|capabilities|简介|概述|介绍|项目简介|核心特性|主要特性|功能特性|特性|功能|亮点|优势|为什么)/i;
+
+  function buildSummary(blocks, budget) {
+    var picked = [], chars = 0, started = false, contentBlocks = 0;
+    for (var i = 0; i < blocks.length; i++) {
+      var b = blocks[i];
+      if (b.type === 'heading') {
+        if (NAV_HEAD.test(b.text.trim())) continue;
+        if (isEmptyHeading(blocks, i)) continue;
+        if (b.level === 1 && !started && !contentBlocks) continue;   // 标题与弹窗头部重复
+        if (STOP.test(b.text.trim())) break;
+        if (contentBlocks && !ALLOW_HEAD.test(b.text.trim())) break; // 介绍区结束
+        if (chars >= 600) break;
+        picked.push(b);
+        continue;
+      }
+      if (isNoise(b)) continue;
+      if (b.type === 'para' && b.text.length < 90 &&
+          /^(npx|npm|pnpm|yarn|pip3?|docker|brew|git|curl|wget|cargo|go|apt|sudo|make|chmod|export)\b/i.test(b.text.replace(/`/g, ''))) continue;  // 命令行
+      if (!started) started = true;
+      var len = textLen(b);
+      if (chars + len > budget) {
+        if (b.type === 'list' && b.items && chars < budget * 0.85) {
+          var fit = [], acc = 0;
+          for (var j = 0; j < b.items.length; j++) {
+            var it = b.items[j];
+            if (acc + it.text.length > budget - chars && fit.length >= 2) break;
+            fit.push(it); acc += it.text.length;
+          }
+          if (fit.length >= 2) { picked.push({ type: 'list', ordered: b.ordered, items: fit }); chars += acc; contentBlocks++; }
+        }
+        if (chars > budget * 0.5) break;
+      }
+      picked.push(b);
+      chars += len;
+      contentBlocks++;
+      if (chars >= budget) break;
+    }
+    while (picked.length && (picked[picked.length - 1].type === 'heading' || isNoise(picked[picked.length - 1]))) picked.pop();
+    var tail = picked[picked.length - 1];
+    if (tail && tail.type === 'para' && /[:：]\s*$/.test(tail.text)) {
+      var m2 = tail.text.match(/^([\s\S]*[.!?。！？])\s+[^.!?。！？]{0,160}[:：]\s*$/);
+      if (m2 && m2[1].length >= 60) picked[picked.length - 1] = { type: 'para', text: m2[1] };
+      else picked.pop();                                        // 只留一句「下面列出了…」没有意义
+    }
+    while (picked.length && (picked[picked.length - 1].type === 'heading' || isNoise(picked[picked.length - 1]))) picked.pop();
+    if (!picked.length) {
+      // 兜底：取前两段有实际文字的内容
+      for (var k = 0; k < blocks.length && picked.length < 2; k++) {
+        if (blocks[k].type === 'para' && blocks[k].text.length > 30) picked.push(blocks[k]);
+      }
+    }
+    return picked;
+  }
+
+  /* ---------------- 6. 对外接口 ---------------- */
+
+  function render(src, opts) {
+    opts = opts || {};
+    var p = prep(src);
+    var blocks = parse(p.text);
+    var ctx = { full: opts.full || '', branch: opts.branch || 'main', refs: p.refs || {} };
+    var budget = opts.budget || 700;
+    var cjk = (p.text.match(/[\u4e00-\u9fff]/g) || []).length;
+    if (cjk / Math.max(1, p.text.length) > 0.22) budget = Math.round(budget * 0.55);  // 中文信息密度更高
+    var sum = buildSummary(blocks, budget);
+    var summaryHtml = toHtml(sum, ctx);
+    var fullHtml = toHtml(blocks, ctx);
+    var chars = 0;
+    blocks.forEach(function (b) { chars += textLen(b); });
+    var sumChars = 0;
+    sum.forEach(function (b) { sumChars += textLen(b); });
+    var hasProse = sum.some(function (b) {
+      if (b.type === 'para') return b.text.length >= 120;
+      if (b.type === 'list') return b.items.length >= 2 && b.items.some(function (i) { return i.text.length >= 40; });
+      return false;
+    });
+    return {
+      summary: summaryHtml,
+      full: fullHtml,
+      chars: chars,
+      summaryChars: sumChars,
+      hasMore: chars > sumChars * 1.15 && blocks.length > sum.length,
+      thin: !hasProse && sumChars < 150,
+      blockCount: blocks.length
+    };
+  }
+
+  return {
+    render: render,
+    prep: prep,
+    parse: parse,
+    inline: inline,
+    toHtml: toHtml,
+    esc: esc
+  };
+});
+
+/* ================= 通用工具 ================= */
+function pad2(n) { return n < 10 ? "0" + n : String(n); }
+function medalCls(n) { return n === 1 ? "g1" : n === 2 ? "g2" : n === 3 ? "g3" : ""; }
+function fmtK(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : "" + n; }
+function esc(s) {
+  return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function searchText(r) {
+  return (r.full_name + " " + r.desc + " " + r.tag + " " + (r.topics || []).join(" ") + " " + (r.lang || "")).toLowerCase();
+}
+/* 注意：CATS 是用 const 声明的，不会挂到 window 上，必须直接按标识符取 */
+function catMeta(id) {
+  const map = (typeof CATS !== "undefined" && CATS) ? CATS : {};
+  return map[id] || { code: "", name: "", icon: "", grad: "linear-gradient(135deg,#6366f1,#a855f7)" };
+}
+
+/* ================= 字段索引：full_name -> repo ================= */
+const REPO_MAP = {};
+function setRepos(arr) { (arr || []).forEach(r => { REPO_MAP[r.full_name] = r; }); }
+
+/* ================= 收藏（本机保存） ================= */
+const FAV_KEY = "ghfav.v1";
+
+/* 存储适配：localStorage → sessionStorage → 内存
+   预览窗口、隐私模式、sandbox iframe 里 localStorage 会直接抛错。
+   老实现把异常 catch 掉了，结果是「点收藏有反应，但其实没存」，
+   所以这里先显式探测能不能写，再决定用哪一层，并把结论暴露给用户。 */
+const STORE = (function () {
+  function probe(s) {
+    try {
+      const k = "__ghfav_probe__";
+      s.setItem(k, "1");
+      const ok = s.getItem(k) === "1";
+      s.removeItem(k);
+      return ok;
+    } catch (e) { return false; }
+  }
+  try {
+    if (window.localStorage && probe(window.localStorage)) return { kind: "local", api: window.localStorage };
+  } catch (e) { /* 某些环境连访问属性都会抛 */ }
+  try {
+    if (window.sessionStorage && probe(window.sessionStorage)) return { kind: "session", api: window.sessionStorage };
+  } catch (e) { /* 同上 */ }
+  return { kind: "memory", api: null };
+})();
+
+let FAV = (function () {
+  if (!STORE.api) return {};
+  try {
+    const o = JSON.parse(STORE.api.getItem(FAV_KEY) || "{}");
+    if (o && typeof o === "object" && !Array.isArray(o)) return o;
+  } catch (e) { /* 数据损坏 */ }
+  return {};
+})();
+
+let SAVE_FAILED = false;
+
+/* ---------- 本地收藏服务（预览窗口不让写 localStorage 时的唯一出路） ----------
+   tools/fav_server.py 在 127.0.0.1:8765 起一个服务，收藏存成 data/favorites.json。
+   页面通过 HTTP 读写，绕开浏览器的存储限制。探测到就用它，探测不到才退回内存。 */
+const REMOTE_PORTS = [8765, 8766, 8767, 8768, 8769, 8770, 8771, 8772, 8773, 8774, 8775];
+let REMOTE_BASE = null;
+let STORE_PROBING = false;
+
+/* 只有在本机打开时才去找本地收藏服务。发布到公网后，访客打开的是线上页面，
+   收藏归各自浏览器所有——这时候去打 127.0.0.1 只会得到一串失败请求。 */
+const IS_LOCAL_PAGE =
+  location.protocol === "file:" ||
+  /^(127\.0\.0\.1|localhost|::1|\[::1\]|0\.0\.0\.0)$/.test(location.hostname);
+
+function healthOf(port) {
+  return fetch("http://127.0.0.1:" + port + "/api/health", { cache: "no-store", mode: "cors" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => (j && j.app === "gh-awesome" ? "http://127.0.0.1:" + port : null))
+    .catch(() => null);
+}
+/* 先试最可能的 8765，没中再扫后面几个，避免每次开页都打 11 个请求 */
+function probeRemote() {
+  return healthOf(REMOTE_PORTS[0]).then(base => {
+    if (base) return base;
+    return Promise.all(REMOTE_PORTS.slice(1).map(healthOf)).then(l => l.filter(Boolean)[0] || null);
+  });
+}
+
+/* 只提交「变了什么」，绝不整份覆盖——否则一个空页面就能把服务端数据冲掉 */
+const PENDING = { set: {}, del: [] };
+
+function queuePending(payload) {
+  if (payload.set) {
+    Object.keys(payload.set).forEach(k => {
+      PENDING.set[k] = payload.set[k];
+      const i = PENDING.del.indexOf(k);
+      if (i >= 0) PENDING.del.splice(i, 1);
+    });
+  }
+  (payload.del || []).forEach(k => {
+    delete PENDING.set[k];
+    if (PENDING.del.indexOf(k) < 0) PENDING.del.push(k);
+  });
+}
+
+function flushPending() {
+  if (!REMOTE_BASE) return;
+  const set = PENDING.set, del = PENDING.del;
+  if (!Object.keys(set).length && !del.length) return;
+  PENDING.set = {};
+  PENDING.del = [];
+  postRemote({ set: set, del: del });
+}
+
+function postRemote(payload) {
+  if (!REMOTE_BASE) { queuePending(payload); return Promise.resolve(false); }
+  return fetch(REMOTE_BASE + "/api/fav", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  })
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => {
+      SAVE_FAILED = !(j && j.ok);
+      if (SAVE_FAILED) mountStoreWarn();
+      return !SAVE_FAILED;
+    })
+    .catch(() => { SAVE_FAILED = true; mountStoreWarn(); return false; });
+}
+
+function pullRemote() {
+  return fetch(REMOTE_BASE + "/api/fav", { cache: "no-store" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(o => {
+      if (!o || typeof o !== "object" || Array.isArray(o)) return;
+      let changed = false;
+      Object.keys(o).forEach(k => { if (!isFav(k)) { FAV[k] = o[k]; changed = true; } });
+      if (changed) {
+        syncFavUI();
+        document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+      }
+    })
+    .catch(() => {});
+}
+
+/* 有本地服务就优先用它（数据落在工程目录里，随时可读、可备份）；
+   没有服务时退回浏览器存储；再不行才是内存 + 告警 */
+function initStorage() {
+  // 线上分享链接：收藏存各自浏览器，不碰本机服务
+  if (!IS_LOCAL_PAGE) {
+    STORE_PROBING = false;
+    if (!STORE.api) mountStoreWarn();
+    return;
+  }
+  STORE_PROBING = true;
+  const before = Object.assign({}, FAV);        // 本地已经有的（可能来自浏览器存储）
+  probeRemote().then(base => {
+    STORE_PROBING = false;
+    if (!base) { mountStoreWarn(); return; }
+    REMOTE_BASE = base;
+    SAVE_FAILED = false;
+    return fetch(base + "/api/fav", { cache: "no-store" })
+      .then(r => (r.ok ? r.json() : null))
+      .then(server => {
+        server = (server && typeof server === "object" && !Array.isArray(server)) ? server : {};
+        let changed = false;
+        Object.keys(server).forEach(k => { if (!isFav(k)) { FAV[k] = server[k]; changed = true; } });
+        if (changed) {
+          syncFavUI();
+          document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+        }
+        // 本地有、服务端没有的 → 只补这些，绝不整份覆盖
+        const add = {};
+        Object.keys(before).forEach(k => { if (!(k in server)) add[k] = before[k]; });
+        if (Object.keys(add).length) postRemote({ set: add });
+        flushPending();          // 探测期间点过的收藏，这时候补发
+      })
+      .catch(() => {})
+      .then(() => {
+        if (STORE.api) {
+          try { STORE.api.setItem(FAV_KEY, JSON.stringify(FAV)); } catch (e) { /* 无所谓 */ }
+        }
+      });
+  }).catch(() => {
+    STORE_PROBING = false;
+    mountStoreWarn();
+  });
+}
+
+/* 当前收藏是否真的存到了磁盘上 */
+function storageOK() {
+  if (SAVE_FAILED) return false;
+  return STORE.kind === "local" || !!REMOTE_BASE;
+}
+function storageMsg() {
+  if (SAVE_FAILED) return "写入失败了，这次收藏可能没保存";
+  if (!IS_LOCAL_PAGE) return "浏览器禁用了本地存储（可能开了无痕模式），收藏关掉页面就没了";
+  if (STORE.kind === "session") return "浏览器禁用了本地存储，收藏只在本次标签页有效，关掉就没了";
+  return "存不住：预览窗口禁止网页写存储，本地收藏服务也没启动。双击「打开网站.command」可解决";
+}
+
+function isFav(full) { return !!full && Object.prototype.hasOwnProperty.call(FAV, full); }
+function favCount() { return Object.keys(FAV).length; }
+function favIcon(on) {
+  return '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="' + (on ? "currentColor" : "none") +
+    '" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M6.5 3h11A1.5 1.5 0 0 1 19 4.5V21l-7-4.4L5 21V4.5A1.5 1.5 0 0 1 6.5 3z"/></svg>';
+}
+function paintFavBtn(el) {
+  const full = el.dataset.fav;
+  if (!full) return;
+  const on = isFav(full);
+  el.classList.toggle("on", on);
+  el.title = on ? "取消收藏" : "收藏到我的清单";
+  el.setAttribute("aria-pressed", on ? "true" : "false");
+  el.innerHTML = favIcon(on) + (el.classList.contains("with-label") ? "<span>" + (on ? "已收藏" : "收藏") + "</span>" : "");
+}
+function syncFavUI() {
+  document.querySelectorAll("[data-fav]").forEach(paintFavBtn);
+  const n = favCount();
+  document.querySelectorAll(".fav-count").forEach(el => { el.textContent = n; });
+  document.querySelectorAll(".fav-link").forEach(a => a.classList.toggle("has", n > 0));
+}
+function persistFav() {
+  if (!STORE.api) return false;
+  try {
+    STORE.api.setItem(FAV_KEY, JSON.stringify(FAV));
+    SAVE_FAILED = false;
+    return true;
+  } catch (e) {
+    SAVE_FAILED = true;
+    return false;
+  }
+}
+
+/* 传变化的那个项目给服务端：加就 set，删就 del */
+function syncOne(full, on) {
+  if (!REMOTE_BASE) return;
+  if (on) postRemote({ set: (function () { const o = {}; o[full] = FAV[full]; return o; })() });
+  else postRemote({ del: [full] });
+}
+
+/* 存不住的时候，页面底部必须说出来，并且给一条能立刻把数据带走的路 */
+function mountStoreWarn() {
+  if (storageOK() || STORE_PROBING || document.getElementById("storewarn")) return;
+  const bar = document.createElement("div");
+  bar.id = "storewarn";
+  bar.className = "storewarn";
+  bar.innerHTML =
+    '<span class="sw-ico">⚠️</span>' +
+    '<span class="sw-txt">' + esc(storageMsg()) + "</span>" +
+    '<a class="sw-btn" href="favorites.html">导出备份</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add("has-storewarn");
+}
+window.addEventListener("DOMContentLoaded", () => {
+  initStorage();
+  // 线上版的收藏属于访客自己，说明文字要跟着改
+  if (!IS_LOCAL_PAGE) {
+    const note = document.querySelector(".favnote");
+    if (note) {
+      note.innerHTML = "收藏保存在 <b>你自己这台设备的浏览器</b>里，只属于你，别人看不到。" +
+        "换设备或清理浏览器数据会丢失，建议偶尔点一下「备份 .json」。";
+    }
+  }
+});
+window.addEventListener("load", () => { setTimeout(mountStoreWarn, 1200); });
+function toggleFav(full) {
+  if (!full) return false;
+  if (isFav(full)) delete FAV[full];
+  else FAV[full] = Date.now();
+  const on = isFav(full);
+  const saved = persistFav();
+  syncOne(full, on);
+  if (!saved && !REMOTE_BASE) mountStoreWarn();
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: full, on: on } }));
+  return on;
+}
+function removeFav(full) {
+  if (!isFav(full)) return;
+  delete FAV[full];
+  const saved = persistFav();
+  syncOne(full, false);
+  if (!saved && !REMOTE_BASE) mountStoreWarn();
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: full, on: false } }));
+}
+
+/* 捕获阶段统一接管收藏点击：既保证卡片重建后依然有效，也避免误触卡片的"打开详情" */
+document.addEventListener("click", e => {
+  const btn = e.target.closest && e.target.closest("[data-fav]");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  toggleFav(btn.dataset.fav);
+}, true);
+
+/* 多个标签页同时开着时保持同步 */
+window.addEventListener("storage", e => {
+  if (e.key !== FAV_KEY) return;
+  try {
+    const o = JSON.parse(e.newValue || "{}");
+    FAV = (o && typeof o === "object" && !Array.isArray(o)) ? o : {};
+  } catch (err) { FAV = {}; }
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+});
+
+/* ================= 卡片模板 ================= */
+function cardHTML(r, opts) {
+  opts = opts || {};
+  const cm = catMeta(r.catId);
+  const label = opts.code ? (r.code || cm.code) + "-" + pad2(r.rank) : "#" + pad2(r.rank);
+  return '<article class="card" style="--cgrad:' + cm.grad + '" data-full="' + esc(r.full_name) +
+    '" data-search="' + esc(searchText(r)) + '">' +
+    '<button class="favbtn" data-fav="' + esc(r.full_name) + '" aria-label="收藏"></button>' +
+    '<div class="c-top">' +
+      '<span class="num ' + medalCls(r.rank) + '" title="编号 ' + (r.code || cm.code) + "-" + pad2(r.rank) + '">' + label + "</span>" +
+      '<img class="avatar" loading="lazy" src="' + r.avatar + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
+      '<span class="c-name"><span class="repo" title="' + esc(r.full_name) + '">' + esc(r.full_name) + "</span></span>" +
+    "</div>" +
+    '<p class="c-zh">' + esc(r.tag) + "</p>" +
+    '<p class="c-en">' + esc(r.desc) + "</p>" +
+    '<div class="c-foot">' +
+      '<span class="stars">★ ' + fmtK(r.stars) + "</span>" +
+      '<span class="lang"><i style="background:' + r.langColor + '"></i>' + esc(r.lang || "—") + "</span>" +
+      '<span class="more-hint">详情 ›</span>' +
+    "</div></article>";
+}
+
+/* 给新渲染出来的卡片/行绑定打开详情 + 悬停预取 */
+function bindCards(root) {
+  (root || document).querySelectorAll("[data-full]:not([data-bound])").forEach(el => {
+    el.dataset.bound = "1";
+    const r = REPO_MAP[el.dataset.full];
+    if (!r) return;
+    el.addEventListener("click", () => openRepo(r));
+    el.addEventListener("mouseenter", () => {
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(() => prefetchReadme(r.full_name), 120);
+    });
+    el.addEventListener("mouseleave", () => clearTimeout(hoverTimer));
+  });
+}
+
+/* ================= 详情弹窗 ================= */
+const overlay = document.getElementById("overlay");
+const mHero = document.getElementById("mHero"),
+      mAvatar = document.getElementById("mAvatar"),
+      mName = document.getElementById("mName"),
+      mId = document.getElementById("mId"),
+      mCat = document.getElementById("mCat"),
+      mSub = document.getElementById("mSub"),
+      mGithub = document.getElementById("mGithub"),
+      mStats = document.getElementById("mStats"),
+      mIntro = document.getElementById("mIntro"),
+      mEn = document.getElementById("mEn"),
+      mTopics = document.getElementById("mTopics"),
+      mReadmeBox = document.getElementById("mReadmeBox"),
+      mFav = document.getElementById("mFav"),
+      mDeploy = document.getElementById("mDeploy");
+let readmeToken = 0;
+let hoverTimer = null;
+let currentRepo = null;
+
+function openRepo(r) {
+  if (!r || !overlay) return;
+  currentRepo = r;
+  const cm = catMeta(r.catId);
+  const code = r.code || cm.code;
+  mHero.style.background = cm.grad;
+  mAvatar.src = r.avatar;
+  mName.textContent = r.full_name;
+  mId.textContent = code + "-" + pad2(r.rank);
+  mCat.textContent = (cm.icon || "") + " " + (cm.name || "");
+  mSub.textContent = "本榜第 " + r.rank + " 个 · " + (r.owner ? r.owner + " · " : "") + "★ " + fmtK(r.stars);
+  mGithub.href = r.url;
+  mStats.innerHTML =
+    '<div class="m-stat"><b class="st">★ ' + fmtK(r.stars) + "</b><span>Stars</span></div>" +
+    '<div class="m-stat"><b>' + fmtK(r.forks) + "</b><span>Forks</span></div>" +
+    '<div class="m-stat"><b><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + r.langColor + ';margin-right:5px"></i>' + esc(r.lang || "—") + "</b><span>语言</span></div>" +
+    '<div class="m-stat"><b style="font-size:13.5px">' + esc(r.updated || "—") + "</b><span>最近更新</span></div>";
+  mIntro.innerHTML =
+    (r.tag ? '<div class="m-tag">' + esc(r.tag) + "</div>" : "") +
+    (r.body || []).map(p => '<p class="m-p">' + esc(p) + "</p>").join("") +
+    ((r.feats && r.feats.length) ? '<div class="m-feats-label">核心能力</div><ul class="m-feats">' +
+      r.feats.map(f => "<li>" + esc(f) + "</li>").join("") + "</ul>" : "") +
+    (r.fit ? '<div class="m-fit"><b>适合</b>' + esc(r.fit) + "</div>" : "");
+  mEn.textContent = r.desc;
+  mTopics.innerHTML = (r.topics || []).map(t => '<span class="m-topic">#' + esc(t) + "</span>").join("");
+  if (mFav) { mFav.dataset.fav = r.full_name; paintFavBtn(mFav); }
+  loadReadme(r.full_name, ++readmeToken);
+  overlay.classList.add("open");
+  document.body.classList.add("locked");
+  overlay.scrollTop = 0;
+}
+function closeRepo() {
+  if (!overlay) return;
+  overlay.classList.remove("open");
+  document.body.classList.remove("locked");
+  readmeToken++;
+}
+if (overlay) {
+  const btnClose = document.getElementById("mClose");
+  if (btnClose) btnClose.addEventListener("click", closeRepo);
+  overlay.addEventListener("click", e => { if (e.target === overlay) closeRepo(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeRepo(); });
+}
+
+/* ================= 一句话部署 =================
+   网站本身不跑任何命令。这里把「这个项目是谁、怎么找到它、要 AI 做什么」
+   打包成一段自包含的话，访客复制后粘给自己的 AI（WorkBuddy / Claude / Cursor
+   等），由那个 AI 读仓库 README 并决定具体部署方式。这样编号不再依赖本机索引。 */
+function deployPrompt(r) {
+  if (!r) return "";
+  const cm = catMeta(r.catId);
+  const code = r.code || cm.code;
+  const id = code + "-" + pad2(r.rank);
+  const topics = (r.topics || []).slice(0, 6).join(", ");
+  return [
+    "帮我在本机部署这个 GitHub 项目：",
+    "仓库：" + r.full_name + "  " + r.url,
+    "榜单编号：" + id + "（" + (cm.name || "") + " · 第 " + r.rank + " 个 · ★" + fmtK(r.stars) + "）",
+    "它是做什么的：" + (r.tag || r.desc || "开源项目"),
+    "官方简介：" + (r.desc || "—"),
+    "技术栈：" + (r.lang || "未知") + (topics ? " · " + topics : ""),
+    "",
+    "请按这个顺序做：",
+    "1. 先读这个仓库的 README 和安装文档，确认它到底用什么方式运行（Docker / npm / pip / go / cargo / 静态站点等），不要凭语言猜。",
+    "2. 列出我机器上缺哪些依赖、目标端口有没有被占；需要装东西或改配置先告诉我。",
+    "3. 用最稳妥的方式部署，尽量隔离环境（优先 Docker 或虚拟环境），不要污染全局环境。",
+    "4. 跑起来后给我：访问地址、启动 / 停止命令、数据存在哪、以及怎么卸载。",
+    "",
+    "遇到需要 Token / API Key、要拉大镜像、要联网下载大量文件或要改系统配置，先问我再动手；任何一步失败就停下来说明原因，别硬来。"
+  ].join("\n");
+}
+
+/* 轻提示：不复用 fav.js 里的同名函数，避免加载顺序互相覆盖 */
+let flashTimer = null;
+function flash(msg) {
+  let el = document.getElementById("toast");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(() => el.classList.remove("show"), 2600);
+}
+
+function legacyCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.cssText = "position:fixed;top:-2000px;left:0;opacity:0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { ta.setSelectionRange(0, text.length); } catch (e) { /* 某些浏览器不支持 */ }
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+/* 复制彻底失败时，把话摊开让人手动全选，不给「假成功」 */
+function showDeployPanel(text) {
+  let box = document.getElementById("deployPanel");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "deployPanel";
+    box.className = "deploy-panel";
+    box.innerHTML =
+      '<div class="dp-head"><b>手动复制下面这段话</b>' +
+      '<button type="button" class="dp-close" aria-label="关闭">✕</button></div>' +
+      '<textarea id="dpText" spellcheck="false"></textarea>' +
+      '<div class="dp-tip">点一下文本框，按 ⌘A（Windows 用 Ctrl+A）全选，再复制。</div>';
+    document.body.appendChild(box);
+    box.querySelector(".dp-close").addEventListener("click", () => { box.style.display = "none"; });
+  }
+  box.style.display = "block";
+  const ta = document.getElementById("dpText");
+  ta.value = text;
+  ta.focus();
+  ta.select();
+}
+
+function copyDeployPrompt() {
+  if (!currentRepo) return;
+  const text = deployPrompt(currentRepo);
+  if (!text) return;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text)
+      .then(() => flash("已复制部署指令，粘给你自己的 AI 就行"))
+      .catch(() => { if (!legacyCopy(text)) showDeployPanel(text); });
+  } else if (!legacyCopy(text)) {
+    showDeployPanel(text);
+  }
+}
+if (mDeploy) mDeploy.addEventListener("click", e => {
+  e.preventDefault();
+  e.stopPropagation();
+  copyDeployPrompt();
+});
+
+/* ================= 分类页：卡片 / 列表 + 搜索 ================= */
+const cat = PAGE.cat;
+const repos = REPOS;
+setRepos(repos);
+let view = "grid";
+
+function paintGrid(box) {
+  box.innerHTML = '<div class="grid">' + repos.map(r => cardHTML(r)).join("") + "</div>";
+  bindCards(box);
+}
+
+function paintRows(box) {
+  let html = '<div class="rows"><div class="rhead">' +
+    "<span>编号</span><span>项目</span><span>一句话介绍</span>" +
+    '<span style="text-align:right">Stars</span><span style="text-align:right">语言</span><span class="rh-fav">☆</span></div>';
+  repos.forEach(r => {
+    html += '<div class="row ' + (r.rank <= 3 ? "top3" : "") + '" data-full="' + esc(r.full_name) +
+      '" data-search="' + esc(searchText(r)) + '">' +
+      '<span class="rn"><i style="background:' + cat.grad + '"></i>' + pad2(r.rank) + "</span>" +
+      '<span class="rname" title="' + esc(r.full_name) + '">' + esc(r.full_name) + "</span>" +
+      '<span class="rtag">' + esc(r.tag) + "</span>" +
+      '<span class="rstars">★ ' + fmtK(r.stars) + "</span>" +
+      '<span class="rlang"><i style="background:' + r.langColor + '"></i>' + esc(r.lang || "—") + "</span>" +
+      '<button class="favbtn rowfav" data-fav="' + esc(r.full_name) + '" aria-label="收藏"></button>' +
+      "</div>";
+  });
+  html += "</div>";
+  box.innerHTML = html;
+  bindCards(box);
+}
+
+function render() {
+  const box = document.getElementById("listwrap");
+  if (view === "grid") paintGrid(box); else paintRows(box);
+  syncFavUI();
+  applyFilter();
+}
+
+/* ---------- 搜索 ---------- */
+const q = document.getElementById("q"), empty = document.getElementById("empty");
+function applyFilter() {
+  const kw = q.value.trim().toLowerCase();
+  let shown = 0;
+  document.querySelectorAll("#listwrap [data-search]").forEach(el => {
+    const hit = !kw || el.dataset.search.indexOf(kw) >= 0;
+    el.style.display = hit ? "" : "none";
+    if (hit) shown++;
+  });
+  empty.style.display = shown ? "none" : "block";
+}
+q.addEventListener("input", applyFilter);
+
+/* ---------- 视图切换 ---------- */
+document.querySelectorAll(".viewtog button").forEach(b => {
+  b.addEventListener("click", () => {
+    if (b.dataset.v === view) return;
+    view = b.dataset.v;
+    document.querySelectorAll(".viewtog button").forEach(x => x.classList.toggle("on", x.dataset.v === view));
+    render();
+  });
+});
+
+/* 首屏渲染 */
+render();
+
+/* ---------- README: 多源并行竞速 + 自动摘要 / 完整全文 ---------- */
+const readmeCache = new Map();
+const README_TIMEOUT = 6000;
+
+function readmeUrls(full, stage) {
+  const out = [];
+  const branches = ["main", "master"];
+  if (stage === 1) {
+    branches.forEach(b => {
+      out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/" + b + "/README.md", b: b });
+      out.push({ u: "https://gcore.jsdelivr.net/gh/" + full + "@" + b + "/README.md", b: b });
+      out.push({ u: "https://raw.githubusercontent.com/" + full + "/" + b + "/README.md", b: b });
+    });
+  } else {
+    branches.forEach(b => {
+      out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/" + b + "/readme.md", b: b });
+      out.push({ u: "https://gcore.jsdelivr.net/gh/" + full + "@" + b + "/readme.md", b: b });
+    });
+    out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/HEAD/README.md", b: "HEAD" });
+  }
+  return out;
+}
+
+/* 镜像站偶尔会甩一个 403/限流 HTML 页回来，不能当成 README */
+function looksLikeErrorPage(txt) {
+  const head = txt.slice(0, 400).toLowerCase();
+  return head.indexOf("<!doctype html") >= 0 || head.indexOf("<html") >= 0 ||
+         /^\s*(403|404|429|500)\s+forbidden/.test(head) || head.indexOf("rate limit") >= 0;
+}
+
+function fetchText(url, ms) {
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), ms || README_TIMEOUT);
+  return fetch(url, { signal: ac.signal, cache: "force-cache" })
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+    .then(t => { if (!t || t.length < 50 || looksLikeErrorPage(t)) throw new Error("bad body"); return t; })
+    .finally(() => clearTimeout(timer));
+}
+
+function raceStage(full, stage, ms) {
+  const list = readmeUrls(full, stage);
+  return new Promise((resolve, reject) => {
+    let left = list.length, done = false;
+    list.forEach(it => {
+      fetchText(it.u, ms).then(txt => {
+        if (!done) { done = true; resolve({ txt: txt, branch: it.b }); }
+      }).catch(() => { if (--left === 0 && !done) reject(new Error("stage fail")); });
+    });
+  });
+}
+
+async function raceReadme(full, ms) {
+  try { return await raceStage(full, 1, ms); }
+  catch (e) { return await raceStage(full, 2, 4000); }
+}
+
+function paintReadme(full, doc, expanded) {
+  const meta = doc.chars >= 1000 ? (doc.chars / 1000).toFixed(1) + "k" : String(doc.chars);
+  let body;
+  if (expanded) {
+    body = '<div class="rm-scroll"><div class="md">' + doc.full + "</div></div>";
+  } else if (doc.thin || !doc.summary) {
+    body = '<div class="rm-empty">这个仓库的 README 以表格、截图和外链为主，能自动提炼的正文很少。展开完整 README 可以看到它的完整排版。</div>';
+  } else {
+    body = '<div class="md">' + doc.summary + "</div>";
+  }
+  const canExpand = doc.hasMore || expanded;
+  mReadmeBox.innerHTML =
+    '<div class="rm-head"><span class="rm-chip">' + (expanded ? "完整 README" : "自动摘要") + "</span>" +
+      '<span class="rm-meta">全文约 ' + meta + " 字</span></div>" +
+    body +
+    '<div class="rm-actions">' +
+      (canExpand ? '<button class="rm-btn" data-act="' + (expanded ? "collapse" : "expand") + '">' +
+        (expanded ? "收起 ↑" : "展开完整 README ↓") + "</button>" : "") +
+      '<a class="rm-btn ghost" href="https://github.com/' + full + '#readme" target="_blank" rel="noopener">去 GitHub 阅读 ↗</a>' +
+    "</div>";
+  const btn = mReadmeBox.querySelector("[data-act]");
+  if (btn) btn.onclick = () => paintReadme(full, doc, btn.getAttribute("data-act") === "expand");
+}
+
+async function loadReadme(full, token) {
+  const cached = readmeCache.get(full);
+  if (cached) {
+    if (token === readmeToken) paintReadme(full, cached, false);
+    return;
+  }
+  mReadmeBox.innerHTML = '<div class="m-readme-loading"><span class="spin"></span>正在加载 README…</div>';
+  try {
+    const got = await raceReadme(full, README_TIMEOUT);
+    if (token !== readmeToken) return;
+    const doc = MD.render(got.txt, { full: full, branch: got.branch });
+    readmeCache.set(full, doc);
+    paintReadme(full, doc, false);
+  } catch (e) {
+    if (token !== readmeToken) return;
+    mReadmeBox.innerHTML = '<div class="m-readme-err">README 加载失败（网络受限或仓库没有 README）。' +
+      '<button class="rm-retry" id="rmRetry">重试</button>' +
+      ' <a class="rm-gh" href="https://github.com/' + full + '" target="_blank" rel="noopener">去 GitHub 看 →</a></div>';
+    const b = document.getElementById("rmRetry");
+    if (b) b.onclick = () => { readmeCache.delete(full); loadReadme(full, ++readmeToken); };
+  }
+}
+
+/* 悬停预取：停 120ms 就开始后台拉取，点开时秒开（hoverTimer 在 core.js 里声明） */
+function prefetchReadme(full) {
+  if (readmeCache.has(full)) return;
+  raceReadme(full, 7000).then(got => {
+    if (!readmeCache.has(full)) readmeCache.set(full, MD.render(got.txt, { full: full, branch: got.branch }));
+  }).catch(() => {});
+}
+
+</script>
+</body>
+</html>

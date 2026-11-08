@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>效率办公（20 个）· GitHub 精选</title>
+<link id="siteCss" rel="stylesheet" href="assets/site.css">
+<script>
+/* 分享链接靠 ?sharecode= 放行。站内跳转一旦丢掉这个参数，在没有 cookie 的环境
+   （内嵌 webview、隐私模式、聊天工具转发截断）就会直接 403「链接不完整」。
+   这里把参数补回当前地址、样式表和所有站内链接；拿不到参数时什么也不做。 */
+(function () {
+  var sc = "";
+  try {
+    var m = location.search.match(/[?&]sharecode=([^&]+)/);
+    if (m) sc = decodeURIComponent(m[1]);
+    if (!sc) {
+      var m2 = (document.referrer || "").match(/[?&]sharecode=([^&]+)/);
+      if (m2) sc = decodeURIComponent(m2[1]);
+    }
+  } catch (e) { return; }
+  if (!sc) return;
+  window.__SHARECODE = sc;
+  if (!/[?&]sharecode=/.test(location.search)) {
+    try { history.replaceState(null, "", location.pathname + "?sharecode=" + encodeURIComponent(sc) + location.hash); } catch (e) {}
+  }
+  /* 样式表也是被同一道网关拦的：不补参数会出现「页面能开但没样式」 */
+  var css = document.getElementById("siteCss");
+  if (css) css.href = "assets/site.css?sharecode=" + encodeURIComponent(sc);
+  function fix(h) {
+    if (!h) return null;
+    if (h.charAt(0) === "#") return null;
+    if (h.indexOf("//") === 0) return null;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(h)) return null;
+    if (/[?&]sharecode=/.test(h)) return null;
+    return h + (h.indexOf("?") >= 0 ? "&" : "?") + "sharecode=" + encodeURIComponent(sc);
+  }
+  function patch() {
+    var as = document.querySelectorAll("a[href]");
+    for (var i = 0; i < as.length; i++) {
+      var n = fix(as[i].getAttribute("href"));
+      if (n) as[i].setAttribute("href", n);
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", patch);
+  else patch();
+  /* 卡片重绘、视图切换会换掉节点，点之前再兜一次 */
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    while (t && t !== document && (!t.tagName || t.tagName.toLowerCase() !== "a")) t = t.parentNode;
+    if (!t || t === document) return;
+    var n = fix(t.getAttribute("href"));
+    if (n) t.setAttribute("href", n);
+  }, true);
+})();
+</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="index.html"><span class="mark">⚡</span><span>GitHub 精选<small>AWESOME REPOS</small></span></a>
+    <div class="search"><span class="ico">🔍</span><input id="q" type="text" placeholder="在 效率办公 里搜索…"></div>
+    <a class="fav-link" href="favorites.html" title="我的收藏"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M6.5 3h11A1.5 1.5 0 0 1 19 4.5V21l-7-4.4L5 21V4.5A1.5 1.5 0 0 1 6.5 3z"/></svg><span class="fav-txt">收藏</span><span class="fav-count">0</span></a>
+    <a class="gh-link" href="index.html">全部项目</a>
+  </div>
+</div>
+<header class="chero">
+  <div class="chero-row">
+    <div class="chero-icon" style="background:linear-gradient(135deg,#f59e0b,#f97316)">⚡</div>
+    <div>
+      <h1>效率办公<span class="code">WORK</span></h1>
+      <p class="desc">笔记、白板、文件管理、时间追踪，让工作事半功倍</p>
+      <div class="pills">
+        <span class="pill">共 <b>20</b> 个项目</span>
+        <span class="pill">编号 <b>#01 – #20</b></span>
+        <span class="pill">累计 <b>★ 850.6k</b></span>
+        <span class="pill">引用格式 <b>WORK-12</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="switchbar"><div class="switchbar-inner">
+  <a class="cchip" href="ai.html">🤖 AI 工具 <span class="n">76</span></a><a class="cchip active" href="productivity.html">⚡ 效率办公 <span class="n">20</span></a><a class="cchip" href="fun.html">🎮 休闲娱乐 <span class="n">30</span></a><a class="cchip" href="devtools.html">🛠️ 开发者工具 <span class="n">16</span></a><a class="cchip" href="frontend.html">🎨 前端框架 <span class="n">19</span></a><a class="cchip" href="selfhosted.html">🏠 自托管服务 <span class="n">12</span></a>
+  <div class="viewtog">
+    <button data-v="grid" class="on">卡片</button>
+    <button data-v="rows">列表</button>
+  </div>
+</div></nav>
+
+<main>
+  <section class="listwrap" id="listwrap"></section>
+  <div class="empty" id="empty">😕 这个分类里没有匹配的项目，换个关键词试试</div>
+</main>
+<footer>
+  <div class="foot-inner">
+    <b>GitHub 精选</b> · 优质开源项目集合 · 共 173 个项目 / 6 大分类<br>
+    数据来源 GitHub Search API · Star 数截至 2026-11-04 · 每个分类内按 Star 降序编号 #01–#N<br>
+    Made with ⚡ by WorkBuddy
+  </div>
+</footer>
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="m-hero" id="mHero">
+      <button class="m-close" id="mClose" aria-label="关闭">✕</button>
+      <div class="m-top">
+        <img class="m-avatar" id="mAvatar" alt="">
+        <div class="m-title">
+          <h3><span id="mName"></span><span class="m-id" id="mId"></span><span class="cat-tag" id="mCat"></span></h3>
+          <div class="sub" id="mSub"></div>
+        </div>
+      </div>
+      <div class="m-btns">
+        <button class="m-btn ghost with-label" id="mFav" aria-label="收藏">收藏</button>
+        <button class="m-btn deploy" id="mDeploy" type="button" title="复制一段可直接粘给 AI 的部署指令">⚡ 复制部署指令</button>
+        <a class="m-btn solid" id="mGithub" target="_blank" rel="noopener">在 GitHub 打开 ↗</a>
+      </div>
+    </div>
+    <div class="m-body">
+      <div class="m-stats" id="mStats"></div>
+      <div class="m-intro" id="mIntro"></div>
+      <details class="m-en-box"><summary>英文原始描述</summary><p class="m-en" id="mEn"></p></details>
+      <div class="m-topics" id="mTopics"></div>
+      <div class="m-readme">
+        <span class="m-sec-label">README 摘要</span>
+        <div class="m-readme-box" id="mReadmeBox"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const PAGE = {"cat": {"id": "productivity", "code": "WORK", "name": "效率办公", "icon": "⚡", "grad": "linear-gradient(135deg,#f59e0b,#f97316)", "desc": "笔记、白板、文件管理、时间追踪，让工作事半功倍", "count": 20}};
+const CATS = {"ai":{"id":"ai","code":"AI","name":"AI 工具","icon":"🤖","grad":"linear-gradient(135deg,#6366f1,#a855f7)"},"productivity":{"id":"productivity","code":"WORK","name":"效率办公","icon":"⚡","grad":"linear-gradient(135deg,#f59e0b,#f97316)"},"fun":{"id":"fun","code":"FUN","name":"休闲娱乐","icon":"🎮","grad":"linear-gradient(135deg,#ec4899,#f43f5e)"},"devtools":{"id":"devtools","code":"DEV","name":"开发者工具","icon":"🛠️","grad":"linear-gradient(135deg,#0ea5e9,#06b6d4)"},"frontend":{"id":"frontend","code":"WEB","name":"前端框架","icon":"🎨","grad":"linear-gradient(135deg,#10b981,#14b8a6)"},"selfhosted":{"id":"selfhosted","code":"SELF","name":"自托管服务","icon":"🏠","grad":"linear-gradient(135deg,#8b5cf6,#6366f1)"}};
+const REPOS = [{"full_name":"excalidraw/excalidraw","name":"excalidraw","owner":"excalidraw","avatar":"https://avatars.githubusercontent.com/u/59452120?v=4","url":"https://github.com/excalidraw/excalidraw","desc":"Virtual whiteboard for sketching hand-drawn like diagrams","stars":135123,"forks":16001,"lang":"TypeScript","topics":["canvas","collaboration","diagrams","drawing","hacktoberfest","productivity"],"updated":"2026-11-03","tag":"手绘风格白板，画架构图最快的地方","body":["Excalidraw 是一个手绘风格的白板工具：线条故意带点抖动，看上去像随手画的，却比 PPT 里的工整框图更有「草稿感」，讨论时不容易被当成最终设计。","它支持多人实时协作、端到端加密、本地优先存储，也有 VS Code 插件、npm 组件和可自托管版本。工程师画架构图、产品画流程、老师画示意图，都能直接用。"],"feats":["手绘风格图形与箭头","多人实时协作 + E2EE","VS Code 插件 / npm 组件","可自托管，数据自己掌握"],"fit":"画架构图、流程图、草图的开发与产品团队","rank":1,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"AppFlowy-IO/AppFlowy","name":"AppFlowy","owner":"AppFlowy-IO","avatar":"https://avatars.githubusercontent.com/u/86002201?v=4","url":"https://github.com/AppFlowy-IO/AppFlowy","desc":"Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.","stars":78164,"forks":6168,"lang":"Dart","topics":["blog","confluence-alternative","content-management","content-services","documentation","flutter"],"updated":"2026-11-02","tag":"开源版 Notion，数据放自己手里","body":["AppFlowy 是一个开源的协作工作区：文档、看板、表格、日历、Wiki 都能在一个空间里组织，交互逻辑和 Notion 很像，但代码开源、可以自托管。","它用 Flutter + Rust 实现，桌面端体验接近原生，离线可用。新版加入了 AI 能力，可对文档内容做总结、改写和生成。适合不放心把公司知识库放在 SaaS 上的团队。"],"feats":["文档 / 看板 / 表格 / 日历视图","离线优先，可自托管","Flutter + Rust，原生体验","内置 AI 写作辅助"],"fit":"想自建 Notion 式知识库的团队","rank":2,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#00B4AB"},{"full_name":"usememos/memos","name":"memos","owner":"usememos","avatar":"https://avatars.githubusercontent.com/u/95764151?v=4","url":"https://github.com/usememos/memos","desc":"Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.","stars":64256,"forks":4934,"lang":"Go","topics":["docker","foss","go","markdown","memo","microblog"],"updated":"2026-11-02","tag":"极简的碎片笔记与想法收集器","body":["Memos 是一个极简的备忘录应用：打开就能写，像发微博一样记录想法，支持 Markdown、标签、图片和公开分享链接。","它用 Go 写成，单个二进制即可运行，几乎零运维成本。相比庞大的笔记系统，它更适合「随手记、稍后整理」的轻量场景，也能当作个人微博客用。"],"feats":["极简输入，Markdown 支持","标签归类与搜索","公开/私有分享","Go 单文件部署"],"fit":"需要随手记录灵感的个人与小团队","rank":3,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#00ADD8"},{"full_name":"laurent22/joplin","name":"joplin","owner":"laurent22","avatar":"https://avatars.githubusercontent.com/u/1285584?v=4","url":"https://github.com/laurent22/joplin","desc":"Joplin - the privacy-focused note taking app with sync capabilities for Windows, macOS, Linux, Android and iOS.","stars":57013,"forks":6393,"lang":"TypeScript","topics":["android","dropbox","electron","enex-files","evernote","javascript"],"updated":"2026-11-04","tag":"注重隐私的跨平台笔记与待办","body":["Joplin 是一个开源笔记应用，最大特点是「你的数据你做主」：可以同步到自己的 Nextcloud、WebDAV、S3 或本地文件夹，采用端到端加密。","它支持 Markdown 编辑、网页剪藏、附件、待办清单、全文搜索，还有插件体系。桌面、移动、终端全覆盖，适合长期积累大量笔记的人。"],"feats":["端到端加密同步","支持 WebDAV / S3 / 自建服务","Markdown + 网页剪藏 + 附件","全平台客户端与插件"],"fit":"重视隐私、笔记量大且长期使用的用户","rank":4,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"siyuan-note/siyuan","name":"siyuan","owner":"siyuan-note","avatar":"https://avatars.githubusercontent.com/u/70468694?v=4","url":"https://github.com/siyuan-note/siyuan","desc":"An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作","stars":47063,"forks":3097,"lang":"TypeScript","topics":["agentic-ai","ai-agent","knowledge-base","local-first","markdown","mcp"],"updated":"2026-11-04","tag":"块级引用的本地优先知识库","body":["思源笔记是国产开源的知识管理工具，核心是「块」：每段文字、每个列表都是可被引用的块，写文档时可以双向链接、嵌入其他块的实时内容。","它本地优先、支持端到端加密同步，数据存成 Markdown 便于迁移；配合大纲、关系图、间隔重复，很适合做长期的知识沉淀与写作。"],"feats":["块级引用与双向链接","本地优先，Markdown 存储","端到端加密同步","大纲 / 关系图 / 闪卡"],"fit":"做长期知识管理、写长文的用户","rank":5,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"files-community/Files","name":"Files","owner":"files-community","avatar":"https://avatars.githubusercontent.com/u/65931357?v=4","url":"https://github.com/files-community/Files","desc":"A modern file manager that helps users organize their files and folders.","stars":46481,"forks":3015,"lang":"C#","topics":["alternatives","csharp","customization","developer-tools","dotnet","file-manager"],"updated":"2026-11-03","tag":"更现代的 Windows 文件管理器","body":["Files 是给 Windows 换掉原生资源管理器的第三方文件管理器：标签页、双栏、多任务并行、云盘集成，界面用 Fluent Design，观感接近 macOS Finder。","它支持文件预览、批量重命名、压缩包直读、Git 状态显示，还能接 OneDrive、Google Drive 等。对每天要在文件堆里翻找的人来说，效率提升很直接。"],"feats":["标签页与多窗格","云盘与网络位置集成","文件预览、批量操作","Fluent Design 现代界面"],"fit":"Windows 重度用户、文件整理强迫症","rank":6,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#178600"},{"full_name":"logseq/logseq","name":"logseq","owner":"logseq","avatar":"https://avatars.githubusercontent.com/u/63385289?v=4","url":"https://github.com/logseq/logseq","desc":"A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc_ggEV","stars":45468,"forks":2866,"lang":"Clojure","topics":["clojure","clojurescript","git","graph","knowledge-base","knowledge-graph"],"updated":"2026-11-03","tag":"大纲 + 双向链接的隐私优先笔记","body":["Logseq 以「大纲」为基本单位：每天一页日记，随手记下想法并用 [[双链]] 连接，时间久了会自然长出知识网络。","它本地存储 Markdown、支持插件与主题、可自建同步，白板功能还能把笔记拼成画布。适合喜欢边写边思考、而非先建文件夹再填内容的人。"],"feats":["大纲式记录 + 双向链接","日记流与任务管理","本地 Markdown 存储","白板 / 插件 / 主题生态"],"fit":"研究者、写作者、做个人知识网络的人","rank":7,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#db5855"},{"full_name":"lfnovo/open-notebook","name":"open-notebook","owner":"lfnovo","avatar":"https://avatars.githubusercontent.com/u/579178?v=4","url":"https://github.com/lfnovo/open-notebook","desc":"An Open Source implementation of Notebook LM with more flexibility and features","stars":41531,"forks":4771,"lang":"TypeScript","topics":["assistant","learning","note-taking","notebook","notes-app","self-learning"],"updated":"2026-11-04","tag":"开源自托管的 NotebookLM","body":["Open Notebook 把 Google NotebookLM 那套「上传资料 → 基于资料问答 → 生成摘要与播客」的能力开源化了，并且可以自己部署。","它支持多模型后端（OpenAI、Anthropic、Ollama 等）、多资料源管理、引用溯源，还能生成对话式音频摘要。对需要处理敏感资料的团队，自托管是刚需。"],"feats":["资料库问答与引用溯源","多模型后端可选","音频摘要与内容再生成","可自托管"],"fit":"做资料研究、需要私有化的团队与个人","rank":8,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"CorentinTh/it-tools","name":"it-tools","owner":"CorentinTh","avatar":"https://avatars.githubusercontent.com/u/25065347?v=4","url":"https://github.com/CorentinTh/it-tools","desc":"Collection of handy online tools for developers, with great UX.","stars":41112,"forks":5559,"lang":"Vue","topics":["converter","developer-productivity","developer-tools","frontend","javascript","productivity"],"updated":"2026-10-27","tag":"开发者常用小工具合集","body":["it-tools 把日常开发中零散需要的小工具集中到一个网页里：JSON 格式化、时间戳转换、Base64、哈希计算、UUID、正则测试、单位换算……上百个。","它纯前端运行，数据不出浏览器，也能自托管成内部工具站。收藏一个页面，就不用再到处搜「在线 xx 工具」了。"],"feats":["上百个开发小工具","纯前端，数据不外传","支持自托管","中文界面与搜索"],"fit":"所有开发者、运维、测试","rank":9,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#41b883"},{"full_name":"ShareX/ShareX","name":"ShareX","owner":"ShareX","avatar":"https://avatars.githubusercontent.com/u/5548736?v=4","url":"https://github.com/ShareX/ShareX","desc":"ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.","stars":40609,"forks":4025,"lang":"C#","topics":["avalonia","capture","color-picker","csharp","dropbox","file-sharing"],"updated":"2026-11-04","tag":"Windows 上最强的截图与录屏工具","body":["ShareX 远不止截图：区域截图、滚动截图、录屏、GIF 录制、OCR 取字、颜色拾取、文件上传，全部可以绑定快捷键，并串成自动化工作流。","截完可以直接上传到自建图床或几十种云存储，链接自动进剪贴板。它是那种「用过就回不去」的工具，且完全免费开源。"],"feats":["截图 / 滚动截图 / 录屏 / GIF","OCR 取字与颜色拾取","自动化工作流与快捷键","上传到自建或第三方图床"],"fit":"Windows 用户、写文档和做教程的人","rank":10,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#178600"},{"full_name":"TriliumNext/Trilium","name":"Trilium","owner":"TriliumNext","avatar":"https://avatars.githubusercontent.com/u/160046342?v=4","url":"https://github.com/TriliumNext/Trilium","desc":"Build your personal knowledge base with Trilium Notes","stars":38693,"forks":2613,"lang":"TypeScript","topics":["electron","electron-app","knowledge-base","knowledge-graph","knowledge-management","knowledge-management-graph"],"updated":"2026-11-04","tag":"为海量笔记设计的层级知识库","body":["Trilium 采用树状层级组织笔记，专门应对「几万条笔记怎么管」的问题：每条笔记都可编程（脚本、属性、模板），能做动态视图和自动化。","它支持自托管服务端 + 桌面/移动客户端同步、代码笔记、关系图、全文搜索，还能加密单条笔记。极客向，但能力上限很高。"],"feats":["树状层级 + 可编程笔记","自托管同步服务","脚本、属性与模板","全文搜索与关系图"],"fit":"笔记量极大、喜欢自定义的技术型用户","rank":11,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"khoj-ai/khoj","name":"khoj","owner":"khoj-ai","avatar":"https://avatars.githubusercontent.com/u/134046886?v=4","url":"https://github.com/khoj-ai/khoj","desc":"Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.","stars":37971,"forks":2531,"lang":"Python","topics":["agent","ai","assistant","chat","chatgpt","emacs"],"updated":"2026-08-02","tag":"连接你的文档与网络的第二大脑","body":["Khoj 是一个可自托管的 AI 助手：把笔记、PDF、Markdown、GitHub 仓库、邮件等资料接进来，用自然语言提问，它会检索你的资料并结合网络给出答案。","它支持在线模型与本地 Ollama，提供网页、桌面、Emacs、Obsidian 等多种入口，还能设置定时任务自动整理信息。适合做个人知识检索入口。"],"feats":["多源资料接入（文档/邮件/代码）","语义检索 + 联网回答","多客户端入口","可自托管，支持本地模型"],"fit":"资料分散、需要统一检索入口的知识工作者","rank":12,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3572A5"},{"full_name":"Wox-launcher/Wox","name":"Wox","owner":"Wox-launcher","avatar":"https://avatars.githubusercontent.com/u/15628601?v=4","url":"https://github.com/Wox-launcher/Wox","desc":"A cross-platform launcher that simply works","stars":27597,"forks":2443,"lang":"Go","topics":["alfred","app-launcher","launcher","launchpad","launchy","productivity"],"updated":"2026-11-04","tag":"Windows 上的 Alfred 式启动器","body":["Wox 是一个跨平台启动器：按下快捷键唤出输入框，就能启动程序、搜索文件、执行命令、查词典、算数、跑插件。","它支持 Everything 索引实现毫秒级文件搜索，插件体系可以接入网页搜索、翻译、剪贴板历史等能力。对键盘党来说，能省下大量鼠标操作。"],"feats":["全局快捷键唤起","文件搜索（可接 Everything）","插件生态","跨平台"],"fit":"Windows 键盘党、效率工具爱好者","rank":13,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#00ADD8"},{"full_name":"lissy93/dashy","name":"dashy","owner":"lissy93","avatar":"https://avatars.githubusercontent.com/u/1862727?v=4","url":"https://github.com/lissy93/dashy","desc":"🚀 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!","stars":26908,"forks":1966,"lang":"Vue","topics":["awesome","dashboard","docker","homelab","homepage","mit"],"updated":"2026-11-02","tag":"自托管的个人服务导航面板","body":["Dashy 是一个可自托管的起始页：把自建的各种服务（NAS、监控、Git、影音）做成图标墙，一个页面全部可达。","它支持状态检测（服务挂了变红）、多套主题、图标搜索、分组折叠、多语言，配置就是一个 YAML 文件。玩自托管的人几乎人手一个。"],"feats":["服务图标墙与分组","在线状态检测","YAML 配置，多主题","支持 Docker 部署"],"fit":"自托管玩家、家庭服务器用户","rank":14,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#41b883"},{"full_name":"super-productivity/super-productivity","name":"super-productivity","owner":"super-productivity","avatar":"https://avatars.githubusercontent.com/u/215719836?v=4","url":"https://github.com/super-productivity/super-productivity","desc":"Super Productivity is an advanced todo list app with integrated Timeboxing and time tracking capabilities. It also comes with integrations for Jira, GitLab, GitHub and Open Project.","stars":23395,"forks":2253,"lang":"TypeScript","topics":["android","flowmodoro","flowtime","habit-tracker","ios","issue-tracker"],"updated":"2026-11-04","tag":"待办 + 时间盒 + 时间追踪三合一","body":["Super Productivity 把待办清单、时间盒（Timeboxing）和自动时间追踪做进一个应用：给任务排好时间块，开始计时就自动记录实际耗时。","它支持从 Jira、GitHub、GitLab、Trello 同步任务，内置番茄钟与休息提醒，数据本地存储并可导出。适合想搞清楚「时间到底花哪了」的人。"],"feats":["待办 + 时间盒 + 计时","集成 Jira / GitHub / GitLab","番茄钟与休息提醒","本地存储，可导出"],"fit":"需要管理多任务与工时的人","rank":15,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"jarun/nnn","name":"nnn","owner":"jarun","avatar":"https://avatars.githubusercontent.com/u/5959286?v=4","url":"https://github.com/jarun/nnn","desc":"n³ The unorthodox terminal file manager","stars":22108,"forks":834,"lang":"C","topics":["android","batch-rename","c","cli","command-line","developer-tools"],"updated":"2026-11-01","tag":"终端里最快的文件管理器","body":["nnn 是一个极轻量的终端文件管理器：启动快、内存占用极小，靠键盘完成浏览、选择、批量操作，能与 shell 命令无缝配合。","它支持插件扩展、文件预览、批量重命名、磁盘占用分析，甚至能在里面直接打开 shell。对常年待在终端里的人来说，比图形文件管理器顺手。"],"feats":["极轻量，启动迅速","键盘驱动，批量操作","插件系统与文件预览","与 shell 命令无缝配合"],"fit":"终端重度用户、运维与后端开发","rank":16,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#555555"},{"full_name":"fullcalendar/fullcalendar","name":"fullcalendar","owner":"fullcalendar","avatar":"https://avatars.githubusercontent.com/u/13825204?v=4","url":"https://github.com/fullcalendar/fullcalendar","desc":"Full-sized drag & drop event calendar in JavaScript","stars":20744,"forks":3711,"lang":"TypeScript","topics":["calendar","event","full-sized"],"updated":"2026-10-16","tag":"前端日历组件的标准答案","body":["FullCalendar 是最成熟的前端日历库：月视图、周视图、日视图、时间轴、资源排班都能开箱用，支持拖拽调整时间、点选创建事件。","它提供 React、Vue、Angular 等框架封装，事件数据用标准 JSON 喂进去即可，样式可完全自定义。做排班系统、预约系统、日程管理时基本绕不开。"],"feats":["多种视图与时间轴","拖拽改期、点选创建","主流框架封装齐全","高度可定制的样式与交互"],"fit":"做排班、预约、日程功能的前端开发者","rank":17,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"ActivityWatch/activitywatch","name":"activitywatch","owner":"ActivityWatch","avatar":"https://avatars.githubusercontent.com/u/18249061?v=4","url":"https://github.com/ActivityWatch/activitywatch","desc":"The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.","stars":19493,"forks":1070,"lang":"Python","topics":["activitywatch","afk","analytics","app","cross-platform","dashboard"],"updated":"2026-11-01","tag":"自动记录你把时间花在哪了","body":["ActivityWatch 在后台自动记录当前活跃的窗口、浏览器标签和离开时间，生成每日/每周的时间分布报告——不用手动打卡。","它完全本地运行、开源、可扩展，支持多设备数据汇总，也能通过 API 自己写分析脚本。想知道「一天到底干了什么」，它比事后回忆靠谱得多。"],"feats":["自动追踪窗口与网站使用","本地存储，隐私可控","可视化时间分布报告","API 与插件扩展"],"fit":"想量化自己时间分配的人、远程工作者","rank":18,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3572A5"},{"full_name":"wulkano/Kap","name":"Kap","owner":"wulkano","avatar":"https://avatars.githubusercontent.com/u/16321113?v=4","url":"https://github.com/wulkano/Kap","desc":"An open-source screen recorder built with web technology","stars":19413,"forks":902,"lang":"TypeScript","topics":["aperture","app","capture","communication","electron","javascript"],"updated":"2024-11-12","tag":"轻量好用的开源录屏工具","body":["Kap 是一个专注「录完就能用」的屏幕录制器：选区域、开录、停止，直接导出 MP4/GIF，内置裁剪、变速、窗口边框美化。","它基于 Electron，界面简洁，适合快速录个操作演示、Bug 复现或 GIF 动图，不必打开重型剪辑软件。"],"feats":["区域录制与窗口捕获","MP4 / GIF 导出","内置裁剪与变速","简洁界面，上手即用"],"fit":"Mac 用户、需要快速录演示的人","rank":19,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"},{"full_name":"foambubble/foam","name":"foam","owner":"foambubble","avatar":"https://avatars.githubusercontent.com/u/67174936?v=4","url":"https://github.com/foambubble/foam","desc":"A personal knowledge management and sharing system for VSCode","stars":17475,"forks":794,"lang":"TypeScript","topics":["graph-visualisation","markdown","markdown-editor","note-taking","notes-app","personal-knowledge-base"],"updated":"2026-10-29","tag":"在 VS Code 里做双链笔记","body":["Foam 把 VS Code 变成知识管理工具：笔记就是 Markdown 文件，用 [[双链]] 互相连接，自动生成关系图、标签索引和反向链接。","因为它完全基于 VS Code 与 Git，你天然拥有版本管理、搜索、插件生态和多设备同步。对已经常驻编辑器的开发者来说，无需再学一套笔记软件。"],"feats":["VS Code 内双链笔记","关系图与反向链接","纯 Markdown + Git 版本管理","复用 VS Code 全部插件"],"fit":"常驻 VS Code 的开发者、技术写作者","rank":20,"cat":"效率办公","catId":"productivity","code":"WORK","langColor":"#3178c6"}];
+/* ------------------------------------------------------------------
+ * md.js — 轻量 Markdown 渲染器 + README 摘要提炼（零依赖）
+ * 浏览器挂到 window.MD；Node 下 module.exports，便于离线测试
+ * ------------------------------------------------------------------ */
+(function (root, factory) {
+  var API = factory();
+  if (typeof module === 'object' && module.exports) module.exports = API;
+  else root.MD = API;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+
+  var CJK = /[\u2e80-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff00-\uffef]/;
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function stripTags(s) { return String(s).replace(/<[^>]*>/g, ''); }
+  function isCJK(ch) { return !!ch && CJK.test(ch); }
+
+  /* ---------------- 1. 预处理：把 HTML 风格 README 归一化成 Markdown ---------------- */
+
+  var LANG_NAMES = /(english|中文|简体中文|正體中文|繁體中文|日本語|日本语|한국어|deutsch|français|francais|español|espanol|italiano|português|portugues|русский|українська|polski|nederlands|svenska|türkçe|turkce|tiếng việt|ภาษาไทย|العربية|עברית|bahasa indonesia|malayalam|മലയാളം|bengali|हिन्दी|हिंदी)/gi;
+
+  function prep(src) {
+    var s = String(src || '')
+      .replace(/\r\n?/g, '\n')
+      .replace(/^\uFEFF/, '');
+
+    s = s.replace(/<!--[\s\S]*?-->/g, '');                       // HTML 注释
+    s = s.replace(/^---\n[\s\S]{0,600}?\n---\n/, '');            // YAML front matter
+    s = s.replace(/<details[\s\S]*?<\/details>/gi, '\n');        // 折叠块（目录/语言切换/FAQ）
+    s = s.replace(/<\/?(picture|source|video|audio|iframe)[^>]*>/gi, '');
+
+    // 块级 HTML → Markdown
+    s = s.replace(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi, function (m, lv, t) {
+      return '\n' + new Array(+lv + 1).join('#') + ' ' + stripTags(t).replace(/\s+/g, ' ').trim() + '\n';
+    });
+    s = s.replace(/<br\s*\/?>/gi, '\n');
+    s = s.replace(/<a\s[^>]*href\s*=\s*["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi, function (m, href, txt) {
+      var t = stripTags(txt).replace(/\s+/g, ' ').trim();
+      return t ? '[' + t.replace(/\]/g, '') + '](' + href + ')' : '';
+    });
+    s = s.replace(/<(b|strong)>([\s\S]*?)<\/\1>/gi, '**$2**');
+    s = s.replace(/<(i|em)>([\s\S]*?)<\/\1>/gi, '*$2*');
+    s = s.replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, '`$1`');
+    s = s.replace(/<li[^>]*>/gi, '\n- ').replace(/<\/li>/gi, '');
+    s = s.replace(/<\/p>|<p[^>]*>/gi, '\n\n');
+    s = s.replace(/<hr[^>]*>/gi, '\n\n---\n\n');
+    s = s.replace(/<img[^>]*>/gi, '');                           // 图片一律丢弃（徽章是噪音，截图走外链太慢）
+    s = s.replace(/<\/?(div|span|center|summary|table|thead|tbody|tfoot|tr|td|th|ul|ol|dl|dt|dd|section|article|header|footer|main|aside|nav|font|sup|sub|mark|kbd|small|big|figure|figcaption|blockquote|pre)[^>]*>/gi, '');
+
+    // 行内图片 / 空链接 / 徽章残渣
+    s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+    s = s.replace(/\[\s*\]\([^)]*\)/g, '');
+
+    // 目录块（连续 >=3 行纯锚点链接）整块删除
+    var lines = s.split('\n');
+    var out = [], run = [];
+    var isToc = function (l) { return /^\s*[-*+]?\s*\[[^\]]{1,60}\]\(#[^)]*\)\s*$/.test(l); };
+    var flush = function () {
+      if (run.length && run.length >= 3) { out.push(''); }
+      else { out.push.apply(out, run); }
+      run = [];
+    };
+    for (var i = 0; i < lines.length; i++) {
+      if (isToc(lines[i])) run.push(lines[i]);
+      else { if (run.length) flush(); out.push(lines[i]); }
+    }
+    if (run.length) flush();
+    s = out.join('\n');
+
+    // 参考式链接定义：[id]: https://... （正文里只留引用，定义单独存）
+    var refs = {};
+    s = s.replace(/^ {0,3}\[([^\]\n]{1,80})\]:\s*<?([^\s>]+)>?(?:\s+["'(][^\n]*)?$/gm, function (m, id, url) {
+      var key = id.trim().toLowerCase();
+      if (!refs[key]) refs[key] = url.trim();
+      return '';
+    });
+
+    // 导航行 / 语言切换行过滤（段落级在 parse 里做，这里只处理明显的链接串）
+    s = s.split('\n').filter(function (l) { return !isNavLine(l); }).join('\n');
+
+    // 清理空行堆积与行尾空白
+    s = s.replace(/[ \t]+$/gm, '').replace(/\n{3,}/g, '\n\n').replace(/^\n+/, '').trim();
+    return { text: s, refs: refs };
+  }
+
+  function isNavLine(l) {
+    if (!l.trim()) return false;
+    if (/^\s{0,3}([-*+]|\d{1,2}[.)])\s/.test(l)) return false;   // 列表项保留
+    if (l.indexOf('|') >= 0 && !/\]\(/.test(l)) return false;      // 表格行保留（无链接）
+    if (/^\s{0,3}#{1,6}\s/.test(l)) return false;                 // 标题保留
+    return isNavText(l);
+  }
+
+  // 整段都是链接/语言项 → 导航条，丢弃
+  function isNavText(t) {
+    var links = t.match(/!?\[[^\]]*\]\([^)]*\)/g) || [];
+    if (!links.length) {
+      return t.length < 80 && (t.match(/[·•|]/g) || []).length >= 2 && !/[.!?。！？]/.test(t);
+    }
+    var rest = t.replace(/!?\[[^\]]*\]\([^)]*\)/g, '')
+                .replace(/[\[\]()<>·|/\\–—•*_,.;:+\-]+/g, ' ')
+                .trim();
+    var langs = t.match(LANG_NAMES) || [];
+    if (links.length >= 2 && rest.length < 14) return true;
+    if (links.length === 1 && rest.length < 4 && t.length < 100) return true;   // 单一 CTA 按钮
+    if (langs.length >= 3 && links.length >= 2 && rest.length < 40) return true;
+    if (links.length >= 2 && rest.length < 60 && !/[.!?。！？]/.test(rest) && rest.split(/\s+/).filter(Boolean).length <= 6) return true;
+    return false;
+  }
+
+  /* ---------------- 2. 块级解析 ---------------- */
+
+  var RE_FENCE = /^\s{0,3}(```+|~~~+)\s*([\w+#.\-]*)/;
+  var RE_HEAD = /^\s{0,3}(#{1,6})\s+(.*?)\s*#*\s*$/;
+  var RE_HR = /^\s{0,3}((\*\s*){3,}|(-\s*){3,}|(_\s*){3,})$/;
+  var RE_UL = /^([ \t]*)([-*+])\s+(.*)$/;
+  var RE_OL = /^([ \t]*)(\d{1,2})[.)]\s+(.*)$/;
+  var RE_QUOTE = /^\s{0,3}>\s?/;
+  var RE_TSEP = /^\s*\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?\s*$/;
+
+  function splitRow(line) {
+    var s = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+    return s.split('|').map(function (c) { return c.trim().replace(/\\\|/g, '|'); });
+  }
+
+  function joinLines(arr) {
+    var s = '';
+    for (var i = 0; i < arr.length; i++) {
+      if (!i) { s = arr[i]; continue; }
+      var prev = s.charAt(s.length - 1), next = arr[i].charAt(0);
+      s += (isCJK(prev) || isCJK(next) ? '' : ' ') + arr[i];
+    }
+    return s;
+  }
+
+  function blockStart(lines, i) {
+    var l = lines[i];
+    if (!l.trim()) return true;
+    if (RE_FENCE.test(l) || RE_HEAD.test(l) || RE_HR.test(l) || RE_QUOTE.test(l)) return true;
+    if (RE_UL.test(l) || RE_OL.test(l)) return true;
+    if (l.indexOf('|') >= 0 && lines[i + 1] && RE_TSEP.test(lines[i + 1])) return true;
+    return false;
+  }
+
+  function parse(md) {
+    var lines = md.split('\n'), out = [], i = 0, n = lines.length, m;
+    while (i < n) {
+      var line = lines[i];
+      if (!line.trim()) { i++; continue; }
+
+      // 围栏代码
+      if ((m = line.match(RE_FENCE))) {
+        var mark = m[1].charAt(0) === '`' ? '```' : '~~~';
+        var lang = (m[2] || '').toLowerCase(), buf = [];
+        i++;
+        while (i < n && lines[i].indexOf(mark) !== 0 && !new RegExp('^\\s{0,3}' + mark).test(lines[i])) {
+          buf.push(lines[i]); i++;
+        }
+        if (i < n) i++;
+        out.push({ type: 'code', lang: lang, text: buf.join('\n') });
+        continue;
+      }
+
+      // 标题
+      if ((m = line.match(RE_HEAD))) {
+        out.push({ type: 'heading', level: m[1].length, text: m[2].trim() });
+        i++; continue;
+      }
+
+      // 分隔线
+      if (RE_HR.test(line)) { out.push({ type: 'hr' }); i++; continue; }
+
+      // 表格
+      if (line.indexOf('|') >= 0 && lines[i + 1] && RE_TSEP.test(lines[i + 1])) {
+        var head = splitRow(line), rows = [];
+        i += 2;
+        while (i < n && lines[i].trim() && lines[i].indexOf('|') >= 0) {
+          rows.push(splitRow(lines[i])); i++;
+        }
+        out.push({ type: 'table', head: head, rows: rows });
+        continue;
+      }
+
+      // 引用
+      if (RE_QUOTE.test(line)) {
+        var q = [];
+        while (i < n && RE_QUOTE.test(lines[i])) { q.push(lines[i].replace(RE_QUOTE, '')); i++; }
+        out.push({ type: 'quote', text: q.join(' ') });
+        continue;
+      }
+
+      // 列表
+      if (RE_UL.test(line) || RE_OL.test(line)) {
+        var ordered = !RE_UL.test(line), items = [], base = null;
+        while (i < n && (RE_UL.test(lines[i]) || RE_OL.test(lines[i]))) {
+          var lm = lines[i].match(RE_UL);
+          var om = lm ? null : lines[i].match(RE_OL);
+          var indent = (lm ? lm[1] : om[1]).replace(/\t/g, '    ').length;
+          var text = lm ? lm[3] : om[3];
+          if (base === null) base = indent;
+          var lvl = Math.min(2, Math.max(0, Math.round((indent - base) / 2)));
+          var checked = null;
+          var cm = text.match(/^\[([ xX])\]\s+(.*)$/);
+          if (cm) { checked = cm[1].toLowerCase() === 'x'; text = cm[2]; }
+          items.push({ level: lvl, text: text, checked: checked });
+          i++;
+          while (i < n && lines[i].trim() && !RE_UL.test(lines[i]) && !RE_OL.test(lines[i]) &&
+                 !RE_HEAD.test(lines[i]) && !RE_FENCE.test(lines[i]) && /^\s{2,}/.test(lines[i])) {
+            items[items.length - 1].text += ' ' + lines[i].trim();
+            i++;
+          }
+        }
+        var pureLinks = items.length >= 3 && items.every(function (it) {
+          return /^\[[^\]]+\]\([^)]*\)$/.test(it.text.trim());
+        });
+        if (!pureLinks) out.push({ type: 'list', ordered: ordered, items: items });
+        continue;
+      }
+
+      // 段落
+      var para = [line.trim()];
+      i++;
+      while (i < n && !blockStart(lines, i)) { para.push(lines[i].trim()); i++; }
+      var ptext = joinLines(para);
+      if (isNavText(ptext)) continue;                            // 合并后才成形的导航条
+      out.push({ type: 'para', text: ptext });
+    }
+    return out;
+  }
+
+  /* ---------------- 3. 行内渲染 ---------------- */
+
+  function resolveUrl(url, ctx) {
+    var u = String(url || '').trim().replace(/^<|>$/g, '');
+    if (!u) return '';
+    if (/^(https?:|mailto:|#|\/\/)/i.test(u)) return u;
+    u = u.replace(/^\.\//, '').replace(/^\//, '');
+    var base = 'https://github.com/' + (ctx.full || '') + '/blob/' + (ctx.branch || 'main') + '/';
+    return base + u.replace(/^\.\.\//, '');
+  }
+
+  function inline(text, ctx) {
+    var s = String(text == null ? '' : text);
+    var codes = [];
+    s = s.replace(/`([^`]+)`/g, function (m, c) {
+      codes.push(c);
+      return '\u0001C' + (codes.length - 1) + '\u0001';
+    });
+
+    s = esc(s);
+    s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+
+    // 参考式链接 [text][id] 与快捷引用 [id]
+    s = s.replace(/\[([^\]]{0,200})\]\[([^\]]{0,80})\]/g, function (m, label, id) {
+      var u = ctx.refs && ctx.refs[(id || label).trim().toLowerCase()];
+      if (!u) return label;
+      return '<a href="' + esc(resolveUrl(u, ctx)) + '" target="_blank" rel="noopener nofollow">' + label + '</a>';
+    });
+    s = s.replace(/\[([^\]\n]{1,80})\](?!\()/g, function (m, id) {
+      var u = ctx.refs && ctx.refs[id.trim().toLowerCase()];
+      return u ? '<a href="' + esc(resolveUrl(u, ctx)) + '" target="_blank" rel="noopener nofollow">' + id + '</a>' : m;
+    });
+
+    // 链接
+    s = s.replace(/\[([^\]]{0,200})\]\(\s*([^)\s]{1,400})(?:\s+&quot;[^&]*&quot;)?\s*\)/g, function (m, label, url) {
+      var href = resolveUrl(url, ctx);
+      if (!href) return label;
+      return '<a href="' + esc(href) + '" target="_blank" rel="noopener nofollow">' + label + '</a>';
+    });
+
+    // <autolink>
+    s = s.replace(/&lt;((?:https?:\/\/|mailto:)[^\s&]+)&gt;/g, function (m, u) {
+      return '<a href="' + esc(u) + '" target="_blank" rel="noopener nofollow">' + u.replace(/^mailto:/, '') + '</a>';
+    });
+
+    // 强调
+    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
+    s = s.replace(/~~([^~\n]+)~~/g, '<del>$1</del>');
+    s = s.replace(/(^|[\s(（])\*([^*\n]+)\*(?=[\s)）,.!?;:，。！？；：]|$)/g, '$1<em>$2</em>');
+
+    // 还原行内代码
+    s = s.replace(/\u0001C(\d+)\u0001/g, function (m, idx) {
+      return '<code>' + esc(codes[+idx]) + '</code>';
+    });
+    return s;
+  }
+
+  /* ---------------- 4. 块级渲染 ---------------- */
+
+  function renderList(b, ctx) {
+    var open = b.ordered ? '<ol>' : '<ul>', close = b.ordered ? '</ol>' : '</ul>';
+    var html = '', depth = 0;
+    b.items.forEach(function (it) {
+      while (depth < it.level) { html += b.ordered ? '<ol>' : '<ul>'; depth++; }
+      while (depth > it.level) { html += close; depth--; }
+      var box = '';
+      if (it.checked === true) box = '<span class="cb on"></span>';
+      else if (it.checked === false) box = '<span class="cb"></span>';
+      html += '<li' + (it.checked !== null ? ' class="task"' : '') + '>' + box + inline(it.text, ctx) + '</li>';
+    });
+    while (depth >= 0) { if (depth === 0) break; html += close; depth--; }
+    return open + html + close;
+  }
+
+  function renderTable(b, ctx) {
+    var h = '<div class="md-table"><table><thead><tr>';
+    b.head.forEach(function (c) { h += '<th>' + inline(c, ctx) + '</th>'; });
+    h += '</tr></thead><tbody>';
+    b.rows.forEach(function (row) {
+      h += '<tr>';
+      for (var c = 0; c < b.head.length; c++) h += '<td>' + inline(row[c] || '', ctx) + '</td>';
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div>';
+  }
+
+  function toHtml(blocks, ctx) {
+    var h = [];
+    for (var i = 0; i < blocks.length; i++) {
+      var b = blocks[i];
+      if (b.type === 'heading') {
+        var lv = Math.min(Math.max(b.level, 2), 5);
+        h.push('<h' + lv + '>' + inline(b.text, ctx) + '</h' + lv + '>');
+      } else if (b.type === 'para') {
+        h.push('<p>' + inline(b.text, ctx) + '</p>');
+      } else if (b.type === 'code') {
+        h.push('<pre' + (b.lang ? ' data-lang="' + esc(b.lang) + '"' : '') + '><code>' + esc(b.text) + '</code></pre>');
+      } else if (b.type === 'quote') {
+        h.push('<blockquote>' + inline(b.text, ctx) + '</blockquote>');
+      } else if (b.type === 'hr') {
+        h.push('<hr>');
+      } else if (b.type === 'list') {
+        h.push(renderList(b, ctx));
+      } else if (b.type === 'table') {
+        h.push(renderTable(b, ctx));
+      }
+    }
+    return h.join('\n');
+  }
+
+  /* ---------------- 5. 摘要提炼 ---------------- */
+
+  // 到了这些章节说明「介绍」部分结束了
+  var STOP = /^(table of contents?|contents?|目录|安装|安装指南|install(ation)?|how to|quick ?start|getting started|使用|使用方法|用法|快速开始|快速上手|快速入门|documentation|docs?|文档|配置|configuration|setup|deploy(ment)?|部署|api( reference)?|license|licen[cs]e|许可|许可证|开源协议|contribut\w*|贡献|acknowledg\w*|致谢|sponsor\w*|赞助|star history|changelog|更新日志|release notes|faq|常见问题|roadmap|development|develop|开发|build|构建|credits|related|相关|disclaimer|免责声明|screenshots?|截图|demo|预览)/i;
+
+  // 纯导航性质的标题，直接丢弃
+  var NAV_HEAD = /^(external links?|links?|link list|badges?|navigation|menu|languages?|语言|目录|table of contents?|contents?|community|社区|social|关注我们|backers?|sponsors?)$/i;
+
+  function textLen(b) {
+    if (b.type === 'list') return b.items.reduce(function (a, i) { return a + i.text.length; }, 0);
+    return (b.text || '').length;
+  }
+
+  function isNoise(b) {
+    if (b.type === 'hr' || b.type === 'code' || b.type === 'table') return true;
+    if (b.type === 'quote') return true;
+    var t = (b.text || '').trim();
+    if (t.length < 2) return true;
+    if (/^[\s\-–—|·•*]+$/.test(t)) return true;
+    if (/(free credits?|become a sponsor|buy me a coffee|ko-fi\.com|patreon\.com|open collective|sponsors? us)/i.test(t)) return true;
+    if (/^(loved|trusted|used|chosen|adopted) by\b/i.test(t) && t.length < 100) return true;
+    if (/^(access|see|read|check|visit|click|try|view|explore|find|learn)\b[\s\S]{0,120}\b(here|demo|docs?|documentation|more|website|details?)\b/i.test(t) && t.length < 140) return true;
+    if (/^(english|中文|简体中文|繁體中文|日本語|한국어|english\s*\|.*)$/i.test(t)) return true;
+    if (/^(english|中文|简体中文|繁體中文|日本語|한국어)(\s*[|/·]\s*(english|中文|简体中文|繁體中文|日本語|한국어))+$/i.test(t)) return true;
+    return false;
+  }
+
+  // 后面紧跟另一个标题（或直接结束）的标题 = 空章节
+  function isEmptyHeading(blocks, i) {
+    for (var j = i + 1; j < blocks.length; j++) {
+      if (blocks[j].type === 'heading') return true;
+      if (isNoise(blocks[j])) continue;
+      return false;
+    }
+    return true;
+  }
+
+  // 属于「介绍区」的章节名，可以继续读下去
+  var ALLOW_HEAD = /^(overview|about|introduction|intro|what'?s? (this|inside|new)|what is|features?|highlights?|key features|core features|main features|why\b|capabilities|简介|概述|介绍|项目简介|核心特性|主要特性|功能特性|特性|功能|亮点|优势|为什么)/i;
+
+  function buildSummary(blocks, budget) {
+    var picked = [], chars = 0, started = false, contentBlocks = 0;
+    for (var i = 0; i < blocks.length; i++) {
+      var b = blocks[i];
+      if (b.type === 'heading') {
+        if (NAV_HEAD.test(b.text.trim())) continue;
+        if (isEmptyHeading(blocks, i)) continue;
+        if (b.level === 1 && !started && !contentBlocks) continue;   // 标题与弹窗头部重复
+        if (STOP.test(b.text.trim())) break;
+        if (contentBlocks && !ALLOW_HEAD.test(b.text.trim())) break; // 介绍区结束
+        if (chars >= 600) break;
+        picked.push(b);
+        continue;
+      }
+      if (isNoise(b)) continue;
+      if (b.type === 'para' && b.text.length < 90 &&
+          /^(npx|npm|pnpm|yarn|pip3?|docker|brew|git|curl|wget|cargo|go|apt|sudo|make|chmod|export)\b/i.test(b.text.replace(/`/g, ''))) continue;  // 命令行
+      if (!started) started = true;
+      var len = textLen(b);
+      if (chars + len > budget) {
+        if (b.type === 'list' && b.items && chars < budget * 0.85) {
+          var fit = [], acc = 0;
+          for (var j = 0; j < b.items.length; j++) {
+            var it = b.items[j];
+            if (acc + it.text.length > budget - chars && fit.length >= 2) break;
+            fit.push(it); acc += it.text.length;
+          }
+          if (fit.length >= 2) { picked.push({ type: 'list', ordered: b.ordered, items: fit }); chars += acc; contentBlocks++; }
+        }
+        if (chars > budget * 0.5) break;
+      }
+      picked.push(b);
+      chars += len;
+      contentBlocks++;
+      if (chars >= budget) break;
+    }
+    while (picked.length && (picked[picked.length - 1].type === 'heading' || isNoise(picked[picked.length - 1]))) picked.pop();
+    var tail = picked[picked.length - 1];
+    if (tail && tail.type === 'para' && /[:：]\s*$/.test(tail.text)) {
+      var m2 = tail.text.match(/^([\s\S]*[.!?。！？])\s+[^.!?。！？]{0,160}[:：]\s*$/);
+      if (m2 && m2[1].length >= 60) picked[picked.length - 1] = { type: 'para', text: m2[1] };
+      else picked.pop();                                        // 只留一句「下面列出了…」没有意义
+    }
+    while (picked.length && (picked[picked.length - 1].type === 'heading' || isNoise(picked[picked.length - 1]))) picked.pop();
+    if (!picked.length) {
+      // 兜底：取前两段有实际文字的内容
+      for (var k = 0; k < blocks.length && picked.length < 2; k++) {
+        if (blocks[k].type === 'para' && blocks[k].text.length > 30) picked.push(blocks[k]);
+      }
+    }
+    return picked;
+  }
+
+  /* ---------------- 6. 对外接口 ---------------- */
+
+  function render(src, opts) {
+    opts = opts || {};
+    var p = prep(src);
+    var blocks = parse(p.text);
+    var ctx = { full: opts.full || '', branch: opts.branch || 'main', refs: p.refs || {} };
+    var budget = opts.budget || 700;
+    var cjk = (p.text.match(/[\u4e00-\u9fff]/g) || []).length;
+    if (cjk / Math.max(1, p.text.length) > 0.22) budget = Math.round(budget * 0.55);  // 中文信息密度更高
+    var sum = buildSummary(blocks, budget);
+    var summaryHtml = toHtml(sum, ctx);
+    var fullHtml = toHtml(blocks, ctx);
+    var chars = 0;
+    blocks.forEach(function (b) { chars += textLen(b); });
+    var sumChars = 0;
+    sum.forEach(function (b) { sumChars += textLen(b); });
+    var hasProse = sum.some(function (b) {
+      if (b.type === 'para') return b.text.length >= 120;
+      if (b.type === 'list') return b.items.length >= 2 && b.items.some(function (i) { return i.text.length >= 40; });
+      return false;
+    });
+    return {
+      summary: summaryHtml,
+      full: fullHtml,
+      chars: chars,
+      summaryChars: sumChars,
+      hasMore: chars > sumChars * 1.15 && blocks.length > sum.length,
+      thin: !hasProse && sumChars < 150,
+      blockCount: blocks.length
+    };
+  }
+
+  return {
+    render: render,
+    prep: prep,
+    parse: parse,
+    inline: inline,
+    toHtml: toHtml,
+    esc: esc
+  };
+});
+
+/* ================= 通用工具 ================= */
+function pad2(n) { return n < 10 ? "0" + n : String(n); }
+function medalCls(n) { return n === 1 ? "g1" : n === 2 ? "g2" : n === 3 ? "g3" : ""; }
+function fmtK(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : "" + n; }
+function esc(s) {
+  return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function searchText(r) {
+  return (r.full_name + " " + r.desc + " " + r.tag + " " + (r.topics || []).join(" ") + " " + (r.lang || "")).toLowerCase();
+}
+/* 注意：CATS 是用 const 声明的，不会挂到 window 上，必须直接按标识符取 */
+function catMeta(id) {
+  const map = (typeof CATS !== "undefined" && CATS) ? CATS : {};
+  return map[id] || { code: "", name: "", icon: "", grad: "linear-gradient(135deg,#6366f1,#a855f7)" };
+}
+
+/* ================= 字段索引：full_name -> repo ================= */
+const REPO_MAP = {};
+function setRepos(arr) { (arr || []).forEach(r => { REPO_MAP[r.full_name] = r; }); }
+
+/* ================= 收藏（本机保存） ================= */
+const FAV_KEY = "ghfav.v1";
+
+/* 存储适配：localStorage → sessionStorage → 内存
+   预览窗口、隐私模式、sandbox iframe 里 localStorage 会直接抛错。
+   老实现把异常 catch 掉了，结果是「点收藏有反应，但其实没存」，
+   所以这里先显式探测能不能写，再决定用哪一层，并把结论暴露给用户。 */
+const STORE = (function () {
+  function probe(s) {
+    try {
+      const k = "__ghfav_probe__";
+      s.setItem(k, "1");
+      const ok = s.getItem(k) === "1";
+      s.removeItem(k);
+      return ok;
+    } catch (e) { return false; }
+  }
+  try {
+    if (window.localStorage && probe(window.localStorage)) return { kind: "local", api: window.localStorage };
+  } catch (e) { /* 某些环境连访问属性都会抛 */ }
+  try {
+    if (window.sessionStorage && probe(window.sessionStorage)) return { kind: "session", api: window.sessionStorage };
+  } catch (e) { /* 同上 */ }
+  return { kind: "memory", api: null };
+})();
+
+let FAV = (function () {
+  if (!STORE.api) return {};
+  try {
+    const o = JSON.parse(STORE.api.getItem(FAV_KEY) || "{}");
+    if (o && typeof o === "object" && !Array.isArray(o)) return o;
+  } catch (e) { /* 数据损坏 */ }
+  return {};
+})();
+
+let SAVE_FAILED = false;
+
+/* ---------- 本地收藏服务（预览窗口不让写 localStorage 时的唯一出路） ----------
+   tools/fav_server.py 在 127.0.0.1:8765 起一个服务，收藏存成 data/favorites.json。
+   页面通过 HTTP 读写，绕开浏览器的存储限制。探测到就用它，探测不到才退回内存。 */
+const REMOTE_PORTS = [8765, 8766, 8767, 8768, 8769, 8770, 8771, 8772, 8773, 8774, 8775];
+let REMOTE_BASE = null;
+let STORE_PROBING = false;
+
+/* 只有在本机打开时才去找本地收藏服务。发布到公网后，访客打开的是线上页面，
+   收藏归各自浏览器所有——这时候去打 127.0.0.1 只会得到一串失败请求。 */
+const IS_LOCAL_PAGE =
+  location.protocol === "file:" ||
+  /^(127\.0\.0\.1|localhost|::1|\[::1\]|0\.0\.0\.0)$/.test(location.hostname);
+
+function healthOf(port) {
+  return fetch("http://127.0.0.1:" + port + "/api/health", { cache: "no-store", mode: "cors" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => (j && j.app === "gh-awesome" ? "http://127.0.0.1:" + port : null))
+    .catch(() => null);
+}
+/* 先试最可能的 8765，没中再扫后面几个，避免每次开页都打 11 个请求 */
+function probeRemote() {
+  return healthOf(REMOTE_PORTS[0]).then(base => {
+    if (base) return base;
+    return Promise.all(REMOTE_PORTS.slice(1).map(healthOf)).then(l => l.filter(Boolean)[0] || null);
+  });
+}
+
+/* 只提交「变了什么」，绝不整份覆盖——否则一个空页面就能把服务端数据冲掉 */
+const PENDING = { set: {}, del: [] };
+
+function queuePending(payload) {
+  if (payload.set) {
+    Object.keys(payload.set).forEach(k => {
+      PENDING.set[k] = payload.set[k];
+      const i = PENDING.del.indexOf(k);
+      if (i >= 0) PENDING.del.splice(i, 1);
+    });
+  }
+  (payload.del || []).forEach(k => {
+    delete PENDING.set[k];
+    if (PENDING.del.indexOf(k) < 0) PENDING.del.push(k);
+  });
+}
+
+function flushPending() {
+  if (!REMOTE_BASE) return;
+  const set = PENDING.set, del = PENDING.del;
+  if (!Object.keys(set).length && !del.length) return;
+  PENDING.set = {};
+  PENDING.del = [];
+  postRemote({ set: set, del: del });
+}
+
+function postRemote(payload) {
+  if (!REMOTE_BASE) { queuePending(payload); return Promise.resolve(false); }
+  return fetch(REMOTE_BASE + "/api/fav", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  })
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => {
+      SAVE_FAILED = !(j && j.ok);
+      if (SAVE_FAILED) mountStoreWarn();
+      return !SAVE_FAILED;
+    })
+    .catch(() => { SAVE_FAILED = true; mountStoreWarn(); return false; });
+}
+
+function pullRemote() {
+  return fetch(REMOTE_BASE + "/api/fav", { cache: "no-store" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(o => {
+      if (!o || typeof o !== "object" || Array.isArray(o)) return;
+      let changed = false;
+      Object.keys(o).forEach(k => { if (!isFav(k)) { FAV[k] = o[k]; changed = true; } });
+      if (changed) {
+        syncFavUI();
+        document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+      }
+    })
+    .catch(() => {});
+}
+
+/* 有本地服务就优先用它（数据落在工程目录里，随时可读、可备份）；
+   没有服务时退回浏览器存储；再不行才是内存 + 告警 */
+function initStorage() {
+  // 线上分享链接：收藏存各自浏览器，不碰本机服务
+  if (!IS_LOCAL_PAGE) {
+    STORE_PROBING = false;
+    if (!STORE.api) mountStoreWarn();
+    return;
+  }
+  STORE_PROBING = true;
+  const before = Object.assign({}, FAV);        // 本地已经有的（可能来自浏览器存储）
+  probeRemote().then(base => {
+    STORE_PROBING = false;
+    if (!base) { mountStoreWarn(); return; }
+    REMOTE_BASE = base;
+    SAVE_FAILED = false;
+    return fetch(base + "/api/fav", { cache: "no-store" })
+      .then(r => (r.ok ? r.json() : null))
+      .then(server => {
+        server = (server && typeof server === "object" && !Array.isArray(server)) ? server : {};
+        let changed = false;
+        Object.keys(server).forEach(k => { if (!isFav(k)) { FAV[k] = server[k]; changed = true; } });
+        if (changed) {
+          syncFavUI();
+          document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+        }
+        // 本地有、服务端没有的 → 只补这些，绝不整份覆盖
+        const add = {};
+        Object.keys(before).forEach(k => { if (!(k in server)) add[k] = before[k]; });
+        if (Object.keys(add).length) postRemote({ set: add });
+        flushPending();          // 探测期间点过的收藏，这时候补发
+      })
+      .catch(() => {})
+      .then(() => {
+        if (STORE.api) {
+          try { STORE.api.setItem(FAV_KEY, JSON.stringify(FAV)); } catch (e) { /* 无所谓 */ }
+        }
+      });
+  }).catch(() => {
+    STORE_PROBING = false;
+    mountStoreWarn();
+  });
+}
+
+/* 当前收藏是否真的存到了磁盘上 */
+function storageOK() {
+  if (SAVE_FAILED) return false;
+  return STORE.kind === "local" || !!REMOTE_BASE;
+}
+function storageMsg() {
+  if (SAVE_FAILED) return "写入失败了，这次收藏可能没保存";
+  if (!IS_LOCAL_PAGE) return "浏览器禁用了本地存储（可能开了无痕模式），收藏关掉页面就没了";
+  if (STORE.kind === "session") return "浏览器禁用了本地存储，收藏只在本次标签页有效，关掉就没了";
+  return "存不住：预览窗口禁止网页写存储，本地收藏服务也没启动。双击「打开网站.command」可解决";
+}
+
+function isFav(full) { return !!full && Object.prototype.hasOwnProperty.call(FAV, full); }
+function favCount() { return Object.keys(FAV).length; }
+function favIcon(on) {
+  return '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="' + (on ? "currentColor" : "none") +
+    '" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M6.5 3h11A1.5 1.5 0 0 1 19 4.5V21l-7-4.4L5 21V4.5A1.5 1.5 0 0 1 6.5 3z"/></svg>';
+}
+function paintFavBtn(el) {
+  const full = el.dataset.fav;
+  if (!full) return;
+  const on = isFav(full);
+  el.classList.toggle("on", on);
+  el.title = on ? "取消收藏" : "收藏到我的清单";
+  el.setAttribute("aria-pressed", on ? "true" : "false");
+  el.innerHTML = favIcon(on) + (el.classList.contains("with-label") ? "<span>" + (on ? "已收藏" : "收藏") + "</span>" : "");
+}
+function syncFavUI() {
+  document.querySelectorAll("[data-fav]").forEach(paintFavBtn);
+  const n = favCount();
+  document.querySelectorAll(".fav-count").forEach(el => { el.textContent = n; });
+  document.querySelectorAll(".fav-link").forEach(a => a.classList.toggle("has", n > 0));
+}
+function persistFav() {
+  if (!STORE.api) return false;
+  try {
+    STORE.api.setItem(FAV_KEY, JSON.stringify(FAV));
+    SAVE_FAILED = false;
+    return true;
+  } catch (e) {
+    SAVE_FAILED = true;
+    return false;
+  }
+}
+
+/* 传变化的那个项目给服务端：加就 set，删就 del */
+function syncOne(full, on) {
+  if (!REMOTE_BASE) return;
+  if (on) postRemote({ set: (function () { const o = {}; o[full] = FAV[full]; return o; })() });
+  else postRemote({ del: [full] });
+}
+
+/* 存不住的时候，页面底部必须说出来，并且给一条能立刻把数据带走的路 */
+function mountStoreWarn() {
+  if (storageOK() || STORE_PROBING || document.getElementById("storewarn")) return;
+  const bar = document.createElement("div");
+  bar.id = "storewarn";
+  bar.className = "storewarn";
+  bar.innerHTML =
+    '<span class="sw-ico">⚠️</span>' +
+    '<span class="sw-txt">' + esc(storageMsg()) + "</span>" +
+    '<a class="sw-btn" href="favorites.html">导出备份</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add("has-storewarn");
+}
+window.addEventListener("DOMContentLoaded", () => {
+  initStorage();
+  // 线上版的收藏属于访客自己，说明文字要跟着改
+  if (!IS_LOCAL_PAGE) {
+    const note = document.querySelector(".favnote");
+    if (note) {
+      note.innerHTML = "收藏保存在 <b>你自己这台设备的浏览器</b>里，只属于你，别人看不到。" +
+        "换设备或清理浏览器数据会丢失，建议偶尔点一下「备份 .json」。";
+    }
+  }
+});
+window.addEventListener("load", () => { setTimeout(mountStoreWarn, 1200); });
+function toggleFav(full) {
+  if (!full) return false;
+  if (isFav(full)) delete FAV[full];
+  else FAV[full] = Date.now();
+  const on = isFav(full);
+  const saved = persistFav();
+  syncOne(full, on);
+  if (!saved && !REMOTE_BASE) mountStoreWarn();
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: full, on: on } }));
+  return on;
+}
+function removeFav(full) {
+  if (!isFav(full)) return;
+  delete FAV[full];
+  const saved = persistFav();
+  syncOne(full, false);
+  if (!saved && !REMOTE_BASE) mountStoreWarn();
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: full, on: false } }));
+}
+
+/* 捕获阶段统一接管收藏点击：既保证卡片重建后依然有效，也避免误触卡片的"打开详情" */
+document.addEventListener("click", e => {
+  const btn = e.target.closest && e.target.closest("[data-fav]");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  toggleFav(btn.dataset.fav);
+}, true);
+
+/* 多个标签页同时开着时保持同步 */
+window.addEventListener("storage", e => {
+  if (e.key !== FAV_KEY) return;
+  try {
+    const o = JSON.parse(e.newValue || "{}");
+    FAV = (o && typeof o === "object" && !Array.isArray(o)) ? o : {};
+  } catch (err) { FAV = {}; }
+  syncFavUI();
+  document.dispatchEvent(new CustomEvent("favchange", { detail: { full: "", on: false } }));
+});
+
+/* ================= 卡片模板 ================= */
+function cardHTML(r, opts) {
+  opts = opts || {};
+  const cm = catMeta(r.catId);
+  const label = opts.code ? (r.code || cm.code) + "-" + pad2(r.rank) : "#" + pad2(r.rank);
+  return '<article class="card" style="--cgrad:' + cm.grad + '" data-full="' + esc(r.full_name) +
+    '" data-search="' + esc(searchText(r)) + '">' +
+    '<button class="favbtn" data-fav="' + esc(r.full_name) + '" aria-label="收藏"></button>' +
+    '<div class="c-top">' +
+      '<span class="num ' + medalCls(r.rank) + '" title="编号 ' + (r.code || cm.code) + "-" + pad2(r.rank) + '">' + label + "</span>" +
+      '<img class="avatar" loading="lazy" src="' + r.avatar + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
+      '<span class="c-name"><span class="repo" title="' + esc(r.full_name) + '">' + esc(r.full_name) + "</span></span>" +
+    "</div>" +
+    '<p class="c-zh">' + esc(r.tag) + "</p>" +
+    '<p class="c-en">' + esc(r.desc) + "</p>" +
+    '<div class="c-foot">' +
+      '<span class="stars">★ ' + fmtK(r.stars) + "</span>" +
+      '<span class="lang"><i style="background:' + r.langColor + '"></i>' + esc(r.lang || "—") + "</span>" +
+      '<span class="more-hint">详情 ›</span>' +
+    "</div></article>";
+}
+
+/* 给新渲染出来的卡片/行绑定打开详情 + 悬停预取 */
+function bindCards(root) {
+  (root || document).querySelectorAll("[data-full]:not([data-bound])").forEach(el => {
+    el.dataset.bound = "1";
+    const r = REPO_MAP[el.dataset.full];
+    if (!r) return;
+    el.addEventListener("click", () => openRepo(r));
+    el.addEventListener("mouseenter", () => {
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(() => prefetchReadme(r.full_name), 120);
+    });
+    el.addEventListener("mouseleave", () => clearTimeout(hoverTimer));
+  });
+}
+
+/* ================= 详情弹窗 ================= */
+const overlay = document.getElementById("overlay");
+const mHero = document.getElementById("mHero"),
+      mAvatar = document.getElementById("mAvatar"),
+      mName = document.getElementById("mName"),
+      mId = document.getElementById("mId"),
+      mCat = document.getElementById("mCat"),
+      mSub = document.getElementById("mSub"),
+      mGithub = document.getElementById("mGithub"),
+      mStats = document.getElementById("mStats"),
+      mIntro = document.getElementById("mIntro"),
+      mEn = document.getElementById("mEn"),
+      mTopics = document.getElementById("mTopics"),
+      mReadmeBox = document.getElementById("mReadmeBox"),
+      mFav = document.getElementById("mFav"),
+      mDeploy = document.getElementById("mDeploy");
+let readmeToken = 0;
+let hoverTimer = null;
+let currentRepo = null;
+
+function openRepo(r) {
+  if (!r || !overlay) return;
+  currentRepo = r;
+  const cm = catMeta(r.catId);
+  const code = r.code || cm.code;
+  mHero.style.background = cm.grad;
+  mAvatar.src = r.avatar;
+  mName.textContent = r.full_name;
+  mId.textContent = code + "-" + pad2(r.rank);
+  mCat.textContent = (cm.icon || "") + " " + (cm.name || "");
+  mSub.textContent = "本榜第 " + r.rank + " 个 · " + (r.owner ? r.owner + " · " : "") + "★ " + fmtK(r.stars);
+  mGithub.href = r.url;
+  mStats.innerHTML =
+    '<div class="m-stat"><b class="st">★ ' + fmtK(r.stars) + "</b><span>Stars</span></div>" +
+    '<div class="m-stat"><b>' + fmtK(r.forks) + "</b><span>Forks</span></div>" +
+    '<div class="m-stat"><b><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + r.langColor + ';margin-right:5px"></i>' + esc(r.lang || "—") + "</b><span>语言</span></div>" +
+    '<div class="m-stat"><b style="font-size:13.5px">' + esc(r.updated || "—") + "</b><span>最近更新</span></div>";
+  mIntro.innerHTML =
+    (r.tag ? '<div class="m-tag">' + esc(r.tag) + "</div>" : "") +
+    (r.body || []).map(p => '<p class="m-p">' + esc(p) + "</p>").join("") +
+    ((r.feats && r.feats.length) ? '<div class="m-feats-label">核心能力</div><ul class="m-feats">' +
+      r.feats.map(f => "<li>" + esc(f) + "</li>").join("") + "</ul>" : "") +
+    (r.fit ? '<div class="m-fit"><b>适合</b>' + esc(r.fit) + "</div>" : "");
+  mEn.textContent = r.desc;
+  mTopics.innerHTML = (r.topics || []).map(t => '<span class="m-topic">#' + esc(t) + "</span>").join("");
+  if (mFav) { mFav.dataset.fav = r.full_name; paintFavBtn(mFav); }
+  loadReadme(r.full_name, ++readmeToken);
+  overlay.classList.add("open");
+  document.body.classList.add("locked");
+  overlay.scrollTop = 0;
+}
+function closeRepo() {
+  if (!overlay) return;
+  overlay.classList.remove("open");
+  document.body.classList.remove("locked");
+  readmeToken++;
+}
+if (overlay) {
+  const btnClose = document.getElementById("mClose");
+  if (btnClose) btnClose.addEventListener("click", closeRepo);
+  overlay.addEventListener("click", e => { if (e.target === overlay) closeRepo(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeRepo(); });
+}
+
+/* ================= 一句话部署 =================
+   网站本身不跑任何命令。这里把「这个项目是谁、怎么找到它、要 AI 做什么」
+   打包成一段自包含的话，访客复制后粘给自己的 AI（WorkBuddy / Claude / Cursor
+   等），由那个 AI 读仓库 README 并决定具体部署方式。这样编号不再依赖本机索引。 */
+function deployPrompt(r) {
+  if (!r) return "";
+  const cm = catMeta(r.catId);
+  const code = r.code || cm.code;
+  const id = code + "-" + pad2(r.rank);
+  const topics = (r.topics || []).slice(0, 6).join(", ");
+  return [
+    "帮我在本机部署这个 GitHub 项目：",
+    "仓库：" + r.full_name + "  " + r.url,
+    "榜单编号：" + id + "（" + (cm.name || "") + " · 第 " + r.rank + " 个 · ★" + fmtK(r.stars) + "）",
+    "它是做什么的：" + (r.tag || r.desc || "开源项目"),
+    "官方简介：" + (r.desc || "—"),
+    "技术栈：" + (r.lang || "未知") + (topics ? " · " + topics : ""),
+    "",
+    "请按这个顺序做：",
+    "1. 先读这个仓库的 README 和安装文档，确认它到底用什么方式运行（Docker / npm / pip / go / cargo / 静态站点等），不要凭语言猜。",
+    "2. 列出我机器上缺哪些依赖、目标端口有没有被占；需要装东西或改配置先告诉我。",
+    "3. 用最稳妥的方式部署，尽量隔离环境（优先 Docker 或虚拟环境），不要污染全局环境。",
+    "4. 跑起来后给我：访问地址、启动 / 停止命令、数据存在哪、以及怎么卸载。",
+    "",
+    "遇到需要 Token / API Key、要拉大镜像、要联网下载大量文件或要改系统配置，先问我再动手；任何一步失败就停下来说明原因，别硬来。"
+  ].join("\n");
+}
+
+/* 轻提示：不复用 fav.js 里的同名函数，避免加载顺序互相覆盖 */
+let flashTimer = null;
+function flash(msg) {
+  let el = document.getElementById("toast");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(() => el.classList.remove("show"), 2600);
+}
+
+function legacyCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.cssText = "position:fixed;top:-2000px;left:0;opacity:0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { ta.setSelectionRange(0, text.length); } catch (e) { /* 某些浏览器不支持 */ }
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+/* 复制彻底失败时，把话摊开让人手动全选，不给「假成功」 */
+function showDeployPanel(text) {
+  let box = document.getElementById("deployPanel");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "deployPanel";
+    box.className = "deploy-panel";
+    box.innerHTML =
+      '<div class="dp-head"><b>手动复制下面这段话</b>' +
+      '<button type="button" class="dp-close" aria-label="关闭">✕</button></div>' +
+      '<textarea id="dpText" spellcheck="false"></textarea>' +
+      '<div class="dp-tip">点一下文本框，按 ⌘A（Windows 用 Ctrl+A）全选，再复制。</div>';
+    document.body.appendChild(box);
+    box.querySelector(".dp-close").addEventListener("click", () => { box.style.display = "none"; });
+  }
+  box.style.display = "block";
+  const ta = document.getElementById("dpText");
+  ta.value = text;
+  ta.focus();
+  ta.select();
+}
+
+function copyDeployPrompt() {
+  if (!currentRepo) return;
+  const text = deployPrompt(currentRepo);
+  if (!text) return;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text)
+      .then(() => flash("已复制部署指令，粘给你自己的 AI 就行"))
+      .catch(() => { if (!legacyCopy(text)) showDeployPanel(text); });
+  } else if (!legacyCopy(text)) {
+    showDeployPanel(text);
+  }
+}
+if (mDeploy) mDeploy.addEventListener("click", e => {
+  e.preventDefault();
+  e.stopPropagation();
+  copyDeployPrompt();
+});
+
+/* ================= 分类页：卡片 / 列表 + 搜索 ================= */
+const cat = PAGE.cat;
+const repos = REPOS;
+setRepos(repos);
+let view = "grid";
+
+function paintGrid(box) {
+  box.innerHTML = '<div class="grid">' + repos.map(r => cardHTML(r)).join("") + "</div>";
+  bindCards(box);
+}
+
+function paintRows(box) {
+  let html = '<div class="rows"><div class="rhead">' +
+    "<span>编号</span><span>项目</span><span>一句话介绍</span>" +
+    '<span style="text-align:right">Stars</span><span style="text-align:right">语言</span><span class="rh-fav">☆</span></div>';
+  repos.forEach(r => {
+    html += '<div class="row ' + (r.rank <= 3 ? "top3" : "") + '" data-full="' + esc(r.full_name) +
+      '" data-search="' + esc(searchText(r)) + '">' +
+      '<span class="rn"><i style="background:' + cat.grad + '"></i>' + pad2(r.rank) + "</span>" +
+      '<span class="rname" title="' + esc(r.full_name) + '">' + esc(r.full_name) + "</span>" +
+      '<span class="rtag">' + esc(r.tag) + "</span>" +
+      '<span class="rstars">★ ' + fmtK(r.stars) + "</span>" +
+      '<span class="rlang"><i style="background:' + r.langColor + '"></i>' + esc(r.lang || "—") + "</span>" +
+      '<button class="favbtn rowfav" data-fav="' + esc(r.full_name) + '" aria-label="收藏"></button>' +
+      "</div>";
+  });
+  html += "</div>";
+  box.innerHTML = html;
+  bindCards(box);
+}
+
+function render() {
+  const box = document.getElementById("listwrap");
+  if (view === "grid") paintGrid(box); else paintRows(box);
+  syncFavUI();
+  applyFilter();
+}
+
+/* ---------- 搜索 ---------- */
+const q = document.getElementById("q"), empty = document.getElementById("empty");
+function applyFilter() {
+  const kw = q.value.trim().toLowerCase();
+  let shown = 0;
+  document.querySelectorAll("#listwrap [data-search]").forEach(el => {
+    const hit = !kw || el.dataset.search.indexOf(kw) >= 0;
+    el.style.display = hit ? "" : "none";
+    if (hit) shown++;
+  });
+  empty.style.display = shown ? "none" : "block";
+}
+q.addEventListener("input", applyFilter);
+
+/* ---------- 视图切换 ---------- */
+document.querySelectorAll(".viewtog button").forEach(b => {
+  b.addEventListener("click", () => {
+    if (b.dataset.v === view) return;
+    view = b.dataset.v;
+    document.querySelectorAll(".viewtog button").forEach(x => x.classList.toggle("on", x.dataset.v === view));
+    render();
+  });
+});
+
+/* 首屏渲染 */
+render();
+
+/* ---------- README: 多源并行竞速 + 自动摘要 / 完整全文 ---------- */
+const readmeCache = new Map();
+const README_TIMEOUT = 6000;
+
+function readmeUrls(full, stage) {
+  const out = [];
+  const branches = ["main", "master"];
+  if (stage === 1) {
+    branches.forEach(b => {
+      out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/" + b + "/README.md", b: b });
+      out.push({ u: "https://gcore.jsdelivr.net/gh/" + full + "@" + b + "/README.md", b: b });
+      out.push({ u: "https://raw.githubusercontent.com/" + full + "/" + b + "/README.md", b: b });
+    });
+  } else {
+    branches.forEach(b => {
+      out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/" + b + "/readme.md", b: b });
+      out.push({ u: "https://gcore.jsdelivr.net/gh/" + full + "@" + b + "/readme.md", b: b });
+    });
+    out.push({ u: "https://ghfast.top/https://raw.githubusercontent.com/" + full + "/HEAD/README.md", b: "HEAD" });
+  }
+  return out;
+}
+
+/* 镜像站偶尔会甩一个 403/限流 HTML 页回来，不能当成 README */
+function looksLikeErrorPage(txt) {
+  const head = txt.slice(0, 400).toLowerCase();
+  return head.indexOf("<!doctype html") >= 0 || head.indexOf("<html") >= 0 ||
+         /^\s*(403|404|429|500)\s+forbidden/.test(head) || head.indexOf("rate limit") >= 0;
+}
+
+function fetchText(url, ms) {
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), ms || README_TIMEOUT);
+  return fetch(url, { signal: ac.signal, cache: "force-cache" })
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+    .then(t => { if (!t || t.length < 50 || looksLikeErrorPage(t)) throw new Error("bad body"); return t; })
+    .finally(() => clearTimeout(timer));
+}
+
+function raceStage(full, stage, ms) {
+  const list = readmeUrls(full, stage);
+  return new Promise((resolve, reject) => {
+    let left = list.length, done = false;
+    list.forEach(it => {
+      fetchText(it.u, ms).then(txt => {
+        if (!done) { done = true; resolve({ txt: txt, branch: it.b }); }
+      }).catch(() => { if (--left === 0 && !done) reject(new Error("stage fail")); });
+    });
+  });
+}
+
+async function raceReadme(full, ms) {
+  try { return await raceStage(full, 1, ms); }
+  catch (e) { return await raceStage(full, 2, 4000); }
+}
+
+function paintReadme(full, doc, expanded) {
+  const meta = doc.chars >= 1000 ? (doc.chars / 1000).toFixed(1) + "k" : String(doc.chars);
+  let body;
+  if (expanded) {
+    body = '<div class="rm-scroll"><div class="md">' + doc.full + "</div></div>";
+  } else if (doc.thin || !doc.summary) {
+    body = '<div class="rm-empty">这个仓库的 README 以表格、截图和外链为主，能自动提炼的正文很少。展开完整 README 可以看到它的完整排版。</div>';
+  } else {
+    body = '<div class="md">' + doc.summary + "</div>";
+  }
+  const canExpand = doc.hasMore || expanded;
+  mReadmeBox.innerHTML =
+    '<div class="rm-head"><span class="rm-chip">' + (expanded ? "完整 README" : "自动摘要") + "</span>" +
+      '<span class="rm-meta">全文约 ' + meta + " 字</span></div>" +
+    body +
+    '<div class="rm-actions">' +
+      (canExpand ? '<button class="rm-btn" data-act="' + (expanded ? "collapse" : "expand") + '">' +
+        (expanded ? "收起 ↑" : "展开完整 README ↓") + "</button>" : "") +
+      '<a class="rm-btn ghost" href="https://github.com/' + full + '#readme" target="_blank" rel="noopener">去 GitHub 阅读 ↗</a>' +
+    "</div>";
+  const btn = mReadmeBox.querySelector("[data-act]");
+  if (btn) btn.onclick = () => paintReadme(full, doc, btn.getAttribute("data-act") === "expand");
+}
+
+async function loadReadme(full, token) {
+  const cached = readmeCache.get(full);
+  if (cached) {
+    if (token === readmeToken) paintReadme(full, cached, false);
+    return;
+  }
+  mReadmeBox.innerHTML = '<div class="m-readme-loading"><span class="spin"></span>正在加载 README…</div>';
+  try {
+    const got = await raceReadme(full, README_TIMEOUT);
+    if (token !== readmeToken) return;
+    const doc = MD.render(got.txt, { full: full, branch: got.branch });
+    readmeCache.set(full, doc);
+    paintReadme(full, doc, false);
+  } catch (e) {
+    if (token !== readmeToken) return;
+    mReadmeBox.innerHTML = '<div class="m-readme-err">README 加载失败（网络受限或仓库没有 README）。' +
+      '<button class="rm-retry" id="rmRetry">重试</button>' +
+      ' <a class="rm-gh" href="https://github.com/' + full + '" target="_blank" rel="noopener">去 GitHub 看 →</a></div>';
+    const b = document.getElementById("rmRetry");
+    if (b) b.onclick = () => { readmeCache.delete(full); loadReadme(full, ++readmeToken); };
+  }
+}
+
+/* 悬停预取：停 120ms 就开始后台拉取，点开时秒开（hoverTimer 在 core.js 里声明） */
+function prefetchReadme(full) {
+  if (readmeCache.has(full)) return;
+  raceReadme(full, 7000).then(got => {
+    if (!readmeCache.has(full)) readmeCache.set(full, MD.render(got.txt, { full: full, branch: got.branch }));
+  }).catch(() => {});
+}
+
+</script>
+</body>
+</html>

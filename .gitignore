@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# 本地缓存（构建时抓取，体积大，无需入库）
+data/readme_cache/
+
+# 个人收藏数据
+data/favorites.json
+
+# 发布副本（与根目录 8 个页面内容一致，避免重复入库）
+publish/
