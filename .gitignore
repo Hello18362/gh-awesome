@@ -10,3 +10,5 @@ data/favorites.json
 
 # 发布副本（与根目录 8 个页面内容一致，避免重复入库）
 publish/
+
+# 日常更新：双击桌面「更新网站.command」即可上传并等待上线
