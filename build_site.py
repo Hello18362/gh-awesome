@@ -21,7 +21,7 @@ CATS = [
      "desc": "音乐、视频、游戏、追番，开源世界也很好玩",
      "grad": "linear-gradient(135deg,#ec4899,#f43f5e)"},
     {"id": "devtools", "code": "DEV", "name": "开发者工具", "icon": "🛠️",
-     "desc": "终端神器、命令行效率工具，程序员的兵器库",
+     "desc": "终端神器、命令行工具与编程学习资源，程序员的兵器库",
      "grad": "linear-gradient(135deg,#0ea5e9,#06b6d4)"},
     {"id": "frontend", "code": "WEB", "name": "前端框架", "icon": "🎨",
      "desc": "框架、组件库与构建工具，现代前端的基石",
